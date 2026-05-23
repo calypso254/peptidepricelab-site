@@ -14,10 +14,50 @@
   --radius: 10px;
 }
 
+@font-face {
+  font-family: 'Switzer';
+  src: url('../assets/fonts/switzer/Switzer-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('../assets/fonts/switzer/Switzer-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('../assets/fonts/switzer/Switzer-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('../assets/fonts/switzer/Switzer-Extrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('../assets/fonts/switzer/Switzer-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
@@ -43,11 +83,14 @@ body {
   z-index: 100;
 }
 .nav-logo {
-  font-weight: 800;
-  font-size: 16px;
-  color: var(--indigo);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: -0.3px;
+}
+.nav-logo img {
+  display: block;
+  width: auto;
+  height: 38px;
 }
 .nav-links {
   display: flex;

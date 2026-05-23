@@ -33,9 +33,36 @@
   }
   </script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
   <style>
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Extrabold.woff2') format('woff2');
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
       --bg:          #f5f7fa;
       --surface:     #ffffff;
@@ -60,7 +87,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-size: 0.9375rem;
       line-height: 1.7;
       color: var(--text);
@@ -445,7 +472,7 @@
 
   <header class="site-header">
     <a href="https://peptidepricelab.com" class="logo">
-      <img src="https://peptidepricelab.com/Peptide_Price_Lab_Logo_Default_Standardized.webp" alt="Peptide Price Lab">
+      <img src="/assets/Peptide_Price_Lab_Logo_Default_Standardized.webp" alt="Peptide Price Lab">
     </a>
     <nav>
       <a href="/peptides/">Research Notes</a>
