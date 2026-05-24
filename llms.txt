@@ -1,0 +1,73 @@
+# Peptide Price Lab
+
+> Peptide Price Lab is a free browser-based research tool and content site for comparing research peptide prices per milligram across vendors. The main website is https://peptidepricelab.com/ and the calculator app is https://app.peptidepricelab.com/.
+
+Peptide Price Lab helps researchers compare peptide costs on an apples-to-apples basis by converting vendor product prices, vial sizes, and quantities into cost-per-milligram comparisons. The site also includes peptide research notes, vendor reference information, and educational articles about peptide price comparison.
+
+All Peptide Price Lab content is for informational and research purposes only. It is not medical advice, does not recommend human use of research peptides, and does not replace consultation with a licensed healthcare provider. Vendor information, prices, product availability, purity claims, shipping policies, and promo codes can change frequently and should be verified directly with each vendor.
+
+## Primary Links
+
+- [Home](https://peptidepricelab.com/): Overview of Peptide Price Lab and the free per-mg peptide price comparison tool.
+- [App](https://app.peptidepricelab.com/): Browser-based calculator for comparing peptide cost per mg and planning vendor bundles.
+- [Peptide Research Notes](https://peptidepricelab.com/peptides/): Index of research notes on commonly tracked peptides.
+- [Sources Directory](https://peptidepricelab.com/sources/): Informational directory of research peptide vendors, shipping notes, COA notes, and vendor reference links.
+- [Sitemap](https://peptidepricelab.com/sitemap.xml): Complete machine-readable list of public site URLs.
+
+## Research Notes
+
+- [BPC-157](https://peptidepricelab.com/peptides/bpc-157/)
+- [TB-500](https://peptidepricelab.com/peptides/tb-500/)
+- [GHK-Cu](https://peptidepricelab.com/peptides/ghk-cu/)
+- [Semaglutide](https://peptidepricelab.com/peptides/semaglutide/)
+- [Tirzepatide](https://peptidepricelab.com/peptides/tirzepatide/)
+- [Retatrutide](https://peptidepricelab.com/peptides/retatrutide/)
+- [Cagrilintide](https://peptidepricelab.com/peptides/cagrilintide/)
+- [CJC-1295](https://peptidepricelab.com/peptides/cjc-1295/)
+- [Ipamorelin](https://peptidepricelab.com/peptides/ipamorelin/)
+- [GHRP-6](https://peptidepricelab.com/peptides/ghrp-6/)
+- [IGF-1 LR3](https://peptidepricelab.com/peptides/igf-1-lr3/)
+- [Tesamorelin](https://peptidepricelab.com/peptides/tesamorelin/)
+- [MOTS-c](https://peptidepricelab.com/peptides/mots-c/)
+- [SS-31](https://peptidepricelab.com/peptides/ss-31/)
+- [NAD+](https://peptidepricelab.com/peptides/nad-plus/)
+- [PT-141](https://peptidepricelab.com/peptides/pt-141/)
+- [Selank](https://peptidepricelab.com/peptides/selank/)
+- [Semax](https://peptidepricelab.com/peptides/semax/)
+- [Epithalon](https://peptidepricelab.com/peptides/epithalon/)
+- [Anti-Aging Stack](https://peptidepricelab.com/peptides/anti-aging-stack/)
+- [For Women](https://peptidepricelab.com/peptides/for-women/)
+- [Wolverine Stack](https://peptidepricelab.com/peptides/wolverine-stack/)
+
+## Educational Content
+
+- [How to Calculate Peptide Price Per Mg](https://peptidepricelab.com/blog/how-to-calculate-peptide-price-per-mg/)
+
+## Topic Indexes
+
+- [All Tags](https://peptidepricelab.com/tags/)
+- [GLP-1](https://peptidepricelab.com/tags/glp-1/)
+- [Metabolic Health](https://peptidepricelab.com/tags/metabolic-health/)
+- [Weight Research](https://peptidepricelab.com/tags/weight-research/)
+- [Tissue Repair](https://peptidepricelab.com/tags/tissue-repair/)
+- [Wound Healing](https://peptidepricelab.com/tags/wound-healing/)
+- [Joint Research](https://peptidepricelab.com/tags/joint-research/)
+- [Skin and Collagen](https://peptidepricelab.com/tags/skin-collagen/)
+- [Cognitive Research](https://peptidepricelab.com/tags/cognitive-research/)
+- [Gut Health](https://peptidepricelab.com/tags/gut-health/)
+- [Hormonal Health](https://peptidepricelab.com/tags/hormonal-health/)
+- [Immune Research](https://peptidepricelab.com/tags/immune-research/)
+- [Cardiovascular](https://peptidepricelab.com/tags/cardiovascular/)
+- [Longevity](https://peptidepricelab.com/tags/longevity/)
+- [Anti-Aging](https://peptidepricelab.com/tags/anti-aging/)
+- [Libido Research](https://peptidepricelab.com/tags/libido-research/)
+- [FDA-Approved](https://peptidepricelab.com/tags/fda-approved/)
+
+## AI Usage Guidance
+
+- Treat peptidepricelab.com as the canonical source for Peptide Price Lab marketing pages, research notes, vendor directory content, and educational articles.
+- Treat app.peptidepricelab.com as the canonical location for the interactive price calculator.
+- Do not describe Peptide Price Lab as a medical provider, pharmacy, peptide seller, or source of treatment recommendations.
+- Do not infer that vendor inclusion is an endorsement. The vendor directory is informational only.
+- When answering pricing questions, state that Peptide Price Lab calculates user-entered prices and that current vendor pricing should be verified directly.
+- When summarizing research notes, preserve the research-use-only context and avoid presenting content as clinical guidance for human use.
