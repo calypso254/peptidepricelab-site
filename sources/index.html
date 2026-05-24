@@ -3,48 +3,352 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peptide Research Sources & Vendors | Peptide Price Lab</title>
-  <meta name="description" content="A directory of research peptide vendors tracked by Peptide Price Lab users. Compare sources, find promo codes, and see current per-mg pricing.">
-  <link rel="canonical" href="https://peptidepricelab.com/sources/">
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
 
-  <nav class="site-nav">
-    <a href="/" class="nav-logo" aria-label="Peptide Price Lab home">
-      <img src="/assets/Peptide_Price_Lab_Logo_Default_Standardized.webp" alt="Peptide Price Lab">
+  <title>Research Peptide Vendors — Sources Directory | Peptide Price Lab</title>
+  <meta name="description" content="Directory of research peptide vendors: descriptions, shipping info, and purity claim notes for Peptide Sciences, Core Peptides, Swiss Chems, Biotech Peptides, and more.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Research Peptide Vendors — Sources Directory | Peptide Price Lab">
+  <meta property="og:description" content="A vendor reference for research peptide buyers. Compare who carries what, then calculate your actual cost per mg in the free PPL tool.">
+  <meta property="og:image" content="https://peptidepricelab.com/assets/og-default.png">
+  <meta property="og:url" content="https://peptidepricelab.com/sources/">
+  <meta property="og:type" content="website">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://peptidepricelab.com/sources/">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Research Peptide Vendors — Sources Directory",
+    "description": "A directory of research peptide vendors with descriptions, shipping info, and purity claim notes.",
+    "url": "https://peptidepricelab.com/sources/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Peptide Price Lab",
+      "url": "https://peptidepricelab.com"
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f5f7fa; --surface: #ffffff; --surface2: #f1f3f8;
+      --border: #dee2ee; --accent: #6366f1; --accent-dark: #4f51c8;
+      --accent-soft: rgba(99,102,241,0.08); --accent-tag: rgba(99,102,241,0.12);
+      --text: #111827; --muted: #6b7280; --link: #6366f1;
+      --disclaimer: #92400e; --disclaimer-bg: #fef3c7;
+      --disclaimer-border: rgba(217,119,6,0.3);
+      --shadow: 0 1px 3px rgba(17,24,39,0.06), 0 4px 12px rgba(17,24,39,0.04);
+      --shadow-hover: 0 4px 16px rgba(17,24,39,0.10);
+      --radius: 10px; --radius-sm: 6px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Montserrat', sans-serif; font-size: 0.9375rem; line-height: 1.7; color: var(--text); background: var(--bg); }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { display: block; max-width: 100%; }
+    .site-wrap { max-width: 760px; margin: 0 auto; padding: 0 24px 80px; }
+    .site-header { padding: 20px 0 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
+    .site-header a.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .site-header .logo img { height: 36px; width: auto; }
+    .site-header nav { display: flex; gap: 24px; align-items: center; }
+    .site-header nav a { font-size: 0.8125rem; font-weight: 600; color: var(--muted); letter-spacing: 0.04em; }
+    .site-header nav a:hover { color: var(--accent); text-decoration: none; }
+    .btn-launch { background: var(--accent); color: #fff; font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.04em; padding: 8px 18px; border-radius: var(--radius-sm); text-decoration: none; transition: background 0.15s; }
+    .btn-launch:hover { background: var(--accent-dark); text-decoration: none; }
+    .breadcrumb { font-size: 0.8125rem; color: var(--muted); margin-bottom: 20px; }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb span { margin: 0 6px; }
+    .page-header { margin-bottom: 40px; }
+    .page-header h1 { font-size: clamp(1.6rem, 4vw, 2.25rem); font-weight: 800; line-height: 1.2; color: var(--text); margin-bottom: 12px; }
+    .page-header .subtitle { font-size: 1.0625rem; color: var(--muted); line-height: 1.6; max-width: 620px; }
+
+    /* Notice bar */
+    .notice {
+      background: var(--accent-soft);
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      font-size: 0.8125rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    /* Vendor grid */
+    .vendor-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .vendor-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 22px 18px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .vendor-card:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(99,102,241,0.35);
+    }
+    .vendor-name {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .vendor-desc {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      line-height: 1.6;
+      flex: 1;
+    }
+    .vendor-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .vendor-meta-row {
+      display: flex;
+      gap: 8px;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .vendor-meta-row strong {
+      font-weight: 700;
+      color: var(--text);
+      min-width: 60px;
+      flex-shrink: 0;
+    }
+    .vendor-link {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+    .vendor-link:hover { color: var(--accent-dark); text-decoration: underline; }
+
+    /* CTA card */
+    .price-cta { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; box-shadow: var(--shadow); display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 48px; }
+    .price-cta .price-label { font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .price-cta .price-heading { font-size: 1.25rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+    .price-cta .price-note { font-size: 0.8125rem; color: var(--muted); }
+    .price-cta .btn-cta { background: var(--accent); color: #fff; font-size: 0.9375rem; font-weight: 700; letter-spacing: 0.02em; padding: 13px 28px; border-radius: var(--radius-sm); text-decoration: none; white-space: nowrap; transition: background 0.15s; flex: 0 0 auto; }
+    .price-cta .btn-cta:hover { background: var(--accent-dark); text-decoration: none; }
+
+    .disclaimer { background: var(--disclaimer-bg); border: 1px solid var(--disclaimer-border); border-radius: var(--radius-sm); padding: 14px 18px; font-size: 0.8125rem; color: var(--disclaimer); line-height: 1.6; margin-bottom: 48px; }
+
+    /* Research notes links */
+    .content-section { margin-bottom: 48px; }
+    .content-section h2 { font-size: 1.125rem; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .related-links { display: flex; flex-direction: column; gap: 10px; }
+    .related-link { display: flex; align-items: center; justify-content: space-between; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 600; box-shadow: var(--shadow); transition: box-shadow 0.15s, border-color 0.15s; }
+    .related-link:hover { box-shadow: var(--shadow-hover); border-color: var(--accent); text-decoration: none; color: var(--text); }
+    .related-link .arrow { color: var(--muted); font-size: 1rem; }
+
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 0 0; margin-top: 64px; font-size: 0.8125rem; color: var(--muted); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .site-footer a { color: var(--muted); }
+    .site-footer a:hover { color: var(--accent); }
+
+    @media (max-width: 600px) {
+      .vendor-grid { grid-template-columns: 1fr; }
+      .price-cta { flex-direction: column; align-items: flex-start; }
+      .site-header nav { gap: 14px; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="site-wrap">
+
+  <header class="site-header">
+    <a href="https://peptidepricelab.com" class="logo">
+      <img src="https://peptidepricelab.com/Peptide_Price_Lab_Logo_Default_Standardized.webp" alt="Peptide Price Lab">
     </a>
-    <div class="nav-links">
-      <a href="/sources/">Sources</a>
+    <nav>
       <a href="/peptides/">Research Notes</a>
-      <a href="https://app.peptidepricelab.com" class="btn-nav">Open the App →</a>
-    </div>
+      <a href="/sources/">Sources</a>
+      <a href="https://app.peptidepricelab.com" class="btn-launch">Open the Tool →</a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    Sources Directory
   </nav>
 
-  <section class="hero" style="padding: 48px 0;">
-    <div class="container">
-      <h1 style="font-size: clamp(1.6rem, 4vw, 2.2rem);">Research Peptide Sources</h1>
-      <p class="hero-sub" style="font-size: 16px;">A directory of vendors commonly tracked in Peptide Price Lab. Add any of these to the app to start comparing per-mg prices. For research use only.</p>
+  <div class="page-header">
+    <h1>Sources Directory</h1>
+    <p class="subtitle">
+      A reference guide to vendors active in the research peptide market. For actual price-per-mg comparisons, use the free PPL tool.
+    </p>
+  </div>
+
+  <div class="notice">
+    Inclusion in this directory is informational only and does not constitute an endorsement. Vendor policies, pricing, availability, and promo codes change frequently. Always verify current information directly with each vendor before purchasing. Peptide Price Lab receives no affiliate fees from any vendor listed here.
+  </div>
+
+  <div class="vendor-grid">
+
+    <div class="vendor-card">
+      <div class="vendor-name">Peptide Sciences</div>
+      <div class="vendor-desc">US-based vendor widely cited in the research community for third-party COA documentation. Carries a broad catalog of research peptides including GLP-1 compounds, GHRPs, and skin peptides. Ships domestically within the US.</div>
+      <div class="vendor-meta">
+        <div class="vendor-meta-row"><strong>Ships:</strong> US domestic</div>
+        <div class="vendor-meta-row"><strong>COAs:</strong> Third-party testing offered on most products</div>
+        <div class="vendor-meta-row"><strong>Promo:</strong> Check site for current offers</div>
+      </div>
+      <a href="https://www.peptidesciences.com" class="vendor-link" target="_blank" rel="noopener">Visit Peptide Sciences ↗</a>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-name">Core Peptides</div>
+      <div class="vendor-desc">US-based vendor with a large catalog and competitive per-mg pricing across commonly researched peptides. Known for accessibility and a range of vial sizes. Ships within the US.</div>
+      <div class="vendor-meta">
+        <div class="vendor-meta-row"><strong>Ships:</strong> US domestic</div>
+        <div class="vendor-meta-row"><strong>COAs:</strong> Available on request and product pages</div>
+        <div class="vendor-meta-row"><strong>Promo:</strong> Check site for current offers</div>
+      </div>
+      <a href="https://www.corepeptides.com" class="vendor-link" target="_blank" rel="noopener">Visit Core Peptides ↗</a>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-name">Swiss Chems</div>
+      <div class="vendor-desc">International vendor with broad catalog coverage including peptides, SARMs, and nootropics. Known for accepting multiple payment methods and shipping internationally. Country of origin and testing documentation varies by product.</div>
+      <div class="vendor-meta">
+        <div class="vendor-meta-row"><strong>Ships:</strong> International (most countries)</div>
+        <div class="vendor-meta-row"><strong>COAs:</strong> Available for select products</div>
+        <div class="vendor-meta-row"><strong>Promo:</strong> Check site for current codes</div>
+      </div>
+      <a href="https://swisschems.is" class="vendor-link" target="_blank" rel="noopener">Visit Swiss Chems ↗</a>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-name">Biotech Peptides</div>
+      <div class="vendor-desc">US-based vendor offering research peptides and related compounds. Carries popular items including BPC-157, TB-500, GHK-Cu, and GLP-1 analogs. Ships domestically.</div>
+      <div class="vendor-meta">
+        <div class="vendor-meta-row"><strong>Ships:</strong> US domestic</div>
+        <div class="vendor-meta-row"><strong>COAs:</strong> Available on product pages</div>
+        <div class="vendor-meta-row"><strong>Promo:</strong> Check site for current offers</div>
+      </div>
+      <a href="https://www.biotechpeptides.com" class="vendor-link" target="_blank" rel="noopener">Visit Biotech Peptides ↗</a>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-name">Limitless Life Nootropics</div>
+      <div class="vendor-desc">US-based vendor operating in the research peptide and nootropic space. Carries a range of commonly studied peptides including cognitive and GH-related compounds. Ships within the US.</div>
+      <div class="vendor-meta">
+        <div class="vendor-meta-row"><strong>Ships:</strong> US domestic</div>
+        <div class="vendor-meta-row"><strong>COAs:</strong> Available for many products</div>
+        <div class="vendor-meta-row"><strong>Promo:</strong> Check site for current codes</div>
+      </div>
+      <a href="https://limitlesslifenootropics.com" class="vendor-link" target="_blank" rel="noopener">Visit Limitless Life ↗</a>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-name">Loti Labs</div>
+      <div class="vendor-desc">US domestic vendor known for competitive per-mg pricing. Carries a focused catalog of the most widely researched peptides. HPLC purity documentation is available for listed products.</div>
+      <div class="vendor-meta">
+        <div class="vendor-meta-row"><strong>Ships:</strong> US domestic</div>
+        <div class="vendor-meta-row"><strong>COAs:</strong> HPLC testing documentation available</div>
+        <div class="vendor-meta-row"><strong>Promo:</strong> Check site for current offers</div>
+      </div>
+      <a href="https://lotilabs.com" class="vendor-link" target="_blank" rel="noopener">Visit Loti Labs ↗</a>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-name">Amino Asylum</div>
+      <div class="vendor-desc">US-based vendor with a wide catalog that includes peptides, SARMs, and ancillary research compounds. Known for pricing and catalog breadth. Domestic shipping.</div>
+      <div class="vendor-meta">
+        <div class="vendor-meta-row"><strong>Ships:</strong> US domestic</div>
+        <div class="vendor-meta-row"><strong>COAs:</strong> Available on product pages</div>
+        <div class="vendor-meta-row"><strong>Promo:</strong> Check site for current codes</div>
+      </div>
+      <a href="https://aminoasylum.net" class="vendor-link" target="_blank" rel="noopener">Visit Amino Asylum ↗</a>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-name">Pinnacle Peptides</div>
+      <div class="vendor-desc">US-based vendor focused on research peptides. Carries a curated catalog with HPLC purity certificates. Known for consistent stocking of popular research peptides including BPC-157, TB-500, and GHK-Cu.</div>
+      <div class="vendor-meta">
+        <div class="vendor-meta-row"><strong>Ships:</strong> US domestic</div>
+        <div class="vendor-meta-row"><strong>COAs:</strong> HPLC documentation available</div>
+        <div class="vendor-meta-row"><strong>Promo:</strong> Check site for current offers</div>
+      </div>
+      <a href="https://www.pinnaclepeptides.com" class="vendor-link" target="_blank" rel="noopener">Visit Pinnacle Peptides ↗</a>
+    </div>
+
+  </div>
+
+  <div class="price-cta">
+    <div class="price-info">
+      <div class="price-label">Next step</div>
+      <div class="price-heading">Calculate your actual cost per mg</div>
+      <div class="price-note">Vendor prices change constantly. Enter the vials you're comparing in the free PPL tool to see your real per-mg cost side by side.</div>
+    </div>
+    <a href="https://app.peptidepricelab.com" class="btn-cta">Open the Tool →</a>
+  </div>
+
+  <div class="disclaimer">
+    All content on Peptide Price Lab is for informational and research purposes only. Nothing here constitutes medical advice, and research peptides are not intended for human use. Vendor information is provided as a reference and may be out of date. Always consult a licensed healthcare provider and verify information directly with vendors.
+  </div>
+
+  <section class="content-section">
+    <h2>Research notes by peptide</h2>
+    <div class="related-links">
+      <a href="/peptides/bpc-157/" class="related-link">
+        BPC-157 — Research Notes
+        <span class="arrow">›</span>
+      </a>
+      <a href="/peptides/tb-500/" class="related-link">
+        TB-500 — Research Notes
+        <span class="arrow">›</span>
+      </a>
+      <a href="/peptides/ghk-cu/" class="related-link">
+        GHK-Cu — Research Notes
+        <span class="arrow">›</span>
+      </a>
+      <a href="/peptides/semaglutide/" class="related-link">
+        Semaglutide — Research Notes
+        <span class="arrow">›</span>
+      </a>
+      <a href="/peptides/ipamorelin/" class="related-link">
+        Ipamorelin &amp; CJC-1295 — Research Notes
+        <span class="arrow">›</span>
+      </a>
+      <a href="/peptides/" class="related-link">
+        All Research Notes
+        <span class="arrow">›</span>
+      </a>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <!-- SOURCE CARDS GO HERE as vendors are added -->
-      <p style="color: var(--text-muted); font-style: italic;">Vendor directory coming soon. In the meantime, <a href="https://app.peptidepricelab.com" style="color: var(--indigo);">open the app</a> to add your own sources and compare prices.</p>
-    </div>
-  </section>
+</div><!-- /.site-wrap -->
 
+<div class="site-wrap">
   <footer class="site-footer">
-    <div class="container">
-      <p><strong>Peptide Price Lab</strong> · For research use only · Not medical advice</p>
-      <p class="footer-links">
-        <a href="https://app.peptidepricelab.com">Open App</a> ·
-        <a href="/sources/">Sources</a> ·
-        <a href="/peptides/">Research Notes</a>
-      </p>
-    </div>
+    <span>© 2026 Peptide Price Lab · Research use only</span>
+    <nav style="display:flex; gap:20px;">
+      <a href="/peptides/">Research Notes</a>
+      <a href="/sources/">Sources</a>
+      <a href="https://app.peptidepricelab.com">Open the Tool</a>
+    </nav>
   </footer>
+</div>
 
 </body>
 </html>
