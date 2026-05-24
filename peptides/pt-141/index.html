@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PT-141 Price Per Mg — Research Notes | Peptide Price Lab</title>
+  <meta name="description" content="PT-141 (bremelanotide) is FDA-approved as Vyleesi for women's HSDD. Research notes on mechanism, RECONNECT trial data, and price per mg across vendors.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PT-141 Price Per Mg — Research Notes | Peptide Price Lab">
+  <meta property="og:description" content="PT-141 (bremelanotide, Vyleesi) is the only FDA-approved on-demand treatment for HSDD in premenopausal women. See the RECONNECT trial data and current price per mg.">
+  <meta property="og:image" content="https://peptidepricelab.com/assets/og-default.png">
+  <meta property="og:url" content="https://peptidepricelab.com/peptides/pt-141/">
+  <meta property="og:type" content="article">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://peptidepricelab.com/peptides/pt-141/">
+
+  <!-- Schema: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "PT-141 Research Notes",
+    "description": "PT-141 (bremelanotide) is FDA-approved as Vyleesi for hypoactive sexual desire disorder in premenopausal women. Research notes on the RECONNECT trials, mechanism, and per-mg pricing.",
+    "url": "https://peptidepricelab.com/peptides/pt-141/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Peptide Price Lab",
+      "url": "https://peptidepricelab.com"
+    },
+    "datePublished": "2026-05-23",
+    "dateModified": "2026-05-23"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:          #f5f7fa;
+      --surface:     #ffffff;
+      --surface2:    #f1f3f8;
+      --border:      #dee2ee;
+      --accent:      #6366f1;
+      --accent-dark: #4f51c8;
+      --accent-soft: rgba(99,102,241,0.08);
+      --accent-tag:  rgba(99,102,241,0.12);
+      --text:        #111827;
+      --muted:       #6b7280;
+      --link:        #6366f1;
+      --disclaimer:  #92400e;
+      --disclaimer-bg: #fef3c7;
+      --disclaimer-border: rgba(217,119,6,0.3);
+      --shadow:      0 1px 3px rgba(17,24,39,0.06), 0 4px 12px rgba(17,24,39,0.04);
+      --shadow-hover: 0 4px 16px rgba(17,24,39,0.10);
+      --radius:      10px;
+      --radius-sm:   6px;
+      /* FDA approval colours */
+      --approved-bg:     #f0fdf4;
+      --approved-text:   #166534;
+      --approved-border: rgba(22,163,74,0.25);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9375rem;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { display: block; max-width: 100%; }
+
+    .site-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* SITE HEADER */
+    .site-header {
+      padding: 20px 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    .site-header a.logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .site-header .logo-text {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .site-header nav { display: flex; gap: 20px; }
+
+    .site-header nav a {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .site-header nav a:hover { color: var(--accent); text-decoration: none; }
+
+    /* PAGE HEADER */
+    .page-header { margin-bottom: 12px; }
+
+    .breadcrumb {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb span { margin: 0 6px; }
+
+    .page-header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .page-subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 620px;
+      margin-bottom: 24px;
+    }
+
+    /* TAGS */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 36px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--accent-tag);
+      color: var(--accent-dark);
+      letter-spacing: 0.01em;
+    }
+
+    .tag.fda {
+      background: rgba(22,163,74,0.12);
+      color: #166534;
+    }
+
+    /* STATS BAR */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    @media (max-width: 560px) {
+      .stats-bar { grid-template-columns: 1fr; }
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .stat-card .stat-label {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .stat-card .stat-value {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .stat-card .stat-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* FDA CALLOUT */
+    .fda-callout {
+      background: var(--approved-bg);
+      border: 1px solid var(--approved-border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 48px;
+    }
+
+    .fda-callout h3 {
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--approved-text);
+      margin-bottom: 10px;
+    }
+
+    .fda-callout ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .fda-callout li {
+      font-size: 0.875rem;
+      color: var(--approved-text);
+      line-height: 1.5;
+    }
+
+    .fda-callout li strong { font-weight: 700; }
+
+    /* CONTENT SECTIONS */
+    .content-section { margin-bottom: 48px; }
+
+    .section-heading {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content-section p {
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .content-section p:last-child { margin-bottom: 0; }
+
+    /* RESEARCH LIST */
+    .research-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .research-list li {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+    }
+
+    .research-list li strong {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .research-list li span {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .cite {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      vertical-align: super;
+      line-height: 0;
+      margin-left: 2px;
+    }
+
+    /* PARAMETERS TABLE */
+    .params-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+
+    .params-table th {
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      padding: 10px 14px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+    }
+
+    .params-table td {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .params-table td:first-child {
+      font-weight: 600;
+      width: 200px;
+      color: var(--muted);
+    }
+
+    /* PRICE CTA */
+    .price-cta {
+      background: var(--accent-soft);
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .price-cta .price-range {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--accent-dark);
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+
+    .price-cta .price-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .price-cta .price-note {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      line-height: 1.5;
+      max-width: 300px;
+    }
+
+    .price-cta .btn-price {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.875rem;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .price-cta .btn-price:hover {
+      background: var(--accent-dark);
+      text-decoration: none;
+    }
+
+    /* BIBLIOGRAPHY */
+    .ref-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.8125rem;
+    }
+
+    .ref-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      line-height: 1.55;
+    }
+
+    .ref-num {
+      font-weight: 700;
+      color: var(--accent);
+      flex-shrink: 0;
+      min-width: 28px;
+    }
+
+    .ref-text { color: var(--muted); }
+    .ref-text em { font-style: italic; }
+    .ref-text a { color: var(--accent); font-weight: 600; }
+
+    /* RELATED LINKS */
+    .related-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .related-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: box-shadow 0.15s;
+    }
+
+    .related-link:hover {
+      box-shadow: var(--shadow-hover);
+      text-decoration: none;
+    }
+
+    .related-link .rl-icon { font-size: 1.25rem; flex-shrink: 0; }
+
+    .related-link .rl-text strong {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .related-link .rl-text span {
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      background: var(--disclaimer-bg);
+      border: 1px solid var(--disclaimer-border);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      font-size: 0.8125rem;
+      color: var(--disclaimer);
+      line-height: 1.6;
+      margin-bottom: 48px;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+
+    .site-footer a { color: var(--muted); }
+    .site-footer a:hover { color: var(--accent); }
+  </style>
+</head>
+
+<body>
+<div class="site-wrap">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="logo" href="https://peptidepricelab.com/">
+      <span class="logo-text">Peptide Price Lab</span>
+    </a>
+    <nav>
+      <a href="https://peptidepricelab.com/peptides/">Peptides</a>
+      <a href="https://peptidepricelab.com/sources/">Sources</a>
+      <a href="https://app.peptidepricelab.com">Price Tool</a>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB + PAGE HEADER -->
+  <div class="page-header">
+    <div class="breadcrumb">
+      <a href="https://peptidepricelab.com/">Home</a>
+      <span>›</span>
+      <a href="https://peptidepricelab.com/peptides/">Peptides</a>
+      <span>›</span>
+      PT-141
+    </div>
+
+    <h1>PT-141 (Bremelanotide)</h1>
+    <p class="page-subtitle">PT-141 is the only FDA-approved on-demand treatment for hypoactive sexual desire disorder in premenopausal women. Here is what the RECONNECT trial data shows, what the research limitations are, and what it costs per milligram.</p>
+
+    <div class="tags">
+      <span class="tag fda">FDA-Approved</span>
+      <span class="tag">Libido Research</span>
+      <span class="tag">Hormonal Health</span>
+    </div>
+  </div>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-card">
+      <div class="stat-label">Peptide Class</div>
+      <div class="stat-value">Melanocortin receptor agonist</div>
+      <div class="stat-note">Cyclic heptapeptide; synthetic analog of alpha-MSH (alpha-melanocyte-stimulating hormone)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Common Vial Size</div>
+      <div class="stat-value">2 mg, 5 mg</div>
+      <div class="stat-note">Vyleesi (prescription): 1.75 mg/0.3 ml prefilled autoinjector</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Typical Price Range</div>
+      <div class="stat-value">$10–$30 / mg</div>
+      <div class="stat-note">Research grade; prescription Vyleesi priced separately</div>
+    </div>
+  </div>
+
+  <!-- FDA CALLOUT -->
+  <div class="fda-callout">
+    <h3>FDA-Approved Forms</h3>
+    <ul>
+      <li><strong>Vyleesi</strong> (subcutaneous injection, 1.75 mg on-demand): hypoactive sexual desire disorder (HSDD) in premenopausal women, approved 2019</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 1: WHAT IT IS -->
+  <div class="content-section">
+    <div class="section-heading">What it is</div>
+    <p>PT-141 (bremelanotide) is a synthetic cyclic heptapeptide and an agonist at melanocortin receptors, particularly MC3R and MC4R in the central nervous system. It was derived from Melanotan II, an earlier melanocortin peptide studied for tanning and sexual function. Unlike the GLP-1 agonists, which act peripherally, bremelanotide acts primarily in the brain on pathways involved in sexual desire. It is marketed as Vyleesi for the FDA-approved prescription indication.</p>
+  </div>
+
+  <!-- SECTION 2: WHAT RESEARCHERS STUDY IT FOR -->
+  <div class="content-section">
+    <div class="section-heading">What researchers study it for</div>
+    <ul class="research-list">
+      <li>
+        <strong>Hypoactive sexual desire disorder (HSDD) in premenopausal women</strong>
+        <span>This is the approved indication. The Phase 3 RECONNECT trials enrolled premenopausal women diagnosed with HSDD and found statistically significant improvements in satisfying sexual events and self-reported desire scores compared to placebo over 24 weeks of on-demand use. <a href="#ref-1" class="cite">[1]</a></span>
+      </li>
+      <li>
+        <strong>On-demand dosing profile</strong>
+        <span>Unlike flibanserin (Addyi), which requires daily oral dosing, bremelanotide is taken on-demand approximately 45 minutes before anticipated sexual activity. Researchers and clinicians have studied whether this profile offers practical advantages for adherence and side effect management in women with HSDD. <a href="#ref-4" class="cite">[4]</a></span>
+      </li>
+      <li>
+        <strong>Long-term safety and tolerability</strong>
+        <span>The RECONNECT extension study followed participants for 52 weeks and found that bremelanotide maintained efficacy signals with a consistent adverse event profile. Nausea was reported as transient and most participants who used the drug at least once continued treatment. <a href="#ref-2" class="cite">[2]</a></span>
+      </li>
+      <li>
+        <strong>Patient-reported outcomes and treatment satisfaction</strong>
+        <span>Exit survey data from RECONNECT participants found that most women who completed the trial reported satisfaction with treatment and indicated they would continue use. Among those who discontinued, adverse effects (primarily nausea and flushing) were cited more often than lack of efficacy. <a href="#ref-6" class="cite">[6]</a></span>
+      </li>
+      <li>
+        <strong>Melanocortin receptor mechanism in sexual function</strong>
+        <span>Researchers have studied how MC4R agonism in the hypothalamus and other brain regions modulates the neural pathways involved in sexual arousal and desire. This work extends beyond bremelanotide itself to the broader question of central nervous system targets for female sexual dysfunction. <a href="#ref-3" class="cite">[3]</a></span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTION 3: RESEARCH CONTEXT -->
+  <div class="content-section">
+    <div class="section-heading">Research context</div>
+    <p>The evidence base for PT-141 is among the strongest of any peptide on this site: two Phase 3 randomized controlled trials (the RECONNECT studies) were the basis for FDA approval in 2019, and the long-term safety data extends to 52 weeks. <a href="#ref-1" class="cite">[1]</a> <a href="#ref-2" class="cite">[2]</a> The approval was specifically for premenopausal women with generalized, acquired HSDD. The drug has not been approved for men or for postmenopausal women.</p>
+    <p>It is worth noting that the effect sizes in the RECONNECT trials, while statistically significant, were modest. A 2024 critical reanalysis concluded that the magnitude of improvement in satisfying sexual events and desire scores was small relative to placebo, and that the clinical meaningfulness of the FDA's chosen outcome measures remains contested in the research literature. <a href="#ref-5" class="cite">[5]</a> Researchers and patients should weigh the statistical significance of the trial results against the practical magnitude of benefit and the frequency of adverse effects, particularly nausea (reported by approximately 40% of participants in the pivotal trials).</p>
+  </div>
+
+  <!-- SECTION 4: RESEARCH PARAMETERS -->
+  <div class="content-section">
+    <div class="section-heading">Typical research parameters</div>
+    <table class="params-table">
+      <thead>
+        <tr>
+          <th>Parameter</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Common vial sizes</td>
+          <td>2 mg, 5 mg (research vendors); Vyleesi: 1.75 mg/0.3 ml prefilled autoinjector (prescription)</td>
+        </tr>
+        <tr>
+          <td>Supplied as</td>
+          <td>Lyophilized powder (research grade, requires reconstitution); prefilled autoinjector (prescription Vyleesi)</td>
+        </tr>
+        <tr>
+          <td>Storage (lyophilized)</td>
+          <td>Refrigerated (2–8°C); protect from light</td>
+        </tr>
+        <tr>
+          <td>Stability</td>
+          <td>Lyophilized form stable 12–24 months under proper storage; reconstituted solutions should be used promptly</td>
+        </tr>
+        <tr>
+          <td>Administration studied</td>
+          <td>Subcutaneous injection in clinical trials; on-demand use approximately 45 minutes before activity studied in RECONNECT; intranasal formulations were studied in earlier trials but were not the approved route</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PRICE CTA -->
+  <div class="price-cta">
+    <div>
+      <div class="price-label">Typical price range (research grade)</div>
+      <div class="price-range">$10–$30 / mg</div>
+      <div class="price-note">Prices vary by vial size, vendor, and purity. Calculate your actual cost per mg →</div>
+    </div>
+    <a class="btn-price" href="https://app.peptidepricelab.com">Compare prices</a>
+  </div>
+
+  <!-- BIBLIOGRAPHY -->
+  <div class="content-section">
+    <div class="section-heading">References</div>
+    <ol class="ref-list">
+      <li id="ref-1">
+        <span class="ref-num">[1]</span>
+        <span class="ref-text">Kingsberg SA, Clayton AH, Portman D, et al. <em>Bremelanotide for the Treatment of Hypoactive Sexual Desire Disorder: Two Randomized Phase 3 Trials.</em> Obstetrics and gynecology. 2019;134. <a href="https://pubmed.ncbi.nlm.nih.gov/31599840/" target="_blank" rel="noopener">PubMed ↗</a></span>
+      </li>
+      <li id="ref-2">
+        <span class="ref-num">[2]</span>
+        <span class="ref-text">Simon JA, Kingsberg SA, Portman D, et al. <em>Long-Term Safety and Efficacy of Bremelanotide for Hypoactive Sexual Desire Disorder.</em> Obstetrics and gynecology. 2019;134. <a href="https://pubmed.ncbi.nlm.nih.gov/31599847/" target="_blank" rel="noopener">PubMed ↗</a></span>
+      </li>
+      <li id="ref-3">
+        <span class="ref-num">[3]</span>
+        <span class="ref-text">Dhillon S, Keam SJ. <em>Bremelanotide: First Approval.</em> Drugs. 2019;79. <a href="https://pubmed.ncbi.nlm.nih.gov/31429064/" target="_blank" rel="noopener">PubMed ↗</a></span>
+      </li>
+      <li id="ref-4">
+        <span class="ref-num">[4]</span>
+        <span class="ref-text">Edinoff AN, Sanders NM, Lewis KB, et al. <em>Bremelanotide for Treatment of Female Hypoactive Sexual Desire.</em> Neurology international. 2022;14. <a href="https://pubmed.ncbi.nlm.nih.gov/35076581/" target="_blank" rel="noopener">PubMed ↗</a></span>
+      </li>
+      <li id="ref-5">
+        <span class="ref-num">[5]</span>
+        <span class="ref-text">Spielmans GI, Ellefson EM. <em>Small Effects, Questionable Outcomes: Bremelanotide for Hypoactive Sexual Desire Disorder.</em> Journal of sex research. 2024;61. <a href="https://pubmed.ncbi.nlm.nih.gov/36809187/" target="_blank" rel="noopener">PubMed ↗</a></span>
+      </li>
+      <li id="ref-6">
+        <span class="ref-num">[6]</span>
+        <span class="ref-text">Koochaki P, Revicki D, Wilson H, et al. <em>The Patient Experience of Premenopausal Women Treated with Bremelanotide for Hypoactive Sexual Desire Disorder: RECONNECT Exit Study Results.</em> Journal of women's health (2002). 2021;30. <a href="https://pubmed.ncbi.nlm.nih.gov/33538638/" target="_blank" rel="noopener">PubMed ↗</a></span>
+      </li>
+    </ol>
+  </div>
+
+  <!-- RELATED LINKS -->
+  <div class="content-section">
+    <div class="section-heading">Related research notes</div>
+    <div class="related-links">
+      <a class="related-link" href="https://peptidepricelab.com/peptides/for-women/">
+        <span class="rl-icon">📖</span>
+        <div class="rl-text">
+          <strong>Peptides in Women's Research</strong>
+          <span>A practical guide to peptides with significant research interest in hormonal health, libido, skin aging, and weight.</span>
+        </div>
+      </a>
+      <a class="related-link" href="https://peptidepricelab.com/peptides/semaglutide/">
+        <span class="rl-icon">🔬</span>
+        <div class="rl-text">
+          <strong>Semaglutide Research Notes</strong>
+          <span>The other major FDA-approved peptide-class compound with strong women's research interest. GLP-1 receptor agonist studied for weight and metabolic health.</span>
+        </div>
+      </a>
+      <a class="related-link" href="https://peptidepricelab.com/sources/">
+        <span class="rl-icon">📋</span>
+        <div class="rl-text">
+          <strong>Sources Directory</strong>
+          <span>Research vendors carrying PT-141, with purity information and pricing.</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    All content on Peptide Price Lab is for informational and research purposes only. Nothing here constitutes medical advice, and these compounds are not intended for human use. Always consult a licensed healthcare provider. Some compounds described here have FDA-approved pharmaceutical forms available by prescription. The research notes on this page describe the compound class as studied in published literature, not any specific product.
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <span>© 2026 Peptide Price Lab · Research use only</span>
+    <nav>
+      <a href="https://peptidepricelab.com/peptides/">Peptides</a> ·
+      <a href="https://peptidepricelab.com/sources/">Sources</a> ·
+      <a href="https://app.peptidepricelab.com">Price Tool</a>
+    </nav>
+  </footer>
+
+</div>
+</body>
+</html>
