@@ -36,9 +36,36 @@
   </script>
 
   <!-- Fonts -->
-  <link rel="stylesheet" href="/css/fonts.css">
 
   <style>
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Extrabold.woff2') format('woff2');
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
     :root {
       --bg:          #f5f7fa;
       --surface:     #ffffff;
@@ -63,7 +90,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-size: 0.9375rem;
       line-height: 1.7;
       color: var(--text);
@@ -165,6 +192,12 @@
       background: var(--accent-tag);
       color: var(--accent-dark);
       letter-spacing: 0.01em;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+    .tag:hover {
+      background: var(--accent);
+      color: #fff;
     }
 
     /* COMPOUND CARDS */
@@ -508,10 +541,10 @@
     <p class="page-subtitle">GHK-Cu and Epithalon address two distinct layers of the aging process. GHK-Cu has one of the largest in vitro evidence bases in skin and collagen research. Epithalon has been studied for telomere elongation and longevity at the cellular level. This page covers what the research actually shows for each compound and what they cost per milligram.</p>
 
     <div class="tags">
-      <span class="tag">Anti-Aging</span>
-      <span class="tag">Skin &amp; Collagen</span>
-      <span class="tag">Longevity</span>
-      <span class="tag">Wound Healing</span>
+      <a href="/tags/anti-aging/" class="tag">Anti-Aging</a>
+      <a href="/tags/skin-collagen/" class="tag">Skin &amp; Collagen</a>
+      <a href="/tags/longevity/" class="tag">Longevity</a>
+      <a href="/tags/wound-healing/" class="tag">Wound Healing</a>
     </div>
   </div>
 

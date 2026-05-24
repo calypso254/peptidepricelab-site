@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLP-1 Research Notes | Peptide Price Lab</title>
+  <meta name="description" content="All Peptide Price Lab research notes tagged GLP-1. GLP-1 receptor agonists and compounds studied primarily through the glucagon-like peptide-1 pathway.">
+  <meta property="og:title" content="GLP-1 Research Notes | Peptide Price Lab">
+  <meta property="og:description" content="GLP-1 receptor agonists and compounds studied primarily through the glucagon-like peptide-1 pathway.">
+  <meta property="og:image" content="https://peptidepricelab.com/assets/og-default.png">
+  <meta property="og:url" content="https://peptidepricelab.com/tags/glp-1/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://peptidepricelab.com/tags/glp-1/">
+  <style>
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Regular.woff2') format('woff2');
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Semibold.woff2') format('woff2');
+      font-weight: 600; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Bold.woff2') format('woff2');
+      font-weight: 700; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Extrabold.woff2') format('woff2');
+      font-weight: 800; font-style: normal; font-display: swap;
+    }
+    :root {
+      --bg: #f5f7fa; --surface: #ffffff; --surface2: #f1f3f8;
+      --border: #dee2ee; --accent: #6366f1; --accent-dark: #4f51c8;
+      --accent-soft: rgba(99,102,241,0.08); --accent-tag: rgba(99,102,241,0.12);
+      --text: #111827; --muted: #6b7280; --link: #6366f1;
+      --shadow: 0 1px 3px rgba(17,24,39,0.06), 0 4px 12px rgba(17,24,39,0.04);
+      --shadow-hover: 0 4px 16px rgba(17,24,39,0.10);
+      --radius: 10px; --radius-sm: 6px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.9375rem; line-height: 1.7;
+      color: var(--text); background: var(--bg);
+    }
+    a { color: var(--link); }
+    .site-wrap { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    .site-header {
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 60px; position: sticky; top: 0; z-index: 100;
+    }
+    .site-header a.logo img { height: 36px; width: auto; }
+    .site-header nav { display: flex; align-items: center; gap: 20px; }
+    .site-header nav a {
+      font-size: 0.8125rem; font-weight: 600; color: var(--muted);
+      text-decoration: none; letter-spacing: 0.02em;
+    }
+    .site-header nav a:hover { color: var(--accent); }
+    .btn-launch {
+      background: var(--accent); color: #fff !important;
+      padding: 6px 14px; border-radius: 6px; font-size: 0.8125rem;
+      font-weight: 700; text-decoration: none; letter-spacing: 0.02em;
+    }
+    .btn-launch:hover { background: var(--accent-dark); }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.8125rem; color: var(--muted);
+      padding: 14px 0; margin-bottom: 0;
+    }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--accent); }
+
+    /* Page header */
+    .page-header { padding: 40px 0 32px; }
+    .page-header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.25rem); font-weight: 800;
+      line-height: 1.2; color: var(--text); margin-bottom: 10px;
+    }
+    .page-header .subtitle {
+      font-size: 1rem; color: var(--muted); line-height: 1.6; margin-bottom: 0;
+    }
+
+    /* Tag chip (for hub page) */
+    .tag {
+      display: inline-block; font-size: 0.6875rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      background: var(--accent-tag); color: var(--accent);
+      padding: 3px 10px; border-radius: 20px;
+      text-decoration: none; transition: background 0.15s, color 0.15s;
+    }
+    .tag:hover { background: var(--accent); color: #fff; }
+
+    /* Tag grid (hub page) */
+    .tag-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px; margin-bottom: 64px;
+    }
+    .tag-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px 22px;
+      text-decoration: none; color: var(--text);
+      box-shadow: var(--shadow); transition: box-shadow 0.18s, border-color 0.18s;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .tag-card:hover { box-shadow: var(--shadow-hover); border-color: var(--accent); }
+    .tag-card-name {
+      font-size: 0.875rem; font-weight: 700; color: var(--text);
+    }
+    .tag-card-desc {
+      font-size: 0.8125rem; color: var(--muted); line-height: 1.5;
+    }
+    .tag-card-count {
+      font-size: 0.75rem; font-weight: 700; color: var(--accent);
+      margin-top: auto; padding-top: 4px;
+    }
+
+    /* Peptide list (tag pages) */
+    .peptide-list { display: flex; flex-direction: column; gap: 14px; margin-bottom: 64px; }
+    .peptide-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px 24px;
+      text-decoration: none; color: var(--text);
+      box-shadow: var(--shadow); transition: box-shadow 0.18s, border-color 0.18s;
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .peptide-card:hover { box-shadow: var(--shadow-hover); border-color: var(--accent); }
+    .peptide-card-name { font-size: 1rem; font-weight: 700; color: var(--text); }
+    .peptide-card-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.5; }
+    .peptide-card-arrow { font-size: 0.8125rem; font-weight: 700; color: var(--accent); margin-top: 4px; }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.8125rem; font-weight: 600; color: var(--muted);
+      text-decoration: none; margin-bottom: 32px;
+    }
+    .back-link:hover { color: var(--accent); }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border); padding: 28px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 0.8125rem; color: var(--muted); gap: 16px; flex-wrap: wrap;
+    }
+    .site-footer a { color: var(--muted); text-decoration: none; }
+    .site-footer a:hover { color: var(--accent); }
+
+    @media (max-width: 560px) {
+      .site-header { padding: 0 16px; }
+      .site-header nav { gap: 12px; }
+      .tag-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="https://peptidepricelab.com" class="logo">
+      <img src="https://peptidepricelab.com/Peptide_Price_Lab_Logo_Default_Standardized.webp" alt="Peptide Price Lab">
+    </a>
+    <nav>
+      <a href="/peptides/">Research Notes</a>
+      <a href="/sources/">Sources</a>
+      <a href="https://app.peptidepricelab.com" class="btn-launch">Open the Tool →</a>
+    </nav>
+  </header>
+
+<div class="site-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    <a href="/tags/">Browse by Category</a>
+    <span>›</span>
+    GLP-1
+  </nav>
+
+  <div class="page-header">
+    <h1>GLP-1</h1>
+    <p class="subtitle">GLP-1 receptor agonists and compounds studied primarily through the glucagon-like peptide-1 pathway. Showing 2 compounds.</p>
+  </div>
+
+  <a href="/tags/" class="back-link">← All categories</a>
+
+  <div class="peptide-list">
+      <a href="/peptides/semaglutide/" class="peptide-card">
+        <span class="peptide-card-name">Semaglutide</span>
+        <span class="peptide-card-desc">FDA-approved GLP-1 agonist studied in weight reduction, glycemic control, and cardiovascular outcomes.</span>
+        <span class="peptide-card-arrow">View research notes →</span>
+      </a>
+      <a href="/peptides/tirzepatide/" class="peptide-card">
+        <span class="peptide-card-name">Tirzepatide</span>
+        <span class="peptide-card-desc">FDA-approved dual GIP/GLP-1 agonist with superior weight loss outcomes vs. semaglutide in trials.</span>
+        <span class="peptide-card-arrow">View research notes →</span>
+      </a>
+  
+      <a href="/peptides/retatrutide/" class="peptide-card">
+        <span class="peptide-card-name">Retatrutide</span>
+        <span class="peptide-card-desc">Retatrutide is a synthetic peptide developed by Eli Lilly that acts as a single-molecule agonist at three distinct hormone receptors: the glucose-dependent insulinotropic polypeptide (GIP) receptor, the glucagon-like peptide-1 (GLP-1) receptor, and the glucagon receptor.</span>
+        <span class="peptide-card-arrow">View research notes &rarr;</span>
+      </a>
+  </div>
+
+</div><!-- /.site-wrap -->
+
+<div class="site-wrap">
+  <footer class="site-footer">
+    <span>© 2026 Peptide Price Lab · Research use only</span>
+    <nav style="display:flex; gap:20px;">
+      <a href="/peptides/">Research Notes</a>
+      <a href="/sources/">Sources</a>
+      <a href="https://app.peptidepricelab.com">Open the Tool</a>
+    </nav>
+  </footer>
+</div>
+
+</body>
+</html>

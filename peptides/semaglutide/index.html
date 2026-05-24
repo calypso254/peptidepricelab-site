@@ -33,6 +33,7 @@
   }
   </script>
 
+
   <style>
     @font-face {
       font-family: 'Switzer';
@@ -62,7 +63,6 @@
       font-style: normal;
       font-display: swap;
     }
-
     :root {
       --bg:          #f5f7fa;
       --surface:     #ffffff;
@@ -137,6 +137,12 @@
     .tag {
       font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
       background: var(--accent-tag); color: var(--accent); padding: 3px 10px; border-radius: 20px;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+    .tag:hover {
+      background: var(--accent);
+      color: #fff;
     }
     .tag.fda {
       background: var(--approved-bg); color: var(--approved-text);
@@ -262,7 +268,7 @@
 
   <header class="site-header">
     <a href="https://peptidepricelab.com" class="logo">
-      <img src="/assets/Peptide_Price_Lab_Logo_Default_Standardized.webp" alt="Peptide Price Lab">
+      <img src="https://peptidepricelab.com/Peptide_Price_Lab_Logo_Default_Standardized.webp" alt="Peptide Price Lab">
     </a>
     <nav>
       <a href="/peptides/">Research Notes</a>
@@ -281,11 +287,11 @@
 
   <div class="page-header">
     <div class="tags">
-      <span class="tag fda">FDA-Approved</span>
-      <span class="tag">GLP-1</span>
-      <span class="tag">Weight Research</span>
-      <span class="tag">Metabolic Health</span>
-      <span class="tag">Cardiovascular</span>
+      <a href="/tags/fda-approved/" class="tag fda">FDA-Approved</a>
+      <a href="/tags/glp-1/" class="tag">GLP-1</a>
+      <a href="/tags/weight-research/" class="tag">Weight Research</a>
+      <a href="/tags/metabolic-health/" class="tag">Metabolic Health</a>
+      <a href="/tags/cardiovascular/" class="tag">Cardiovascular</a>
     </div>
     <h1>Semaglutide — Research Notes</h1>
     <p class="subtitle">

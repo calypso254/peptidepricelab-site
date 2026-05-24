@@ -35,9 +35,36 @@
   }
   </script>
 
-  <link rel="stylesheet" href="/css/fonts.css">
 
   <style>
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Switzer';
+      src: url('/assets/fonts/switzer/Switzer-Extrabold.woff2') format('woff2');
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
     :root {
       --bg: #f5f7fa; --surface: #ffffff; --surface2: #f1f3f8;
       --border: #dee2ee; --accent: #6366f1; --accent-dark: #4f51c8;
@@ -50,7 +77,7 @@
       --radius: 10px; --radius-sm: 6px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 0.9375rem; line-height: 1.7; color: var(--text); background: var(--bg); }
+    body { font-family: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.9375rem; line-height: 1.7; color: var(--text); background: var(--bg); }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     img { display: block; max-width: 100%; }
@@ -69,7 +96,14 @@
     .breadcrumb span { margin: 0 6px; }
     .page-header { margin-bottom: 40px; }
     .page-header .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
-    .tag { font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: var(--accent-tag); color: var(--accent); padding: 3px 10px; border-radius: 20px; }
+    .tag { font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: var(--accent-tag); color: var(--accent); padding: 3px 10px; border-radius: 20px;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+    .tag:hover {
+      background: var(--accent);
+      color: #fff;
+    }
     .page-header h1 { font-size: clamp(1.6rem, 4vw, 2.25rem); font-weight: 800; line-height: 1.2; color: var(--text); margin-bottom: 12px; }
     .page-header .subtitle { font-size: 1.0625rem; color: var(--muted); line-height: 1.6; max-width: 620px; }
     .stats-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 48px; }
@@ -151,11 +185,11 @@
 
   <div class="page-header">
     <div class="tags">
-      <span class="tag">Anti-Aging</span>
-      <span class="tag">Longevity</span>
-      <span class="tag">Metabolic Health</span>
-      <span class="tag">Hormonal Health</span>
-      <span class="tag">Tissue Repair</span>
+      <a href="/tags/anti-aging/" class="tag">Anti-Aging</a>
+      <a href="/tags/longevity/" class="tag">Longevity</a>
+      <a href="/tags/metabolic-health/" class="tag">Metabolic Health</a>
+      <a href="/tags/hormonal-health/" class="tag">Hormonal Health</a>
+      <a href="/tags/tissue-repair/" class="tag">Tissue Repair</a>
     </div>
     <h1>MOTS-c — Research Notes</h1>
     <p class="subtitle">
