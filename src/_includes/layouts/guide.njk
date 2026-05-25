@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+ogType: article
+---
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  <a href="/start-here/">Start Here</a>
+  <span>&rsaquo;</span>
+  {{ h1 or title }}
+</nav>
+
+<article class="article">
+  <header class="article-header">
+    {% if readingTime %}
+      <div class="article-meta">{{ readingTime }}</div>
+    {% endif %}
+    <h1>{{ h1 or title }}</h1>
+    {% if lede %}<p class="lede">{{ lede }}</p>{% endif %}
+  </header>
+
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+</article>
