@@ -86,6 +86,13 @@
   </url>
 
   <url>
+    <loc>https://peptidepricelab.com/peptides/glow-blend/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://peptidepricelab.com/peptides/igf-1-lr3/</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -95,6 +102,27 @@
   <url>
     <loc>https://peptidepricelab.com/peptides/ipamorelin/</loc>
     <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://peptidepricelab.com/peptides/ipamorelin-only/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://peptidepricelab.com/peptides/klow-blend/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://peptidepricelab.com/peptides/melanotan-ii/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -277,6 +305,13 @@
   <url>
     <loc>https://peptidepricelab.com/tags/skin-collagen/</loc>
     <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://peptidepricelab.com/tags/sleep-research/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
