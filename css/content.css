@@ -1023,6 +1023,87 @@ img { display: block; max-width: 100%; }
   font-weight: 600;
 }
 
+.news-page .article-header {
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.article-card {
+  display: block;
+  padding: 24px 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  text-decoration: none;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.article-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-hover);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.article-card .card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+.article-card .card-tag {
+  background: var(--accent-tag);
+  border-radius: 4px;
+  color: var(--accent);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+.article-card h2 {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.article-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.article-card .read-more {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--accent);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
 .research-note .article-body {
   max-width: 680px;
 }
