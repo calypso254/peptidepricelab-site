@@ -16,11 +16,36 @@ description: "Research notes on commonly studied peptides, typical use cases, co
     <p class="lede">Quick-reference notes on commonly tracked research peptides. For research use only, not medical advice.</p>
   </header>
 
+  <h2 class="peptide-section-heading">Solo Peptides</h2>
   <div class="peptide-index-grid">
     {% for note in collections.researchNotes %}
-      <a href="{{ note.url }}" class="peptide-index-card">
-        {{ note.data.peptideName or note.data.h1 or note.data.title }}
-      </a>
+      {% if note.data.peptideType == "single" %}
+        <a href="{{ note.url }}" class="peptide-index-card">
+          {{ note.data.peptideName or note.data.h1 or note.data.title }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h2 class="peptide-section-heading">Common Blends</h2>
+  <div class="peptide-index-grid">
+    {% for note in collections.researchNotes %}
+      {% if note.data.peptideType == "blend" %}
+        <a href="{{ note.url }}" class="peptide-index-card">
+          {{ note.data.peptideName or note.data.h1 or note.data.title }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h2 class="peptide-section-heading">Research Stacks</h2>
+  <div class="peptide-index-grid">
+    {% for note in collections.researchNotes %}
+      {% if note.data.peptideType == "stack" %}
+        <a href="{{ note.url }}" class="peptide-index-card">
+          {{ note.data.peptideName or note.data.h1 or note.data.title }}
+        </a>
+      {% endif %}
     {% endfor %}
   </div>
 

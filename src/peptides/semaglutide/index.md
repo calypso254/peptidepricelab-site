@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "Semaglutide Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "Semaglutide"
 h1: "Semaglutide — Research Notes"

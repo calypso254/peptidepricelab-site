@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "MOTS-c Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "MOTS-c"
 h1: "MOTS-c — Research Notes"

@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "GHRP-6 Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "GHRP-6"
 h1: "GHRP-6 — Research Notes"

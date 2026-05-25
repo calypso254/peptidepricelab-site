@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "BPC-157 Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "BPC-157"
 h1: "BPC-157 — Research Notes"

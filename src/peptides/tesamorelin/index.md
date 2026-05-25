@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "Tesamorelin Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "Tesamorelin"
 h1: "Tesamorelin"

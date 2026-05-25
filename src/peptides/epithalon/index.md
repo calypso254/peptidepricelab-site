@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "Epithalon Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "Epithalon"
 h1: "Epithalon"

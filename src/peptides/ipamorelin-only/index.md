@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "Ipamorelin Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "Ipamorelin"
 h1: "Ipamorelin — Research Notes"

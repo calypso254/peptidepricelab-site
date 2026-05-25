@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "PT-141 Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "PT-141 (Bremelanotide)"
 h1: "PT-141 (Bremelanotide)"

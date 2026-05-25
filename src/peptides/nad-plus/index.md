@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "NAD+ Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "NAD+"
 h1: "NAD+ — Research Notes"

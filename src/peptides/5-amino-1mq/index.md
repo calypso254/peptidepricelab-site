@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "5-Amino-1MQ Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "5-Amino-1MQ"
 h1: "5-Amino-1MQ — Research Notes"

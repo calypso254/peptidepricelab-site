@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "SS-31 (Elamipretide) Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "SS-31 (Elamipretide)"
 h1: "SS-31 (Elamipretide)"

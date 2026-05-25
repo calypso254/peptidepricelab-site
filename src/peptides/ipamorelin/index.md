@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: stack
 title: "Ipamorelin & CJC-1295 Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "Ipamorelin & CJC-1295"
 h1: "Ipamorelin & CJC-1295 — Research Notes"

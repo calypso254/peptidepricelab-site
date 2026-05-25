@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: blend
 title: "Wolverine Stack: BPC-157 + TB-500 Price Per Mg | Peptide Price Lab"
 peptideName: "The Wolverine Stack: BPC-157 + TB-500"
 h1: "The Wolverine Stack: BPC-157 + TB-500"

@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "Melanotan II Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "Melanotan II"
 h1: "Melanotan II — Research Notes"

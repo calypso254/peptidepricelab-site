@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: stack
 title: "GHK-Cu + Epithalon Anti-Aging Research Protocol | Peptide Price Lab"
 peptideName: "GHK-Cu + Epithalon: Anti-Aging Research"
 h1: "GHK-Cu + Epithalon: Anti-Aging Research"

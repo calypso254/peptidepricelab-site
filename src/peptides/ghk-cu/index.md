@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "GHK-Cu Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "GHK-Cu"
 h1: "GHK-Cu Research Notes"

@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "Selank Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "Selank"
 h1: "Selank"

@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: blend
 title: "GLOW Blend Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "GLOW Blend"
 h1: "GLOW Blend — Research Notes"

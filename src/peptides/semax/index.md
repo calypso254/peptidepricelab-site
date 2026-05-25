@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "Semax Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "Semax"
 h1: "Semax"

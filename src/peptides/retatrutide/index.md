@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "Retatrutide Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "Retatrutide"
 h1: "Retatrutide"

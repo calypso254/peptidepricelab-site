@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "Tirzepatide Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "Tirzepatide"
 h1: "Tirzepatide — Research Notes"

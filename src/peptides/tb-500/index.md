@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "TB-500 Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "TB-500"
 h1: "TB-500 Research Notes"

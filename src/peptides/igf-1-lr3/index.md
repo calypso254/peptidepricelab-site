@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "IGF-1 LR3 Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "IGF-1 LR3"
 h1: "IGF-1 LR3"

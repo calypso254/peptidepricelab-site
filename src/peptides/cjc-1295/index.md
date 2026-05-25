@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: single
 title: "CJC-1295 Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "CJC-1295"
 h1: "CJC-1295"

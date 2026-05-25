@@ -1,5 +1,6 @@
 ---
 layout: layouts/research-note.njk
+peptideType: blend
 title: "KLOW Blend Price Per Mg — Research Notes | Peptide Price Lab"
 peptideName: "KLOW Blend"
 h1: "KLOW Blend — Research Notes"
