@@ -287,6 +287,7 @@ img { display: block; max-width: 100%; }
 
 .research-note .cost-card {
   width: min(812px, calc(100vw - 48px));
+  margin: 0 0 48px;
 }
 
 .compound-card,
