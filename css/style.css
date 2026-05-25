@@ -8,9 +8,8 @@
   --cyan: #06b6d4;
   --text: #1a1a2e;
   --text-muted: #64748b;
-  --bg: #f5f7fa;
-  --bg-alt: #ffffff;
-  --surface: #ffffff;
+  --bg: #ffffff;
+  --bg-alt: #f8fafc;
   --border: #e2e8f0;
   --radius: 10px;
 }
@@ -93,7 +92,7 @@ body {
 }
 
 .container {
-  max-width: 760px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -103,10 +102,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 20px 24px 16px;
+  padding: 16px 32px;
   border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  z-index: 100;
 }
 .nav-logo {
   display: inline-flex;
@@ -143,7 +145,7 @@ body {
 .hero {
   padding: 80px 0 64px;
   text-align: center;
-  background: var(--bg);
+  background: linear-gradient(160deg, #f0f1ff 0%, #ffffff 60%);
 }
 .hero h1 {
   font-size: clamp(2rem, 5vw, 3rem);
@@ -216,7 +218,7 @@ body {
   margin-top: 32px;
 }
 .step-card {
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
@@ -245,7 +247,7 @@ body {
   margin-top: 28px;
 }
 .peptide-card {
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 16px;
