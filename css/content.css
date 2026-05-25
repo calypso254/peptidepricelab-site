@@ -691,6 +691,21 @@ img { display: block; max-width: 100%; }
   text-decoration: none;
 }
 
+.peptides-page .peptide-index-grid {
+  margin-top: 28px;
+}
+
+.peptides-page .peptide-index-card {
+  min-height: auto;
+  background: transparent;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.peptides-page .peptide-index-card:hover {
+  background: #f0f1ff;
+}
+
 .tag-card,
 .note-card,
 .vendor-card {
