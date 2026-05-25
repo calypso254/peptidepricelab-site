@@ -15,7 +15,7 @@ ogType: article
     {% if tags %}
       <div class="tags">
         {% for tag in tags %}
-          <a href="/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a>
+          <a href="/tags/{{ tag | slugify }}/" class="tag{% if tag == 'FDA-Approved' %} fda{% endif %}">{{ tag }}</a>
         {% endfor %}
       </div>
     {% endif %}

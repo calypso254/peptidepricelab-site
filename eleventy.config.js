@@ -51,6 +51,21 @@ export default function (eleventyConfig) {
     JSON.stringify(value, null, 2)
   );
 
+  eleventyConfig.addTransform("cleanListParagraphs", function (content) {
+    if (!this.page.outputPath || !this.page.outputPath.endsWith(".html")) {
+      return content;
+    }
+
+    return content
+      .replace(/(<(?:ul|ol)\b[^>]*>)\s*<p>/g, "$1")
+      .replace(/<p>\s*(<\/(?:ul|ol)>)/g, "$1")
+      .replace(/<\/p>\s*(<\/(?:ul|ol)>)/g, "$1")
+      .replace(/(<\/(?:ul|ol)>)\s*<\/p>/g, "$1")
+      .replace(/<\/li>\s*<\/p>\s*<p>\s*<li/g, "</li>\n<li")
+      .replace(/<p>\s*(<li\b)/g, "$1")
+      .replace(/(<\/li>)\s*<\/p>/g, "$1");
+  });
+
   eleventyConfig.addCollection("blogPosts", (collectionApi) =>
     collectionApi.getFilteredByGlob("src/blog/**/*.md").sort((a, b) =>
       String(b.data.date || "").localeCompare(String(a.data.date || ""))

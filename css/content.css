@@ -10,6 +10,9 @@
   --text: #111827;
   --muted: #6b7280;
   --link: #6366f1;
+  --approved-bg: #f0fdf4;
+  --approved-border: rgba(22, 163, 74, 0.3);
+  --approved-text: #166534;
   --disclaimer: #92400e;
   --disclaimer-bg: #fef3c7;
   --disclaimer-border: rgba(217, 119, 6, 0.3);
@@ -857,6 +860,276 @@ img { display: block; max-width: 100%; }
   font-weight: 800;
 }
 
+.research-note .article-body {
+  max-width: 680px;
+}
+
+.research-note .tag.fda {
+  background: var(--approved-bg);
+  color: var(--approved-text);
+  border: 1px solid var(--approved-border);
+}
+
+.research-note .tag.fda:hover {
+  background: var(--approved-text);
+  color: #fff;
+}
+
+.research-note .approval-callout {
+  background: var(--approved-bg);
+  border: 1px solid var(--approved-border);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin: 0 0 40px;
+  font-size: 0.875rem;
+  color: var(--approved-text);
+  line-height: 1.6;
+  box-shadow: none;
+}
+
+.research-note .approval-callout strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.research-note .approval-callout ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.research-note .approval-callout li {
+  margin: 0;
+}
+
+.research-note .approval-callout li::before {
+  content: "\2713  ";
+  font-weight: 700;
+}
+
+.research-note .stats-bar {
+  margin-bottom: 48px;
+}
+
+.research-note .stat-card {
+  border-radius: var(--radius);
+  padding: 16px 20px;
+}
+
+.research-note .stat-card strong {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.research-note .stat-card small {
+  margin-top: 2px;
+}
+
+.research-note .content-section,
+.research-note .bibliography,
+.research-note .related-section {
+  margin: 0 0 48px;
+}
+
+.research-note .content-section h2,
+.research-note .bibliography h2,
+.research-note .related-section h2,
+.research-note .section-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.research-note .content-section p {
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.research-note .content-section p:last-child {
+  margin-bottom: 0;
+}
+
+.research-note .research-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding-left: 0 !important;
+}
+
+.research-note .research-list li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  box-shadow: var(--shadow);
+}
+
+.research-note .research-list li strong {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.research-note .research-list li span {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.research-note .params-table-wrap {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin: 18px 0 24px;
+}
+
+.research-note .params-table {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.research-note .params-table th {
+  padding: 10px 14px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.research-note .params-table td {
+  padding: 12px 14px;
+}
+
+.research-note .params-table td:first-child {
+  width: 160px;
+  color: var(--muted);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.research-note .price-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  border: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  margin: 0 0 48px;
+  box-shadow: var(--shadow);
+}
+
+.research-note .price-cta .price-label {
+  margin-bottom: 4px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.research-note .price-cta .price-range {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.research-note .price-cta .price-note {
+  margin-top: 4px;
+  font-size: 0.8125rem;
+}
+
+.research-note .price-cta .btn-cta {
+  flex: 0 0 auto;
+  margin-top: 0;
+  padding: 13px 28px;
+  font-size: 0.9375rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.research-note .disclaimer {
+  margin: 0 0 48px;
+}
+
+.research-note .cite {
+  margin-left: 1px;
+  padding: 0 1px;
+  font-size: 0.65em;
+  font-weight: 700;
+  line-height: 0;
+  vertical-align: super;
+  text-decoration: none;
+}
+
+.research-note .bibliography .ref-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding-left: 0 !important;
+}
+
+.research-note .bibliography .ref-list li {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  scroll-margin-top: 80px;
+}
+
+.research-note .bibliography .ref-num {
+  flex: 0 0 auto;
+  min-width: 24px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.research-note .bibliography .ref-text {
+  flex: 1;
+  color: var(--muted);
+}
+
+.research-note .bibliography .ref-text em {
+  font-style: italic;
+}
+
+.research-note .bibliography .ref-text a {
+  color: var(--accent);
+  font-size: 0.75rem;
+  word-break: break-all;
+}
+
+.research-note .bibliography .ref-list li:target {
+  margin: -8px -10px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+}
+
 @media (max-width: 600px) {
   .site-wrap { padding-inline: 20px; }
   .site-header {
@@ -877,5 +1150,15 @@ img { display: block; max-width: 100%; }
   }
   .price-cta {
     align-items: flex-start;
+  }
+  .research-note .price-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .research-note .stats-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+  .research-note .stats-bar .stat-card:last-child {
+    grid-column: 1 / -1;
   }
 }
