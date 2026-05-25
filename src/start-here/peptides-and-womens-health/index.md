@@ -1,5 +1,6 @@
 ---
 layout: layouts/guide.njk
+section: plain-language
 title: "Peptides and Women's Health: What the Research Actually Shows | Peptide Price Lab"
 h1: "Peptides and Women's Health: What the Research Actually Shows"
 lede: "Most peptide research has been conducted on male subjects. That gap is real, and it matters. Here's what we know, what's promising, and what still needs more study before anyone can draw firm conclusions."

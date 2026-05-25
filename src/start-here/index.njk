@@ -26,88 +26,33 @@ schema:
   </header>
 
   <div class="intro-note">
-    <strong>A note on what this is (and isn't):</strong> Peptide Price Lab is a research tool. Everything here is drawn from published science, not personal testimonials or marketing. We don't tell you what to do - we help you understand what's known, what's not, and what questions to ask.
+    <strong>A note on what this is (and isn't):</strong> Peptide Price Lab is a research tool. Everything here is drawn from published science, not personal testimonials or marketing. We don't tell you what to do — we help you understand what's known, what's not, and what questions to ask.
   </div>
 
-  <div class="section-label">The basics</div>
+  <div class="section-label">The Basics</div>
   <div class="guide-grid">
-    <a href="/start-here/what-are-peptides/" class="guide-card">
-      <div class="card-icon" aria-hidden="true">01</div>
-      <h2>What Are Peptides, Really?</h2>
-      <p>Peptides are everywhere in your body already. This guide explains what they are in plain language, how they differ from proteins and hormones, and why researchers are interested in them.</p>
-      <span class="read-more">Read the guide &rarr;</span>
-    </a>
-
-    <a href="/start-here/peptides-and-womens-health/" class="guide-card">
-      <div class="card-icon" aria-hidden="true">02</div>
-      <h2>Peptides and Women's Health</h2>
-      <p>What does the research say about how peptides interact with women's physiology? What's studied, what's promising, and what's still early-stage.</p>
-      <span class="read-more">Read the guide &rarr;</span>
-    </a>
-
-    <a href="/start-here/research-vs-approved/" class="guide-card">
-      <div class="card-icon" aria-hidden="true">03</div>
-      <h2>Research Peptides vs. FDA-Approved Compounds</h2>
-      <p>There's an important difference between a peptide sold for research and one prescribed by a doctor. This guide explains the distinction and what it means for you.</p>
-      <span class="read-more">Read the guide &rarr;</span>
-    </a>
-
-    <a href="/start-here/how-to-read-research/" class="guide-card">
-      <div class="card-icon" aria-hidden="true">04</div>
-      <h2>How to Read a Research Notes Page</h2>
-      <p>The research notes on this site are dense. This guide walks you through how to read one, what the citations mean, and how to tell strong evidence from preliminary findings.</p>
-      <span class="read-more">Read the guide &rarr;</span>
-    </a>
+    {% for article in collections.startHereBasics %}
+      <a href="{{ article.url }}" class="guide-card">
+        <h2>{{ article.data.h1 or article.data.title }}</h2>
+        <p>{{ article.data.lede }}</p>
+        {% if article.data.readingTime %}<span class="reading-time">{{ article.data.readingTime }}</span>{% endif %}
+        <span class="read-more">Read the guide &rarr;</span>
+      </a>
+    {% endfor %}
   </div>
+  <p class="section-see-all"><a href="/start-here/basics/">See all The Basics guides &rarr;</a></p>
 
-  <div class="section-label">Common questions</div>
+  <div class="section-label">Common Questions</div>
   <div class="guide-grid">
-    <a href="/start-here/glp1-explainer/" class="guide-card">
-      <div class="card-icon" aria-hidden="true">05</div>
-      <h2>GLP-1s - What Everyone Is Talking About</h2>
-      <p>Semaglutide, tirzepatide, retatrutide. The GLP-1 class is the most-discussed peptide family right now. Here's what they are and what the research shows.</p>
-      <span class="read-more">Read the guide &rarr;</span>
-    </a>
-
+    {% for article in collections.startHereCommonQuestions %}
+      <a href="{{ article.url }}" class="guide-card">
+        <h2>{{ article.data.h1 or article.data.title }}</h2>
+        <p>{{ article.data.lede }}</p>
+        {% if article.data.readingTime %}<span class="reading-time">{{ article.data.readingTime }}</span>{% endif %}
+        <span class="read-more">Read the guide &rarr;</span>
+      </a>
+    {% endfor %}
   </div>
+  <p class="section-see-all"><a href="/start-here/common-questions/">See all Common Questions &rarr;</a></p>
 
-  <div class="section-label">In plain language</div>
-  <div class="guide-grid">
-    <a href="/blog/mots-c-what-women-need-to-know/" class="guide-card">
-      <div class="card-icon" aria-hidden="true">✦</div>
-      <h2>MOTS-c: The Peptide Your Body Already Makes</h2>
-      <p>Your mitochondria produce MOTS-c. Its levels rise when you exercise and fall as you age — and researchers think that gap matters more than most people realize.</p>
-      <span class="read-more">Read the article &rarr;</span>
-    </a>
-
-    <a href="/blog/tirzepatide-what-the-research-shows/" class="guide-card">
-      <div class="card-icon" aria-hidden="true">✦</div>
-      <h2>Tirzepatide (Mounjaro, Zepbound): What the Research Actually Shows</h2>
-      <p>Tirzepatide produced the largest weight reductions ever recorded in a clinical trial. The most important finding isn't the headline number — it's what happens when treatment stops.</p>
-      <span class="read-more">Read the article &rarr;</span>
-    </a>
-
-    <a href="/blog/retatrutide-triple-agonist-what-we-know/" class="guide-card">
-      <div class="card-icon" aria-hidden="true">✦</div>
-      <h2>Retatrutide: The Biggest Weight Loss Number We've Seen</h2>
-      <p>24% mean body weight reduction in a Phase 2 trial. That number is real. So is how early we are in understanding what this compound actually does.</p>
-      <span class="read-more">Read the article &rarr;</span>
-    </a>
-
-    <a href="/blog/how-to-calculate-peptide-price-per-mg/" class="guide-card">
-      <div class="card-icon" aria-hidden="true">✦</div>
-      <h2>How to Calculate Peptide Price Per Mg</h2>
-      <p>Vial price is meaningless without knowing the mg count. Here's the formula, a worked example, and why the comparison gets more complicated than it looks.</p>
-      <span class="read-more">Read the article &rarr;</span>
-    </a>
-  </div>
-
-  <div class="bridge-block">
-    <div class="bridge-icon" aria-hidden="true">Next</div>
-    <div>
-      <h3>Ready to go deeper?</h3>
-      <p>Once you have the basics, the Research Notes section has detailed, citation-backed pages on individual peptides: mechanisms, study summaries, dosing data from the literature, and price comparisons.</p>
-      <a href="/peptides/" class="btn-bridge">Browse Research Notes &rarr;</a>
-    </div>
-  </div>
 </div>

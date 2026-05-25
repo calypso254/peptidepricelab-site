@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+title: "The Basics — Start Here | Peptide Price Lab"
+description: "Foundational guides on what peptides are, how research works, and what the science actually says. Written for someone starting from scratch."
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  <a href="/start-here/">Start Here</a>
+  <span>&rsaquo;</span>
+  The Basics
+</nav>
+
+<div class="start-page">
+  <header class="article-header">
+    <div class="eyebrow">Start Here &rsaquo; The Basics</div>
+    <h1>The Basics</h1>
+    <p class="lede">Foundational guides written for someone who just found us and has no prior knowledge. No jargon, no assumed background.</p>
+  </header>
+
+  <div class="guide-grid">
+    {% for article in collections.startHereBasics %}
+      <a href="{{ article.url }}" class="guide-card">
+        <h2>{{ article.data.h1 or article.data.title }}</h2>
+        <p>{{ article.data.lede }}</p>
+        {% if article.data.readingTime %}<span class="reading-time">{{ article.data.readingTime }}</span>{% endif %}
+        <span class="read-more">Read the guide &rarr;</span>
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="section-nav">
+    <a href="/start-here/" class="back-link">&larr; Back to Start Here</a>
+    <a href="/start-here/common-questions/" class="next-link">Common Questions &rarr;</a>
+  </div>
+</div>

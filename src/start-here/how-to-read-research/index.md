@@ -1,5 +1,6 @@
 ---
 layout: layouts/guide.njk
+section: basics
 title: "How to Read a Research Notes Page | Peptide Price Lab"
 h1: "How to Read a Research Notes Page"
 lede: "The research notes on this site are dense by design. This guide walks you through how to read one, what the citations mean, and how to tell strong evidence from early-stage findings."

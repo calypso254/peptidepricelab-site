@@ -68,7 +68,19 @@ export default function (eleventyConfig) {
       .replace(/(<\/div>)\s*<\/p>/g, "$1");
   });
 
-  eleventyConfig.addCollection("blogPosts", (collectionApi) =>
+  eleventyConfig.addCollection("startHereBasics", (collectionApi) =>
+    collectionApi.getFilteredByGlob("src/start-here/**/*.md")
+      .filter(item => item.data.section === "basics")
+      .sort((a, b) => String(a.data.title || "").localeCompare(String(b.data.title || "")))
+  );
+
+  eleventyConfig.addCollection("startHereCommonQuestions", (collectionApi) =>
+    collectionApi.getFilteredByGlob("src/start-here/**/*.md")
+      .filter(item => item.data.section === "common-questions")
+      .sort((a, b) => String(a.data.title || "").localeCompare(String(b.data.title || "")))
+  );
+
+    eleventyConfig.addCollection("blogPosts", (collectionApi) =>
     collectionApi.getFilteredByGlob("src/blog/**/*.md").sort((a, b) =>
       String(b.data.date || "").localeCompare(String(a.data.date || ""))
     )

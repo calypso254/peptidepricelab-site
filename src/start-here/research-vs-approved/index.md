@@ -1,5 +1,6 @@
 ---
 layout: layouts/guide.njk
+section: basics
 title: "Research Peptides vs. FDA-Approved Compounds | Peptide Price Lab"
 h1: "Research Peptides vs. FDA-Approved Compounds"
 lede: "There's an important difference between a peptide sold for research and one prescribed by a doctor. Understanding that distinction tells you a lot about how to read the evidence and what questions to ask."

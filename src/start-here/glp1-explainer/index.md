@@ -1,5 +1,6 @@
 ---
 layout: layouts/guide.njk
+section: basics
 title: "GLP-1s — What Everyone Is Talking About | Peptide Price Lab"
 h1: "GLP-1s — What Everyone Is Talking About"
 lede: "Semaglutide, tirzepatide, retatrutide. The GLP-1 class is the most-discussed peptide family right now. Here's what they are, how they work, and what the research actually shows, without the breathlessness."

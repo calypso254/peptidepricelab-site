@@ -1,5 +1,6 @@
 ---
 layout: layouts/guide.njk
+section: common-questions
 title: "How to Evaluate a Research Peptide Vendor | Peptide Price Lab"
 h1: "How to Evaluate a Research Peptide Vendor"
 lede: "The research peptide market is unregulated, which means quality varies enormously. Here is what to look for, what to avoid, and how to read the documents that actually tell you what is in the vial."

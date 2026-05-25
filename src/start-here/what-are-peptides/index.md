@@ -1,5 +1,6 @@
 ---
 layout: layouts/guide.njk
+section: basics
 title: "What Are Peptides, Really? | Peptide Price Lab"
 h1: "What Are Peptides, Really?"
 lede: "Peptides are everywhere in your body already. They're how your cells talk to each other. Here's a plain-language explanation of what they are, how they differ from proteins and hormones, and why researchers are so interested in them."

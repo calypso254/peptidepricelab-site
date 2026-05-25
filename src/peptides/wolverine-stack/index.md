@@ -1,11 +1,11 @@
 ---
 layout: layouts/research-note.njk
 peptideType: blend
-title: "Wolverine Stack: BPC-157 + TB-500 Price Per Mg | Peptide Price Lab"
-peptideName: "The Wolverine Stack: BPC-157 + TB-500"
-h1: "The Wolverine Stack: BPC-157 + TB-500"
-lede: "BPC-157 and TB-500 are the two most-studied tissue repair peptides in the research community. This page covers what each compound is, what researchers study them for, how their mechanisms differ, and what they cost per milligram."
-description: "BPC-157 and TB-500 are the two most-researched tissue repair peptides. Compare price per mg for both, understand what researchers study them for, and see the cost of running them together."
+title: "Wolverine Blend: BPC-157 + TB-500 Price Per Mg | Peptide Price Lab"
+peptideName: "Wolverine Blend: BPC-157 + TB-500"
+h1: "Wolverine Blend: BPC-157 + TB-500"
+lede: "Wolverine is a pre-mixed blend of BPC-157 and TB-500 — the two most-studied tissue repair peptides in the research community. This page covers what each compound is, what researchers study them for, how their mechanisms differ, and what they cost per milligram."
+description: "Wolverine is a research blend of BPC-157 and TB-500, the two most-studied tissue repair peptides. See what's in it, how the mechanisms differ, and compare price per mg."
 tags:
   - Tissue Repair
   - Wound Healing
@@ -15,8 +15,8 @@ tags:
 schema:
   "@context": "https://schema.org"
   "@type": "Article"
-  headline: "Wolverine Stack Research Notes: BPC-157 and TB-500"
-  description: "BPC-157 and TB-500 are the two most-researched tissue repair peptides. Compare price per mg and understand what published research has examined for each compound."
+  headline: "Wolverine Blend Research Notes: BPC-157 and TB-500"
+  description: "Wolverine is a pre-mixed research blend of BPC-157 and TB-500. Compare price per mg and understand what published research has examined for each compound."
   url: "https://peptidepricelab.com/peptides/wolverine-stack/"
   publisher:
     "@type": "Organization"
@@ -78,7 +78,7 @@ schema:
   <!-- COMBINED COST CARD -->
   <div class="cost-card">
     <div>
-      <div class="cost-label">Combined price range (per mg, each)</div>
+      <div class="cost-label">Wolverine blend price range (per mg, each compound)</div>
       <div class="cost-range">$6–$18 total per mg pair</div>
     </div>
     <div class="cost-note">Actual cost depends on vial size, vendor, and purity. The price tool lets you compare vendors and calculate your real per-mg cost for both compounds.</div>
@@ -87,9 +87,9 @@ schema:
 
   <!-- SECTION 1: WHAT THE COMBINATION IS -->
   <div class="content-section">
-    <div class="section-heading">What the "Wolverine Stack" is</div>
-    <p>The name comes from the research community, not from any pharmaceutical or clinical source. Researchers and enthusiasts use "Wolverine Stack" to describe the pairing of BPC-157 and TB-500 because both peptides are studied for tissue repair and wound healing, and their proposed mechanisms are largely complementary.</p>
-    <p>BPC-157 is a synthetic pentadecapeptide (15 amino acids) derived from a protein found in gastric juice. It does not exist in this form naturally. TB-500 is a synthetic fragment of thymosin beta-4, a protein involved in actin regulation and cell motility that is produced naturally in the thymus and many other tissues. Both are research-only compounds with no approved human pharmaceutical applications.</p>
+    <div class="section-heading">What the Wolverine blend is</div>
+    <p>Wolverine is a pre-mixed blend of BPC-157 and TB-500 sold by many research vendors under that name. The name is community-generated — it does not come from any pharmaceutical or clinical source — but it has stuck, and most vendors who carry the combination simply call it Wolverine. Researchers and enthusiasts are drawn to the pairing because both peptides are studied for tissue repair and wound healing, and their proposed mechanisms are largely complementary.</p>
+    <p>Some researchers prefer to buy the two compounds separately and combine them at their own ratios rather than purchasing the pre-mixed blend. Either way, the underlying compounds are the same: BPC-157 is a synthetic pentadecapeptide (15 amino acids) derived from a protein found in gastric juice, and TB-500 is a synthetic fragment of thymosin beta-4, a protein involved in actin regulation and cell motility. Both are research-only compounds with no approved human pharmaceutical applications.</p>
   </div>
 
   <!-- SECTION 2: MECHANISM COMPARISON -->
@@ -159,7 +159,7 @@ schema:
   <div class="content-section">
     <div class="section-heading">Research context</div>
     <p>The evidence base for both compounds is almost entirely preclinical. BPC-157 has been studied extensively in rodent models across a wide range of tissue types, but as of 2025 no peer-reviewed human clinical trials have been published. TB-500 (the synthetic fragment) shares this limitation for most applications, though the full thymosin beta-4 protein has advanced to Phase 3 trial data in the context of dry eye and ocular surface disease.</p>
-    <p>The "Wolverine Stack" terminology is community-generated and does not appear in peer-reviewed literature. Researchers interested in the combination are typically extrapolating from two separate bodies of preclinical work. Anyone evaluating this combination should read the individual research notes for each compound to understand where the evidence is stronger and where it remains speculative.</p>
+    <p>The Wolverine name is community-generated and does not appear in peer-reviewed literature. Researchers interested in the combination — whether purchased as a pre-mixed blend or self-assembled from individual vials — are typically extrapolating from two separate bodies of preclinical work. Anyone evaluating this combination should read the individual research notes for each compound to understand where the evidence is stronger and where it remains speculative.</p>
   </div>
 
   <!-- SECTION 5: PRICING DETAIL -->
