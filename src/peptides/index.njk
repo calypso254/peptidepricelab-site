@@ -15,10 +15,10 @@ description: "Research notes on commonly studied peptides, typical use cases, co
   <p class="lede">Quick-reference notes on commonly tracked research peptides. For research use only, not medical advice.</p>
 </header>
 
-<div class="note-grid">
+<div class="peptide-index-grid">
   {% for note in collections.researchNotes %}
-    <a href="{{ note.url }}" class="note-card">
-      <span class="note-card-name">{{ note.data.peptideName or note.data.h1 or note.data.title }}</span>
+    <a href="{{ note.url }}" class="peptide-index-card">
+      {{ note.data.peptideName or note.data.h1 or note.data.title }}
     </a>
   {% endfor %}
 </div>
