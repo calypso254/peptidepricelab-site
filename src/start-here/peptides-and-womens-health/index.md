@@ -114,7 +114,7 @@ schema:
 <h2>Where to go from here</h2>
 
 <p>
-  If you want to go deeper on any of the compounds mentioned here, the Research Notes section covers them individually with full citation detail. The pages on <a href="/peptides/ghk-cu/">GHK-Cu</a> and <a href="/peptides/collagen-peptides/">collagen peptides</a> are good starting points for the skin and collagen angle.
+  If you want to go deeper on any of the compounds mentioned here, the Research Notes section covers them individually with full citation detail. The page on <a href="/peptides/ghk-cu/">GHK-Cu</a> and the <a href="/tags/skin-collagen/">Skin &amp; Collagen tag page</a> are good starting points for the skin and collagen angle.
 </p>
 
 <p>
