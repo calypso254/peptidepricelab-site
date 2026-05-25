@@ -1,0 +1,13 @@
+{
+  "name": "Peptide Price Lab",
+  "url": "https://peptidepricelab.com",
+  "appUrl": "https://app.peptidepricelab.com",
+  "description": "Research peptide price comparison, vendor notes, and per-mg calculation tools.",
+  "defaultOgImage": "https://peptidepricelab.com/assets/og-default.png",
+  "logo": {
+    "default": "/assets/logos/peptide-price-lab-logo-default.svg",
+    "cyberNoir": "/assets/logos/peptide-price-lab-logo-cyber-noir.svg",
+    "malibu": "/assets/logos/peptide-price-lab-logo-malibu.svg",
+    "rosewood": "/assets/logos/peptide-price-lab-logo-rosewood.svg"
+  }
+}

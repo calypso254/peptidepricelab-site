@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+ogType: article
+---
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  <a href="/blog/">Blog</a>
+  <span>&rsaquo;</span>
+  {{ title }}
+</nav>
+
+<article class="article">
+  <header class="article-header">
+    {% if date or readingTime %}
+      <div class="article-meta">
+        {% if date %}{{ date | readableDate }}{% endif %}
+        {% if date and readingTime %} &middot; {% endif %}
+        {% if readingTime %}{{ readingTime }}{% endif %}
+      </div>
+    {% endif %}
+    <h1>{{ h1 or title }}</h1>
+    {% if lede %}<p class="lede">{{ lede }}</p>{% endif %}
+  </header>
+
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+</article>

@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: "Peptide Research Notes"
+description: "Research notes on commonly studied peptides, typical use cases, concentration ranges, and current price comparisons across major vendors."
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  Research Notes
+</nav>
+
+<header class="article-header">
+  <h1>Peptide Research Notes</h1>
+  <p class="lede">Quick-reference notes on commonly tracked research peptides. For research use only, not medical advice.</p>
+</header>
+
+<div class="note-grid">
+  {% for note in collections.researchNotes %}
+    <a href="{{ note.url }}" class="note-card">
+      <span class="note-card-name">{{ note.data.peptideName or note.data.h1 or note.data.title }}</span>
+      {% if note.data.lede %}
+        <span class="note-card-desc">{{ note.data.lede }}</span>
+      {% endif %}
+      <span class="note-card-arrow">View research notes &rarr;</span>
+    </a>
+  {% endfor %}
+</div>
+
+<p class="microcopy">Pages are added as research notes are completed. <a href="{{ site.appUrl }}">Open the app</a> to compare current prices.</p>

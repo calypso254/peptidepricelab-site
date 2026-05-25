@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+title: "Browse by Category"
+description: "Browse all peptide and research compound notes by category. Tissue repair, anti-aging, GLP-1, cognitive research, and more."
+ogDescription: "Browse all peptide and research compound notes by category."
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  Browse by Category
+</nav>
+
+<header class="article-header">
+  <h1>Browse by Category</h1>
+  <p class="lede">Each research notes page is tagged by the areas researchers study it for. Select a category to see all related compounds.</p>
+</header>
+
+<div class="tag-grid">
+  {% for tagGroup in collections.noteTags %}
+    <a href="/tags/{{ tagGroup.slug }}/" class="tag-card">
+      <span class="tag-card-name">{{ tagGroup.name }}</span>
+      <span class="tag-card-desc">{{ tagGroup.description }}</span>
+      <span class="tag-card-count">{{ tagGroup.items.length }} {% if tagGroup.items.length == 1 %}compound{% else %}compounds{% endif %}</span>
+    </a>
+  {% endfor %}
+</div>

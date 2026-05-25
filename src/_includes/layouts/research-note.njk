@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+ogType: article
+---
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  <a href="/peptides/">Research Notes</a>
+  <span>&rsaquo;</span>
+  {{ peptideName or title }}
+</nav>
+
+<article class="article research-note">
+  <header class="article-header">
+    {% if tags %}
+      <div class="tags">
+        {% for tag in tags %}
+          <a href="/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <h1>{{ h1 or title }}</h1>
+    {% if lede %}<p class="lede">{{ lede }}</p>{% endif %}
+  </header>
+
+  {% if stats %}
+    <section class="stats-bar" aria-label="Research note summary">
+      {% for stat in stats %}
+        <div class="stat-card">
+          <span>{{ stat.label }}</span>
+          <strong>{{ stat.value }}</strong>
+          {% set statNote = stat.note or stat.statNote or stat["stat-note"] %}
+          {% if statNote %}
+            <small>{{ statNote }}</small>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </section>
+  {% endif %}
+
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+</article>

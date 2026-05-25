@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}{% if title and site.name not in title %} | {{ site.name }}{% endif %}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta property="og:title" content="{{ ogTitle or title }}">
+  <meta property="og:description" content="{{ ogDescription or description or site.description }}">
+  <meta property="og:image" content="{{ ogImage or site.defaultOgImage }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/content.css">
+  {% if schema %}
+  <script type="application/ld+json">{{ schema | jsonLd | safe }}</script>
+  {% endif %}
+</head>
+<body>
+  <div class="site-wrap">
+    {% include "partials/header.njk" %}
+    {{ content | safe }}
+    {% include "partials/footer.njk" %}
+  </div>
+</body>
+</html>

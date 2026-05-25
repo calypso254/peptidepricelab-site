@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.noteTags
+  size: 1
+  alias: tagGroup
+permalink: "/tags/{{ tagGroup.slug }}/"
+eleventyComputed:
+  title: "{{ tagGroup.name }} Notes"
+  description: "All Peptide Price Lab research notes tagged {{ tagGroup.name }}. {{ tagGroup.description }}"
+  ogTitle: "{{ tagGroup.name }} Notes | Peptide Price Lab"
+  ogDescription: "{{ tagGroup.description }}"
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  <a href="/tags/">Browse by Category</a>
+  <span>&rsaquo;</span>
+  {{ tagGroup.name }}
+</nav>
+
+<header class="article-header">
+  <h1>{{ tagGroup.name }}</h1>
+  <p class="lede">{{ tagGroup.description }} Showing {{ tagGroup.items.length }} {% if tagGroup.items.length == 1 %}compound{% else %}compounds{% endif %}.</p>
+</header>
+
+<a href="/tags/" class="back-link">&larr; All categories</a>
+
+<div class="note-grid">
+  {% for note in tagGroup.items %}
+    <a href="{{ note.url }}" class="note-card">
+      <span class="note-card-name">{{ note.data.peptideName or note.data.h1 or note.data.title }}</span>
+      {% if note.data.lede %}
+        <span class="note-card-desc">{{ note.data.lede }}</span>
+      {% endif %}
+      <span class="note-card-arrow">View research notes &rarr;</span>
+    </a>
+  {% endfor %}
+</div>

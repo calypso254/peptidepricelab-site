@@ -1,0 +1,71 @@
+---
+layout: layouts/base.njk
+title: "Research Peptide Vendors - Sources Directory"
+description: "Directory of research peptide vendors: descriptions, shipping info, and purity claim notes for Peptide Sciences, Core Peptides, Swiss Chems, Biotech Peptides, and more."
+ogTitle: "Research Peptide Vendors - Sources Directory | Peptide Price Lab"
+ogDescription: "A vendor reference for research peptide buyers. Compare who carries what, then calculate your actual cost per mg in the free PPL tool."
+schema:
+  "@context": "https://schema.org"
+  "@type": "WebPage"
+  name: "Research Peptide Vendors - Sources Directory"
+  description: "A directory of research peptide vendors with descriptions, shipping info, and purity claim notes."
+  url: "https://peptidepricelab.com/sources/"
+  publisher:
+    "@type": "Organization"
+    name: "Peptide Price Lab"
+    url: "https://peptidepricelab.com"
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  Sources Directory
+</nav>
+
+<header class="article-header">
+  <h1>Sources Directory</h1>
+  <p class="lede">A reference guide to vendors active in the research peptide market. For actual price-per-mg comparisons, use the free PPL tool.</p>
+</header>
+
+<div class="callout">
+  Inclusion in this directory is informational only and does not constitute an endorsement. Vendor policies, pricing, availability, and promo codes change frequently. Always verify current information directly with each vendor before purchasing. Peptide Price Lab receives no affiliate fees from any vendor listed here.
+</div>
+
+<div class="vendor-grid">
+  {% set vendors = [
+    { name: "Peptide Sciences", desc: "US-based vendor widely cited in the research community for third-party COA documentation. Carries a broad catalog of research peptides including GLP-1 compounds, GHRPs, and skin peptides.", ships: "US domestic", coas: "Third-party testing offered on most products", promo: "Check site for current offers", url: "https://www.peptidesciences.com" },
+    { name: "Core Peptides", desc: "US-based vendor with a large catalog and competitive per-mg pricing across commonly researched peptides. Known for accessibility and a range of vial sizes.", ships: "US domestic", coas: "Available on request and product pages", promo: "Check site for current offers", url: "https://www.corepeptides.com" },
+    { name: "Swiss Chems", desc: "International vendor with broad catalog coverage including peptides, SARMs, and nootropics. Known for accepting multiple payment methods and shipping internationally.", ships: "International, most countries", coas: "Available for select products", promo: "Check site for current codes", url: "https://swisschems.is" },
+    { name: "Biotech Peptides", desc: "US-based vendor offering research peptides and related compounds. Carries popular items including BPC-157, TB-500, GHK-Cu, and GLP-1 analogs.", ships: "US domestic", coas: "Available on product pages", promo: "Check site for current offers", url: "https://www.biotechpeptides.com" },
+    { name: "Limitless Life Nootropics", desc: "US-based vendor operating in the research peptide and nootropic space. Carries a range of commonly studied peptides including cognitive and GH-related compounds.", ships: "US domestic", coas: "Available for many products", promo: "Check site for current codes", url: "https://limitlesslifenootropics.com" },
+    { name: "Loti Labs", desc: "US domestic vendor known for competitive per-mg pricing. Carries a focused catalog of the most widely researched peptides. HPLC purity documentation is available for listed products.", ships: "US domestic", coas: "HPLC testing documentation available", promo: "Check site for current offers", url: "https://lotilabs.com" },
+    { name: "Amino Asylum", desc: "US-based vendor with a wide catalog that includes peptides, SARMs, and ancillary research compounds. Known for pricing and catalog breadth.", ships: "US domestic", coas: "Available on product pages", promo: "Check site for current codes", url: "https://aminoasylum.net" },
+    { name: "Pinnacle Peptides", desc: "US-based vendor focused on research peptides. Carries a curated catalog with HPLC purity certificates and popular research peptides including BPC-157, TB-500, and GHK-Cu.", ships: "US domestic", coas: "HPLC documentation available", promo: "Check site for current offers", url: "https://www.pinnaclepeptides.com" }
+  ] %}
+
+  {% for vendor in vendors %}
+    <article class="vendor-card">
+      <h2>{{ vendor.name }}</h2>
+      <p>{{ vendor.desc }}</p>
+      <dl>
+        <div><dt>Ships</dt><dd>{{ vendor.ships }}</dd></div>
+        <div><dt>COAs</dt><dd>{{ vendor.coas }}</dd></div>
+        <div><dt>Promo</dt><dd>{{ vendor.promo }}</dd></div>
+      </dl>
+      <a href="{{ vendor.url }}" target="_blank" rel="noopener">Visit {{ vendor.name }} &nearr;</a>
+    </article>
+  {% endfor %}
+</div>
+
+<div class="price-cta">
+  <div>
+    <div class="price-label">Next step</div>
+    <div class="price-range">Calculate your actual cost per mg</div>
+    <div class="price-note">Vendor prices change constantly. Enter the vials you are comparing in the free PPL tool to see your real per-mg cost side by side.</div>
+  </div>
+  <a href="{{ site.appUrl }}" class="btn-cta">Open the Tool &rarr;</a>
+</div>
+
+<div class="disclaimer">
+  All content on Peptide Price Lab is for informational and research purposes only. Nothing here constitutes medical advice, and research peptides are not intended for human use. Vendor information is provided as a reference and may be out of date. Always verify information directly with vendors.
+</div>
