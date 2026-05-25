@@ -34,18 +34,23 @@ a:hover { text-decoration: underline; }
 img { display: block; max-width: 100%; }
 
 .site-wrap {
-  max-width: 760px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 0 24px 80px;
 }
 
+.site-main {
+  padding-top: 0;
+}
+
 .site-header {
+  width: min(100% - 48px, 1280px);
+  margin: 0 auto 48px;
   padding: 20px 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--border);
-  margin-bottom: 48px;
 }
 
 .site-header a.logo {
@@ -637,7 +642,7 @@ img { display: block; max-width: 100%; }
 }
 
 .note-grid {
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   margin-bottom: 32px;
 }
 
@@ -655,9 +660,11 @@ img { display: block; max-width: 100%; }
 .tag-card,
 .note-card {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 18px 20px;
+  align-items: center;
+  justify-content: center;
+  min-height: 62px;
+  padding: 14px 16px;
+  text-align: center;
 }
 
 .tag-card:hover,
@@ -670,7 +677,7 @@ img { display: block; max-width: 100%; }
 
 .tag-card-name,
 .note-card-name {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 800;
   color: var(--text);
 }
@@ -688,6 +695,11 @@ img { display: block; max-width: 100%; }
   font-weight: 800;
   color: var(--accent);
   margin-top: auto;
+}
+
+.note-card-desc,
+.note-card-arrow {
+  display: none;
 }
 
 .back-link {
@@ -751,12 +763,19 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 600px) {
   .site-wrap { padding-inline: 20px; }
+  .site-header {
+    width: auto;
+    margin: 0 16px 36px;
+  }
   .site-header nav { gap: 14px; }
   .site-header nav a:not(.btn-launch) { display: none; }
   .stats-bar { grid-template-columns: 1fr; }
   .vendor-grid,
   .tag-grid {
     grid-template-columns: 1fr;
+  }
+  .note-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .price-cta {
     align-items: flex-start;

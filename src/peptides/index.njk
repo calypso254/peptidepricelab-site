@@ -19,10 +19,6 @@ description: "Research notes on commonly studied peptides, typical use cases, co
   {% for note in collections.researchNotes %}
     <a href="{{ note.url }}" class="note-card">
       <span class="note-card-name">{{ note.data.peptideName or note.data.h1 or note.data.title }}</span>
-      {% if note.data.lede %}
-        <span class="note-card-desc">{{ note.data.lede }}</span>
-      {% endif %}
-      <span class="note-card-arrow">View research notes &rarr;</span>
     </a>
   {% endfor %}
 </div>
