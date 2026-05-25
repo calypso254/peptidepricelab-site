@@ -63,7 +63,9 @@ export default function (eleventyConfig) {
       .replace(/(<\/(?:ul|ol)>)\s*<\/p>/g, "$1")
       .replace(/<\/li>\s*<\/p>\s*<p>\s*<li/g, "</li>\n<li")
       .replace(/<p>\s*(<li\b)/g, "$1")
-      .replace(/(<\/li>)\s*<\/p>/g, "$1");
+      .replace(/(<\/li>)\s*<\/p>/g, "$1")
+      .replace(/<p>\s*(<div\b[^>]*>)/g, "$1")
+      .replace(/(<\/div>)\s*<\/p>/g, "$1");
   });
 
   eleventyConfig.addCollection("blogPosts", (collectionApi) =>
