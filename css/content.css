@@ -1106,7 +1106,7 @@ img { display: block; max-width: 100%; }
 
 .article-card-with-image {
   display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
+  grid-template-columns: minmax(300px, 42%) minmax(0, 1fr);
   gap: 18px;
   align-items: stretch;
   padding: 18px;
@@ -1120,10 +1120,10 @@ img { display: block; max-width: 100%; }
 
 .article-card-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   aspect-ratio: 3 / 2;
   min-height: 142px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .article-card-content {
@@ -1721,7 +1721,7 @@ img { display: block; max-width: 100%; }
     grid-template-columns: 1fr;
   }
   .article-card-image img {
-    height: 100%;
+    height: auto;
     aspect-ratio: 3 / 2;
   }
   .sources-page .vendor-grid {
