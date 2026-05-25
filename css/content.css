@@ -1108,21 +1108,21 @@ img { display: block; max-width: 100%; }
   display: grid;
   grid-template-columns: minmax(300px, 42%) minmax(0, 1fr);
   gap: 18px;
-  align-items: stretch;
+  align-items: start;
   padding: 18px;
 }
 
 .article-card-image {
   overflow: hidden;
+  align-self: start;
+  aspect-ratio: 3 / 2;
   border-radius: var(--radius-sm);
   background: var(--surface2);
 }
 
 .article-card-image img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 2;
-  min-height: 142px;
+  height: 100%;
   object-fit: cover;
 }
 
