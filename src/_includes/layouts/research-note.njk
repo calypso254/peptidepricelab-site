@@ -41,4 +41,16 @@ ogType: article
   <div class="article-body">
     {{ content | safe }}
   </div>
+
+{% if relatedReading and relatedReading.length %}
+  <aside class="related-reading">
+    <h2>Keep reading</h2>
+    <ul>
+      {% for item in relatedReading %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </aside>
+{% endif %}
+
 </article>

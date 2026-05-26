@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+title: "In Plain Language | Peptide Price Lab"
+description: "Peptide research in plain language. Not a beginner track — a different lens. For the reader who knows what they're looking for but wants accessible prose over citations."
+ogTitle: "In Plain Language | Peptide Price Lab"
+ogDescription: "Peptide research written in plain language — accessible prose over citations, for readers who want to understand the science without the density."
+schema:
+  "@context": "https://schema.org"
+  "@type": "CollectionPage"
+  name: "In Plain Language"
+  description: "Plain-language writing on peptide research from Peptide Price Lab."
+  url: "https://peptidepricelab.com/plain-language/"
+  publisher:
+    "@type": "Organization"
+    name: "Peptide Price Lab"
+    url: "https://peptidepricelab.com"
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  In Plain Language
+</nav>
+
+<div class="start-page">
+  <header class="article-header">
+    <div class="eyebrow">In Plain Language</div>
+    <h1>The research, without the density.</h1>
+    <p class="lede">
+      This isn't a beginner track — it's a different lens. These pieces are for the reader who already knows what they're looking for but wants accessible prose over a wall of citations.
+    </p>
+  </header>
+
+  <div class="guide-grid">
+    {% for article in collections.plainLanguage %}
+      <a href="{{ article.url }}" class="guide-card">
+        <h2>{{ article.data.h1 or article.data.title }}</h2>
+        <p>{{ article.data.lede }}</p>
+        {% if article.data.readingTime %}<span class="reading-time">{{ article.data.readingTime }}</span>{% endif %}
+        <span class="read-more">Read &rarr;</span>
+      </a>
+    {% endfor %}
+  </div>
+</div>

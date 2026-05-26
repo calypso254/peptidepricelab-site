@@ -5,25 +5,23 @@ ogType: article
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a>
   <span>&rsaquo;</span>
-  <a href="/start-here/">Start Here</a>
+  <a href="/plain-language/">In Plain Language</a>
   <span>&rsaquo;</span>
   {{ h1 or title }}
 </nav>
 
 <article class="article">
   <header class="article-header">
-    {% if readingTime %}
-      <div class="article-meta">{{ readingTime }}</div>
+    {% if date or readingTime %}
+      <div class="article-meta">
+        {% if date %}{{ date | readableDate }}{% endif %}
+        {% if date and readingTime %} &middot; {% endif %}
+        {% if readingTime %}{{ readingTime }}{% endif %}
+      </div>
     {% endif %}
     <h1>{{ h1 or title }}</h1>
     {% if lede %}<p class="lede">{{ lede }}</p>{% endif %}
   </header>
-
-  {% if image %}
-    <figure class="article-hero-image guide-hero-image">
-      <img src="{{ image }}" alt="{{ imageAlt or h1 or title }}">
-    </figure>
-  {% endif %}
 
   <div class="article-body">
     {{ content | safe }}

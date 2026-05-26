@@ -10,7 +10,7 @@
   <meta property="og:image" content="{{ ogImage or site.defaultOgImage }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:type" content="{{ ogType or 'website' }}">
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="canonical" href="{{ canonicalUrl or (site.url + page.url) }}">
   <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/content.css">
   {% if schema %}

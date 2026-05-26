@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+title: "Editor's Notes | Peptide Price Lab"
+description: "Analysis, editorial takes, and context on emerging peptide research. Pepper's perspective on what the science actually means."
+ogTitle: "Editor's Notes | Peptide Price Lab"
+ogDescription: "Analysis and editorial takes on peptide research from Pepper at Peptide Price Lab."
+schema:
+  "@context": "https://schema.org"
+  "@type": "CollectionPage"
+  name: "Editor's Notes"
+  description: "Editorial analysis and takes on peptide research from Peptide Price Lab."
+  url: "https://peptidepricelab.com/notes/"
+  publisher:
+    "@type": "Organization"
+    name: "Peptide Price Lab"
+    url: "https://peptidepricelab.com"
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  Editor's Notes
+</nav>
+
+<div class="start-page">
+  <header class="article-header">
+    <div class="eyebrow">Editor's Notes</div>
+    <h1>What the research means.</h1>
+    <p class="lede">
+      Not summaries — takes. These pieces go beyond what the studies say to ask what they actually mean, what's missing, and what to make of the numbers everyone is citing.
+    </p>
+  </header>
+
+  <div class="guide-grid">
+    {% for note in collections.editorNotes %}
+      <a href="{{ note.url }}" class="guide-card">
+        <h2>{{ note.data.h1 or note.data.title }}</h2>
+        <p>{{ note.data.lede }}</p>
+        <div class="article-meta">
+          {% if note.data.date %}{{ note.data.date | readableDate }}{% endif %}
+          {% if note.data.date and note.data.readingTime %} &middot; {% endif %}
+          {% if note.data.readingTime %}{{ note.data.readingTime }}{% endif %}
+        </div>
+        <span class="read-more">Read &rarr;</span>
+      </a>
+    {% endfor %}
+  </div>
+</div>

@@ -68,7 +68,17 @@ export default function (eleventyConfig) {
       .replace(/(<\/div>)\s*<\/p>/g, "$1");
   });
 
-  eleventyConfig.addCollection("startHereBasics", (collectionApi) =>
+  eleventyConfig.addCollection("editorNotes", (collectionApi) =>
+    collectionApi.getFilteredByGlob("src/notes/**/*.md")
+      .sort((a, b) => String(b.data.date || "").localeCompare(String(a.data.date || "")))
+  );
+
+    eleventyConfig.addCollection("plainLanguage", (collectionApi) =>
+    collectionApi.getFilteredByGlob("src/plain-language/**/*.md")
+      .sort((a, b) => String(b.data.date || "").localeCompare(String(a.data.date || "")))
+  );
+
+    eleventyConfig.addCollection("startHereBasics", (collectionApi) =>
     collectionApi.getFilteredByGlob("src/start-here/**/*.md")
       .filter(item => item.data.section === "basics")
       .sort((a, b) => String(a.data.title || "").localeCompare(String(b.data.title || "")))
