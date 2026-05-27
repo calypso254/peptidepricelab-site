@@ -1,5 +1,6 @@
 ---
 layout: layouts/guide.njk
+section: common-questions
 title: "Bac Water and Syringe Math: How to Calculate Your Draw | Peptide Price Lab"
 h1: "Bac Water and Syringe Math: How to Calculate Your Draw"
 lede: "Once you know a dose, you still have to figure out how much to pull into a syringe. Here's the math, step by step, with real examples."

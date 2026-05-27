@@ -1,5 +1,6 @@
 ---
 layout: layouts/guide.njk
+section: common-questions
 title: "How Peptide Dosing Is Communicated in Research | Peptide Price Lab"
 h1: "How Peptide Dosing Is Communicated in Research"
 lede: "Research papers don't say 'take this much.' They report what subjects received in studies. Here's how to read that language so you know what you're looking at."

@@ -4,6 +4,8 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  {# ── Static section pages ── #}
   <url>
     <loc>{{ site.url }}/</loc>
     <lastmod>2026-05-24</lastmod>
@@ -13,6 +15,24 @@ eleventyExcludeFromCollections: true
   <url>
     <loc>{{ site.url }}/peptides/</loc>
     <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/plain-language/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/notes/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/start-here/</loc>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -29,61 +49,61 @@ eleventyExcludeFromCollections: true
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/news/fda-peptide-compounding-2026/</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/start-here/</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/start-here/what-are-peptides/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/start-here/peptides-and-womens-health/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/start-here/research-vs-approved/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/start-here/how-to-read-research/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/start-here/glp1-explainer/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>{{ site.url }}/tags/</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  {% for post in collections.blogPosts %}
+
+  {# ── News articles (hardcoded — small volume) ── #}
+  <url>
+    <loc>{{ site.url }}/news/fda-peptide-compounding-2026/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  {# ── Plain Language articles ── #}
+  {% for post in collections.plainLanguage %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
     <lastmod>{{ post.data.date | sitemapDate }}</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   {% endfor %}
+
+  {# ── Editor's Notes ── #}
+  {% for post in collections.editorNotes %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    <lastmod>{{ post.data.date | sitemapDate }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+
+  {# ── Start Here — Basics ── #}
+  {% for guide in collections.startHereBasics %}
+  <url>
+    <loc>{{ site.url }}{{ guide.url }}</loc>
+    <lastmod>{{ guide.data.date | sitemapDate }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+
+  {# ── Start Here — Common Questions ── #}
+  {% for guide in collections.startHereCommonQuestions %}
+  <url>
+    <loc>{{ site.url }}{{ guide.url }}</loc>
+    <lastmod>{{ guide.data.date | sitemapDate }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+
+  {# ── Research Notes ── #}
   {% for note in collections.researchNotes %}
   <url>
     <loc>{{ site.url }}{{ note.url }}</loc>
@@ -92,6 +112,8 @@ eleventyExcludeFromCollections: true
     <priority>0.7</priority>
   </url>
   {% endfor %}
+
+  {# ── Tag pages ── #}
   {% for tagGroup in collections.noteTags %}
   <url>
     <loc>{{ site.url }}/tags/{{ tagGroup.slug }}/</loc>
@@ -100,4 +122,5 @@ eleventyExcludeFromCollections: true
     <priority>0.6</priority>
   </url>
   {% endfor %}
+
 </urlset>
