@@ -721,10 +721,111 @@
 
 
 /* ============================================================
+   9b. RESEARCH-NOTE BODY  (the {{content}} of research-note.njk)
+   The peptide-note markdown emits <section class="content-section">
+   blocks inside .article-body, plus .research-list, a .price-cta with
+   .price-range, and a .bibliography / .ref-list. Style them as one
+   continuous editorial article rather than detached homepage sections.
+   ============================================================ */
+
+/* Tame the homepage-scale .content-section when it sits inside an article */
+.article-body .content-section {
+  padding: 36px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.article-body .content-section:first-child { padding-top: 0; }
+.article-body .content-section:last-child { border-bottom: none; }
+.article-body .content-section > h2 {
+  font-family: var(--display);
+  font-weight: var(--display-weight);
+  font-size: 32px;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+.article-body .content-section > p { max-width: none; }
+
+/* Research areas list — term + explanation per row */
+.research-list { list-style: none; padding: 0; margin: 8px 0 0; }
+.research-list li {
+  display: grid;
+  gap: 4px;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+}
+.research-list li:last-child { border-bottom: 1px solid var(--rule); }
+.research-list strong {
+  font-family: var(--display);
+  font-weight: var(--display-weight);
+  font-size: 21px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.research-list span {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+/* Big per-mg price figure inside the price CTA */
+.price-range {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  font-weight: var(--display-weight);
+  margin: 6px 0 10px;
+}
+
+/* Bibliography / references */
+.bibliography { margin: 36px 0 0; padding-top: 32px; border-top: 2px solid var(--ink); }
+.bibliography h2 {
+  font-family: var(--display);
+  font-weight: var(--display-weight);
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  margin: 0 0 16px;
+  color: var(--ink);
+}
+.ref-list { list-style: none; padding: 0; margin: 0; }
+.ref-list li {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 8px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+.ref-num { font-family: var(--mono); font-size: 12px; color: var(--accent); font-weight: 600; }
+.ref-text em { font-style: italic; color: var(--ink); }
+.ref-text a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
+
+/* Citation superscripts inside body prose (also defined in content.css;
+   harmless re-assertion to guarantee styling) */
+.article-body a.cite {
+  font-family: var(--mono);
+  font-size: 0.7em;
+  font-weight: 600;
+  color: var(--accent);
+  vertical-align: super;
+  text-decoration: none;
+  margin-left: 1px;
+}
+
+/* ============================================================
    10. RESPONSIVE
    ============================================================ */
 @container app (max-width: 760px) {
   .home-hero { padding: 48px 0 40px; }
+  .article-body .content-section > h2 { font-size: 26px !important; }
+  .research-list strong { font-size: 19px; }
   .home-hero h1 { font-size: clamp(38px, 11vw, 56px) !important; }
   .home-hero .lede { font-size: 18px !important; }
 
@@ -754,4 +855,52 @@
   .dispatch-lead { grid-template-columns: 1fr; gap: 36px; }
 
   .related-reading li a { font-size: 19px; gap: 12px; }
+}
+
+/* ============================================================
+   11. MASTHEAD LOGO — the bead monogram (P·P·L)
+   Overrides the placeholder .logo-mark in content.css. Renders the
+   monogram inline so it uses the real Instrument Serif + bead dots,
+   matching the app icon / favicon. No image dependency.
+   ============================================================ */
+.site-header .logo { gap: 14px; }
+.site-header .logo img { display: none; } /* retire the old logo image if present */
+
+.site-header .logo-mark {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--display);
+  font-style: normal;
+  font-weight: var(--display-weight);
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.site-header .logo-mark .bead {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ink);
+  display: inline-block;
+  margin: 0 5px;
+  font-style: normal;
+}
+.site-header .logo-mark .bead--accent { background: var(--accent); }
+
+.site-header .logo-word {
+  font-family: var(--display);
+  font-weight: var(--display-weight);
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  padding-left: 14px;
+  border-left: 1px solid var(--rule);
+  white-space: nowrap;
+}
+
+@container app (max-width: 760px) {
+  .site-header .logo-word { font-size: 18px; padding-left: 11px; }
+  .site-header .logo-mark { font-size: 26px; }
 }

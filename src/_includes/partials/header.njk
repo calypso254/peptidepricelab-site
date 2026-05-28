@@ -1,29 +1,28 @@
-{# Site masthead. Hamburger + drawer fire from the @container query in
-   content.css when the viewport is narrow — no JS dependency for the
-   responsive behavior, only for the open/close toggle.
+{# Site masthead — matches the canvas design exactly.
+   Nav order + labels: The Index · Start Here · Plain Language ·
+   Editor's Notes · News · Sources · Dispatch.
 
-   The drawer is a sibling of the nav, gated by JS on a single 'is-open'
-   class. The hamburger button mirrors aria-expanded for accessibility. #}
+   "The Index" links to /peptides/ (the research-notes index) — the
+   editorial name used in the design.
+
+   Hamburger + drawer fire from the @container query in content.css when
+   the viewport is narrow; the inline script only toggles the open class. #}
 
 <header class="site-header" data-component="masthead">
   <a href="/" class="logo" aria-label="{{ site.name }} home">
-    {% if site.logo and site.logo.default %}
-      <img src="{{ site.logo.default }}" alt="{{ site.name }}">
-    {% else %}
-      <span class="logo-mark">P<span class="dot">·</span>P<span class="dot">·</span>L</span>
-      <span class="logo-label">Peptide<br>Price Lab</span>
-    {% endif %}
+    <span class="logo-mark" aria-hidden="true">P<i class="bead"></i>P<i class="bead bead--accent"></i>L</span>
+    <span class="logo-word">Peptide Price Lab</span>
   </a>
 
   {# Desktop nav #}
   <nav aria-label="Primary">
-    <a href="/peptides/"      {% if '/peptides/'      in page.url %}aria-current="page"{% endif %}>Research Notes</a>
-    <a href="/plain-language/"{% if '/plain-language/' in page.url %}aria-current="page"{% endif %}>Plain Language</a>
-    <a href="/notes/"         {% if '/notes/'         in page.url %}aria-current="page"{% endif %}>Editor's Notes</a>
-    <a href="/start-here/"    {% if '/start-here/'    in page.url %}aria-current="page"{% endif %}>Start Here</a>
-    <a href="/news/"          {% if '/news/'          in page.url %}aria-current="page"{% endif %}>News</a>
-    <a href="/dispatch/"      {% if '/dispatch/'      in page.url %}aria-current="page"{% endif %}>Dispatch</a>
-    <a href="/sources/"       {% if '/sources/'       in page.url %}aria-current="page"{% endif %}>Sources</a>
+    <a href="/peptides/"       {% if '/peptides/'       in page.url %}aria-current="page"{% endif %}>The Index</a>
+    <a href="/start-here/"     {% if '/start-here/'     in page.url %}aria-current="page"{% endif %}>Start Here</a>
+    <a href="/plain-language/" {% if '/plain-language/' in page.url %}aria-current="page"{% endif %}>Plain Language</a>
+    <a href="/notes/"          {% if '/notes/'          in page.url %}aria-current="page"{% endif %}>Editor's Notes</a>
+    <a href="/news/"           {% if '/news/'           in page.url %}aria-current="page"{% endif %}>News</a>
+    <a href="/sources/"        {% if '/sources/'        in page.url %}aria-current="page"{% endif %}>Sources</a>
+    <a href="/dispatch/"       {% if '/dispatch/'       in page.url %}aria-current="page"{% endif %}>Dispatch</a>
   </nav>
   <a href="{{ site.appUrl }}" class="btn-launch">Open the Tool &rarr;</a>
 
@@ -35,15 +34,15 @@
     <span class="hamburger-text">Menu</span>
   </button>
 
-  {# Mobile drawer — same items as desktop nav, restyled #}
+  {# Mobile drawer — same items + order as desktop nav #}
   <div class="drawer" id="primary-drawer" aria-hidden="true">
-    <a href="/peptides/"      {% if '/peptides/'      in page.url %}aria-current="page"{% endif %}>Research Notes <span class="drawer-num">01</span></a>
-    <a href="/start-here/"    {% if '/start-here/'    in page.url %}aria-current="page"{% endif %}>Start Here      <span class="drawer-num">02</span></a>
-    <a href="/plain-language/"{% if '/plain-language/' in page.url %}aria-current="page"{% endif %}>Plain Language <span class="drawer-num">03</span></a>
-    <a href="/notes/"         {% if '/notes/'         in page.url %}aria-current="page"{% endif %}>Editor's Notes  <span class="drawer-num">04</span></a>
-    <a href="/news/"          {% if '/news/'          in page.url %}aria-current="page"{% endif %}>News            <span class="drawer-num">05</span></a>
-    <a href="/dispatch/"      {% if '/dispatch/'      in page.url %}aria-current="page"{% endif %}>Dispatch        <span class="drawer-num">06</span></a>
-    <a href="/sources/"       {% if '/sources/'       in page.url %}aria-current="page"{% endif %}>Sources         <span class="drawer-num">07</span></a>
+    <a href="/peptides/"       {% if '/peptides/'       in page.url %}aria-current="page"{% endif %}>The Index       <span class="drawer-num">01</span></a>
+    <a href="/start-here/"     {% if '/start-here/'     in page.url %}aria-current="page"{% endif %}>Start Here      <span class="drawer-num">02</span></a>
+    <a href="/plain-language/" {% if '/plain-language/' in page.url %}aria-current="page"{% endif %}>Plain Language  <span class="drawer-num">03</span></a>
+    <a href="/notes/"          {% if '/notes/'          in page.url %}aria-current="page"{% endif %}>Editor's Notes  <span class="drawer-num">04</span></a>
+    <a href="/news/"           {% if '/news/'           in page.url %}aria-current="page"{% endif %}>News            <span class="drawer-num">05</span></a>
+    <a href="/sources/"        {% if '/sources/'        in page.url %}aria-current="page"{% endif %}>Sources         <span class="drawer-num">06</span></a>
+    <a href="/dispatch/"       {% if '/dispatch/'       in page.url %}aria-current="page"{% endif %}>Dispatch        <span class="drawer-num">07</span></a>
     <a href="{{ site.appUrl }}" class="btn-launch">Open the Tool &rarr;</a>
   </div>
 </header>

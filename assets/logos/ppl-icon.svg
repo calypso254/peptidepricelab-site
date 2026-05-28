@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Peptide Price Lab">
+  <rect width="512" height="512" rx="112" fill="#2a2119"></rect>
+  <g stroke="#fbf7ef" stroke-width="18" stroke-linecap="round">
+    <line x1="150" y1="360" x2="246" y2="300"></line>
+    <line x1="246" y1="300" x2="342" y2="240"></line>
+    <line x1="342" y1="240" x2="430" y2="165"></line>
+  </g>
+  <circle cx="150" cy="360" r="34" fill="#fbf7ef"></circle>
+  <circle cx="246" cy="300" r="34" fill="#fbf7ef"></circle>
+  <circle cx="342" cy="240" r="34" fill="#fbf7ef"></circle>
+  <circle cx="430" cy="165" r="46" fill="#9b3a33"></circle>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="64" viewBox="0 0 300 64" role="img" aria-label="Peptide Price Lab">
+  
+  <rect x="0" y="6" width="52" height="52" rx="12" fill="#2a2119"></rect>
+  <g stroke="#fbf7ef" stroke-width="2.4" stroke-linecap="round">
+    <line x1="13" y1="44" x2="22" y2="38"></line>
+    <line x1="22" y1="38" x2="31" y2="31"></line>
+    <line x1="31" y1="31" x2="40" y2="22"></line>
+  </g>
+  <circle cx="13" cy="44" r="3.4" fill="#fbf7ef"></circle>
+  <circle cx="22" cy="38" r="3.4" fill="#fbf7ef"></circle>
+  <circle cx="31" cy="31" r="3.4" fill="#fbf7ef"></circle>
+  <circle cx="40" cy="22" r="4.6" fill="#9b3a33"></circle>
+  
+  <text x="68" y="32" font-family="&#39;Instrument Serif&#39;, Georgia, serif" font-size="27" fill="#2a2119">Peptide Price Lab</text>
+  <text x="69" y="49" font-family="&#39;Switzer&#39;, system-ui, sans-serif" font-size="8" font-weight="700" letter-spacing="1.5" fill="#5a5043">RESEARCH CLEARLY · SOURCE CONFIDENTLY</text>
+</svg>
