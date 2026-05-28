@@ -1,0 +1,91 @@
+---
+layout: layouts/base.njk
+title: "The Dispatch - A Saturday Letter on Honest Peptide Pricing"
+description: "One short letter every Saturday on what moved in the per-mg peptide market this week, and the new research worth your weekend. Free, ad-free, no selling lists."
+ogTitle: "The Dispatch | Peptide Price Lab"
+ogDescription: "A short, honest letter every Saturday on the research peptide market and the science worth reading. Free and ad-free."
+schema:
+  "@context": "https://schema.org"
+  "@type": "CollectionPage"
+  name: "The Dispatch"
+  description: "A weekly letter on the research peptide market from Peptide Price Lab."
+  url: "https://peptidepricelab.com/dispatch/"
+  publisher:
+    "@type": "Organization"
+    name: "Peptide Price Lab"
+    url: "https://peptidepricelab.com"
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  The Dispatch
+</nav>
+
+<div class="dispatch-page">
+  <header class="article-header">
+    <div class="eyebrow">The Saturday Dispatch</div>
+    <h1>One short letter, <em>every Saturday.</em></h1>
+    <p class="lede">
+      A short, honest letter on what moved in the per-mg market this week and the new research actually worth your weekend. Roughly 4,800 readers. No selling lists, ever.
+    </p>
+  </header>
+
+  {% set issues = collections.dispatch %}
+
+  {% if issues and issues.length %}
+    {% set latest = issues[0] %}
+    <section class="dispatch-lead">
+      <div>
+        <div class="dispatch-lead-eyebrow">&sect; Latest issue &middot; {{ latest.data.date | readableDate }}</div>
+        <div class="dispatch-issue-num">{{ latest.data.issueNumber }} &mdash; {{ latest.data.date | readableDate }}</div>
+        <h2>{{ latest.data.h1 or latest.data.title }}</h2>
+        {% if latest.data.lede %}<p class="dispatch-blurb">{{ latest.data.lede }}</p>{% endif %}
+        <a href="{{ latest.url }}" class="read-more">Read this week's letter &rarr;</a>
+      </div>
+
+      <form class="subscribe-form" action="{{ site.newsletterAction or '#' }}" method="post">
+        <span class="form-label">Subscribe &mdash; it's free</span>
+        <p class="form-prompt">One short letter, Saturday at 7&nbsp;a.m. Eastern. Unsubscribe with one click.</p>
+        <input type="email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Send me the Dispatch</button>
+        <div class="form-trust">
+          <div>&approx; 4,800 readers</div>
+          <div>One email, every Saturday</div>
+          <div>No selling lists, ever</div>
+        </div>
+      </form>
+    </section>
+
+    {% if issues.length > 1 %}
+      <div class="dispatch-archive-heading">
+        <span class="eyebrow">&sect; Archive &mdash; earlier issues</span>
+        <span class="count">{{ issues.length - 1 }} on file</span>
+      </div>
+      {% for issue in issues %}
+        {% if not loop.first %}
+          <a href="{{ issue.url }}" class="feed-row">
+            <div class="feed-num">{{ issue.data.issueNumber }}<span class="date">{{ issue.data.date | readableDate }}</span></div>
+            <h3>{{ issue.data.h1 or issue.data.title }}</h3>
+            <p class="feed-blurb">{{ issue.data.lede }}</p>
+            <span class="feed-cta">Read &rarr;</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    <div class="intro-note">
+      <strong>The first issue is on its way.</strong> Subscribe below and you'll get the inaugural Dispatch this Saturday.
+    </div>
+    <form class="subscribe-form" action="{{ site.newsletterAction or '#' }}" method="post" style="max-width:none;margin-top:24px">
+      <span class="form-label">Subscribe &mdash; it's free</span>
+      <p class="form-prompt">One short letter, every Saturday at 7&nbsp;a.m. Eastern.</p>
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <button type="submit">Send me the Dispatch</button>
+      <div class="form-trust"><div>No selling lists, ever</div></div>
+    </form>
+  {% endif %}
+
+  {% set pledgeVariant = "wide" %}
+  {% include "partials/pledge.njk" %}
+</div>

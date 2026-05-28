@@ -27,6 +27,14 @@ export default function (eleventyConfig) {
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "");
 
+  // Sort helper: newest first, using `date` then schema.datePublished as fallback.
+  const dateKey = (item) =>
+    String(
+      item.data.date ||
+      (item.data.schema && item.data.schema.datePublished) ||
+      ""
+    );
+
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("CNAME");
@@ -100,6 +108,23 @@ export default function (eleventyConfig) {
     collectionApi.getFilteredByGlob("src/peptides/**/*.md").sort((a, b) =>
       String(a.data.title || "").localeCompare(String(b.data.title || ""))
     )
+  );
+
+  // News: third-party headlines, annotated. Articles live at
+  // src/news/<slug>/index.(njk|md). The hub itself (src/news/index.njk) is
+  // excluded because the glob requires a sub-directory segment.
+  eleventyConfig.addCollection("news", (collectionApi) =>
+    collectionApi
+      .getFilteredByGlob(["src/news/*/index.njk", "src/news/*/index.md"])
+      .sort((a, b) => dateKey(b).localeCompare(dateKey(a)))
+  );
+
+  // Dispatch: the weekly Saturday letter. Issues live at
+  // src/dispatch/<slug>/index.md with an `issueNumber` and `date`.
+  eleventyConfig.addCollection("dispatch", (collectionApi) =>
+    collectionApi
+      .getFilteredByGlob(["src/dispatch/*/index.md", "src/dispatch/*/index.njk"])
+      .sort((a, b) => dateKey(b).localeCompare(dateKey(a)))
   );
 
   eleventyConfig.addCollection("noteTags", (collectionApi) => {

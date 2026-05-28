@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+ogType: article
+---
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <span>&rsaquo;</span>
+  <a href="/dispatch/">The Dispatch</a>
+  <span>&rsaquo;</span>
+  {{ issueNumber or title }}
+</nav>
+
+<article class="article dispatch-issue">
+  <header class="article-header">
+    <div class="article-meta">
+      {% if issueNumber %}<span class="tag">{{ issueNumber }}</span>{% endif %}
+      {% if date %}<span>{{ date | readableDate }}</span>{% endif %}
+      {% if readingTime %}<span class="sep">&middot;</span><span>{{ readingTime }}</span>{% endif %}
+    </div>
+    <h1>{{ h1 or title }}</h1>
+    {% if lede %}<p class="lede">{{ lede }}</p>{% endif %}
+  </header>
+
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+
+  {# Subscribe prompt at the foot of every issue #}
+  <form class="subscribe-form" action="{{ site.newsletterAction or '#' }}" method="post" style="max-width:none;margin-top:40px">
+    <span class="form-label">Get the next one</span>
+    <p class="form-prompt">One short letter, every Saturday at 7&nbsp;a.m. Eastern. Unsubscribe in one click.</p>
+    <input type="email" name="email" placeholder="you@example.com" required>
+    <button type="submit">Send me the Dispatch</button>
+    <div class="form-trust">
+      <div>&approx; 4,800 readers</div>
+      <div>No selling lists, ever</div>
+    </div>
+  </form>
+
+  {% include "partials/pledge.njk" %}
+</article>
