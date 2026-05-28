@@ -1,0 +1,50 @@
+{# The Pledge — the honest affiliate policy block.
+
+   Drop this partial into any article layout near the bottom:
+       {% include "partials/pledge.njk" %}
+
+   On hub / index pages, opt into the wide treatment by setting
+   the variant to "wide":
+       {% set pledgeVariant = "wide" %}
+       {% include "partials/pledge.njk" %}
+#}
+
+{% set _variant = pledgeVariant or "inline" %}
+
+<aside class="pledge pledge--{{ _variant }}" aria-label="How we stay free">
+  <div class="pledge-grid">
+    {% if _variant == "wide" %}
+      <div>
+        <span class="eyebrow">&sect; The Pledge</span>
+        <h2>The honest<br><span class="italic">affiliate</span><br>policy.</h2>
+      </div>
+    {% else %}
+      <div>
+        <span class="eyebrow">How we stay free</span>
+      </div>
+    {% endif %}
+
+    <div>
+      <p class="pledge-lede">
+        We use affiliate codes &mdash; but only when they&rsquo;re actually
+        the better deal.
+      </p>
+      <p class="pledge-body">
+        If a vendor is running a 30%-off weekend and our code only earns
+        you 15%, we point you to the sale &mdash; not our link. When our code
+        <em>is</em> the better deal, you&rsquo;ll see it labeled, and using
+        it costs you nothing extra.
+      </p>
+      <p class="pledge-body">
+        The small commission those codes earn &mdash; when they earn
+        anything &mdash; is what keeps the Lab free to use, ad-free, and
+        beholden to no vendor.
+      </p>
+      <div class="pledge-promises">
+        <span>&check; Best deal wins, always</span>
+        <span>&check; Codes labeled in-line</span>
+        <span>&check; No sponsored placement</span>
+      </div>
+    </div>
+  </div>
+</aside>

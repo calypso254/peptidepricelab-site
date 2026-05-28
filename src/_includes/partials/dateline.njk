@@ -1,0 +1,28 @@
+{# Dateline — the slim volume/tagline/date strip that sits below the
+   masthead on most pages. Use:
+       {% include "partials/dateline.njk" %}
+
+   Customize via variables in the parent template:
+       {% set datelineVol     = "Vol. 02 · BPC-157" %}
+       {% set datelineTagline = "A research note." %}
+       {% set datelineDate    = "23 May 2026" %}
+#}
+
+{% set _vol = datelineVol or ("Vol. 02 &middot; " + (section or "")) | safe %}
+{% set _tagline = datelineTagline or site.tagline or "A field guide to honest peptide pricing." %}
+{% set _date = datelineDate or (page.date | readableDate) or "" %}
+
+<div class="dateline">
+  <span>
+    {%- set _parts = _vol | split(' &middot; ') if (' &middot; ' in _vol) else (_vol | split(' · ')) -%}
+    {% if _parts and _parts.length > 1 %}
+      {{ _parts[0] | safe }}<span class="dateline-sep"> &middot; </span><span class="dateline-break">{{ _parts[1] | safe }}</span>
+    {% else %}
+      {{ _vol | safe }}
+    {% endif %}
+  </span>
+  <span class="tagline">{{ _tagline }}</span>
+  <span>
+    Updated<span class="dateline-sep"> </span><span class="dateline-break">{{ _date }}</span>
+  </span>
+</div>

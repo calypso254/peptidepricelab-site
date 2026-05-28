@@ -1,9 +1,57 @@
+{# Site footer. Mirrors the canvas footer: dark ink background, brand block
+   + three columns of links, a slim attribution row at the bottom, and the
+   research-use disclaimer pinned above the columns. #}
+
 <footer class="site-footer">
-  <span>&copy; 2026 {{ site.name }} &middot; Research use only</span>
-  <nav>
-    <a href="/peptides/">Research Notes</a>
-    <a href="/news/">News</a>
-    <a href="/sources/">Sources</a>
-    <a href="{{ site.appUrl }}">Open the Tool</a>
-  </nav>
+  <div class="disclaimer">
+    <span class="disclaimer-label">Research use only.</span>
+    Peptide Price Lab is an editorial calculator. Nothing here is medical
+    advice, a recommendation, or a prescription. Consult a qualified
+    clinician before anything that meets your body.
+  </div>
+
+  <div class="footer-cols">
+    <div class="footer-brand-col">
+      <div class="footer-brand">Peptide Price <span class="accent">Lab</span></div>
+      <p class="footer-tagline">
+        An independent editorial calculator and field guide for the
+        honest milligram. Made carefully, read slowly.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-heading">Read</div>
+      <ul>
+        <li><a href="/peptides/">Research Notes</a></li>
+        <li><a href="/plain-language/">Plain Language</a></li>
+        <li><a href="/notes/">Editor's Notes</a></li>
+        <li><a href="/start-here/">Start Here</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-heading">Tool</div>
+      <ul>
+        <li><a href="{{ site.appUrl }}">Open the calculator</a></li>
+        <li><a href="/sources/">Vendor index</a></li>
+        <li><a href="/news/">In the news</a></li>
+        <li><a href="/dispatch/">The Dispatch</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-heading">About</div>
+      <ul>
+        <li><a href="/notes/on-the-honest-milligram/">Editorial standards</a></li>
+        <li><a href="/notes/when-affiliate-codes-are-honest/">Affiliate policy</a></li>
+        <li><a href="mailto:editor@peptidepricelab.com">Contact the editor</a></li>
+        <li><a href="/llms.txt">For AI agents</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2026 {{ site.name }} &middot; Vol. 02 &middot; An independent publication</span>
+    <span class="signoff">Edited for readers, not advertisers.</span>
+  </div>
 </footer>

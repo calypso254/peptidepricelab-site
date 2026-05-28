@@ -1,14 +1,75 @@
-<header class="site-header">
+{# Site masthead. Hamburger + drawer fire from the @container query in
+   content.css when the viewport is narrow — no JS dependency for the
+   responsive behavior, only for the open/close toggle.
+
+   The drawer is a sibling of the nav, gated by JS on a single 'is-open'
+   class. The hamburger button mirrors aria-expanded for accessibility. #}
+
+<header class="site-header" data-component="masthead">
   <a href="/" class="logo" aria-label="{{ site.name }} home">
-    <img src="{{ site.logo.default }}" alt="{{ site.name }}">
+    {% if site.logo and site.logo.default %}
+      <img src="{{ site.logo.default }}" alt="{{ site.name }}">
+    {% else %}
+      <span class="logo-mark">P<span class="dot">·</span>P<span class="dot">·</span>L</span>
+      <span class="logo-label">Peptide<br>Price Lab</span>
+    {% endif %}
   </a>
-  <nav>
-    <a href="/peptides/">Research Notes</a>
-    <a href="/plain-language/">Plain Language</a>
-    <a href="/notes/">Editor's Notes</a>
-    <a href="/start-here/">Start Here</a>
-    <a href="/sources/">Vendors</a>
-    <a href="/news/">News</a>
-    <a href="{{ site.appUrl }}" class="btn-launch">Open the Tool &rarr;</a>
+
+  {# Desktop nav #}
+  <nav aria-label="Primary">
+    <a href="/peptides/"      {% if '/peptides/'      in page.url %}aria-current="page"{% endif %}>Research Notes</a>
+    <a href="/plain-language/"{% if '/plain-language/' in page.url %}aria-current="page"{% endif %}>Plain Language</a>
+    <a href="/notes/"         {% if '/notes/'         in page.url %}aria-current="page"{% endif %}>Editor's Notes</a>
+    <a href="/start-here/"    {% if '/start-here/'    in page.url %}aria-current="page"{% endif %}>Start Here</a>
+    <a href="/news/"          {% if '/news/'          in page.url %}aria-current="page"{% endif %}>News</a>
+    <a href="/dispatch/"      {% if '/dispatch/'      in page.url %}aria-current="page"{% endif %}>Dispatch</a>
+    <a href="/sources/"       {% if '/sources/'       in page.url %}aria-current="page"{% endif %}>Sources</a>
   </nav>
+  <a href="{{ site.appUrl }}" class="btn-launch">Open the Tool &rarr;</a>
+
+  {# Mobile hamburger #}
+  <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-drawer">
+    <span class="hamburger-lines" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </span>
+    <span class="hamburger-text">Menu</span>
+  </button>
+
+  {# Mobile drawer — same items as desktop nav, restyled #}
+  <div class="drawer" id="primary-drawer" aria-hidden="true">
+    <a href="/peptides/"      {% if '/peptides/'      in page.url %}aria-current="page"{% endif %}>Research Notes <span class="drawer-num">01</span></a>
+    <a href="/start-here/"    {% if '/start-here/'    in page.url %}aria-current="page"{% endif %}>Start Here      <span class="drawer-num">02</span></a>
+    <a href="/plain-language/"{% if '/plain-language/' in page.url %}aria-current="page"{% endif %}>Plain Language <span class="drawer-num">03</span></a>
+    <a href="/notes/"         {% if '/notes/'         in page.url %}aria-current="page"{% endif %}>Editor's Notes  <span class="drawer-num">04</span></a>
+    <a href="/news/"          {% if '/news/'          in page.url %}aria-current="page"{% endif %}>News            <span class="drawer-num">05</span></a>
+    <a href="/dispatch/"      {% if '/dispatch/'      in page.url %}aria-current="page"{% endif %}>Dispatch        <span class="drawer-num">06</span></a>
+    <a href="/sources/"       {% if '/sources/'       in page.url %}aria-current="page"{% endif %}>Sources         <span class="drawer-num">07</span></a>
+    <a href="{{ site.appUrl }}" class="btn-launch">Open the Tool &rarr;</a>
+  </div>
 </header>
+
+<script>
+  (function () {
+    var hdr = document.querySelector('.site-header');
+    if (!hdr) return;
+    var btn = hdr.querySelector('.hamburger');
+    var drawer = hdr.querySelector('.drawer');
+    var txt = btn && btn.querySelector('.hamburger-text');
+    if (!btn || !drawer) return;
+    btn.addEventListener('click', function () {
+      var open = drawer.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      drawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+      if (txt) txt.textContent = open ? 'Close' : 'Menu';
+    });
+    drawer.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        drawer.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        drawer.setAttribute('aria-hidden', 'true');
+        if (txt) txt.textContent = 'Menu';
+      }
+    });
+  })();
+</script>

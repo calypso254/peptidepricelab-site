@@ -1,67 +1,60 @@
+/* Peptide Price Lab — fonts.css
+   ──────────────────────────────────────────────────────────────────
+   Loads:
+   - Switzer (sans)      — locally hosted woff2
+   - Libre Baskerville   — locally hosted ttf  (used as fallback serif)
+   - Instrument Serif    — Google Fonts CDN    (primary display serif)
+   ──────────────────────────────────────────────────────────────── */
+
+/* Instrument Serif — primary display face. CDN-hosted; weights 400 + 400 italic. */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+/* ── Switzer (sans body) ───────────────────────────────────────── */
 @font-face {
   font-family: 'Switzer';
   src: url('/assets/fonts/switzer/Switzer-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  font-weight: 400; font-style: normal; font-display: swap;
 }
-
 @font-face {
   font-family: 'Switzer';
   src: url('/assets/fonts/switzer/Switzer-Semibold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+  font-weight: 600; font-style: normal; font-display: swap;
 }
-
 @font-face {
   font-family: 'Switzer';
   src: url('/assets/fonts/switzer/Switzer-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+  font-weight: 700; font-style: normal; font-display: swap;
 }
-
 @font-face {
   font-family: 'Switzer';
   src: url('/assets/fonts/switzer/Switzer-Extrabold.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+  font-weight: 800; font-style: normal; font-display: swap;
 }
-
 @font-face {
   font-family: 'Switzer';
   src: url('/assets/fonts/switzer/Switzer-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+  font-weight: 900; font-style: normal; font-display: swap;
 }
 
+/* ── Libre Baskerville (display fallback) ──────────────────────── */
 @font-face {
   font-family: 'Libre Baskerville';
   src: url('/assets/fonts/libre-baskerville/LibreBaskerville-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  font-weight: 400; font-style: normal; font-display: swap;
 }
-
 @font-face {
   font-family: 'Libre Baskerville';
   src: url('/assets/fonts/libre-baskerville/LibreBaskerville-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+  font-weight: 700; font-style: normal; font-display: swap;
 }
-
 @font-face {
   font-family: 'Libre Baskerville';
   src: url('/assets/fonts/libre-baskerville/LibreBaskerville-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+  font-weight: 400; font-style: italic; font-display: swap;
 }
 
 :root {
-  --font-accent: 'Libre Baskerville', Georgia, serif;
+  --font-display: 'Instrument Serif', 'Libre Baskerville', Georgia, serif;
+  --font-body:    'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-accent:  'Libre Baskerville', Georgia, serif;
 }
