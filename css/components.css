@@ -823,10 +823,131 @@
    Without these, the homepage .content-section rule (72px padding) leaves a
    huge gap above the first section ("What it is") and the stats-bar/body
    margins stack. Widen the reading column and close the gap. */
-.research-note .article-body { max-width: 760px; padding-top: 0; }
+/* Research-note — wide editorial layout: a left-rail heading beside a body
+   column, matching the canvas peptide page so the article integrates with the
+   rest of the site instead of floating as a narrow centered column.
+   CSS-only — the markdown keeps its <section class="content-section"><h2>… */
+.research-note .article-body { max-width: none; padding: 0 0 56px; }
 .research-note .stats-bar { margin: 28px 0 0; }
-.research-note .article-body .content-section:first-child { padding-top: 28px; }
-.research-note .article-body .content-section:first-child > h2 { margin-top: 0; }
+
+.research-note .article-body .content-section {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 700px);
+  column-gap: 56px;
+  row-gap: 0;
+  padding: 40px 0;
+  align-items: start;
+  border-bottom: none;
+  border-top: 1px solid var(--rule);
+}
+.research-note .article-body .content-section:first-child { border-top: none; padding-top: 32px; }
+.research-note .article-body .content-section > h2 {
+  grid-column: 1;
+  grid-row: 1 / 99;
+  position: sticky;
+  top: 88px;
+  align-self: start;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+.research-note .article-body .content-section > :not(h2) { grid-column: 2; }
+
+/* Non-section blocks (price band, disclaimer, references) align to the body column */
+.research-note .article-body > .price-cta,
+.research-note .article-body > .disclaimer,
+.research-note .article-body > .bibliography {
+  margin-left: 266px;
+  max-width: 700px;
+}
+.research-note .article-body > .bibliography { border-top: 1px solid var(--rule); padding-top: 32px; }
+
+@container app (max-width: 760px) {
+  .research-note .article-body .content-section { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
+  .research-note .article-body .content-section > h2 { position: static; grid-row: auto; font-size: 22px; margin-bottom: 6px; }
+  .research-note .article-body > .price-cta,
+  .research-note .article-body > .disclaimer,
+  .research-note .article-body > .bibliography { margin-left: 0; max-width: none; }
+}
+
+/* ============================================================
+   12. TAG PAGES
+   /tags/ (category index) and /tags/<slug>/ (per-category list).
+   Without these the card name renders identically to the body text.
+   ============================================================ */
+.tag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0;
+  border-top: 2px solid var(--ink);
+  margin: 28px 0;
+}
+@container app (min-width: 761px) {
+  .tag-grid { grid-template-columns: 1fr 1fr; column-gap: 48px; }
+}
+.tag-card,
+.tag-note-card {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 24px 0;
+  border: none;
+  border-bottom: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink);
+  transition: padding-left var(--t-fast);
+}
+.tag-card:hover,
+.tag-note-card:hover { background: transparent; padding-left: 8px; }
+
+.tag-card-name,
+.tag-note-card-name {
+  font-family: var(--display);
+  font-weight: var(--display-weight);
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  transition: color var(--t-fast);
+}
+.tag-card:hover .tag-card-name,
+.tag-note-card:hover .tag-note-card-name { color: var(--accent); }
+
+.tag-card-desc,
+.tag-note-card-desc {
+  font-family: var(--sans);
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--ink-2);
+  max-width: 680px;
+}
+.tag-card-count {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.tag-note-card-arrow {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+.tag-note-list { display: grid; gap: 0; border-top: 2px solid var(--ink); margin: 20px 0 0; }
+.back-link {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+  margin: 8px 0 24px;
+}
+.back-link:hover { color: var(--accent); }
 
 /* ============================================================
    10. RESPONSIVE
