@@ -1,8 +1,8 @@
 ---
 layout: layouts/base.njk
 title: "Peptide Price Lab - Per-mg Peptide Price Comparison Tool"
-description: "Compare research peptide prices per milligram across top vendors. Find the best value, optimize bundles, and track sources, all in one free tool."
-ogTitle: "Peptide Price Lab - Per-mg Peptide Price Comparison"
+description: "Compare research peptide prices per milligram across top vendors. Find the best value, optimize bundles, and track sources — all in one free tool."
+ogTitle: "Peptide Price Lab — Per-mg Peptide Price Comparison"
 ogDescription: "The free research tool for comparing peptide prices per mg across vendors. Stop overpaying. Start comparing."
 ogImage: "https://peptidepricelab.com/assets/og-image.png"
 schema:
@@ -13,84 +13,127 @@ schema:
   applicationCategory: "UtilitiesApplication"
   operatingSystem: "Web"
   description: "Per-mg peptide price comparison and bundle optimizer for research use."
-  offers:
-    "@type": "Offer"
-    price: "0"
-    priceCurrency: "USD"
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }
 ---
 
-<section class="home-hero">
-  <h1>Stop guessing. Start comparing.</h1>
-  <p class="lede">Peptide Price Lab calculates the real cost per milligram across every vendor, so you always know you are getting the best value on research peptides.</p>
-  <a href="{{ site.appUrl }}" class="btn-cta">Compare Prices Now &rarr;</a>
-  <p class="microcopy">Free &middot; No account required &middot; Research use only</p>
+{# ── Hero ───────────────────────────────────────────────────────────── #}
+<section class="hp-hero">
+  <div class="hp-hero-main">
+    <div class="eyebrow">The Cover Story · Issue Fourteen</div>
+    <h1 class="hp-hero-title">Stop guessing<br>what a milligram<br><span class="italic">actually costs.</span></h1>
+    <p class="hp-hero-lede">A free, vendor-neutral calculator for the only number that matters when you're sourcing research peptides — the price per milligram.</p>
+    <div class="hp-hero-cta">
+      <a href="{{ site.appUrl }}" class="btn-cta">Compare prices now →</a>
+      <a href="/start-here/" class="hp-hero-link">Or — read what peptides actually are</a>
+    </div>
+  </div>
+  <aside class="hp-receipt" aria-hidden="true">
+    <div class="hp-receipt-head">BPC-157 · Per-mg Receipt</div>
+    <div class="hp-receipt-row"><span>Vendor A · 5 mg · $28</span><span>$5.60</span></div>
+    <div class="hp-receipt-row"><span>Vendor B · 10 mg · $45</span><span>$4.50</span></div>
+    <div class="hp-receipt-row"><span>Vendor C · 5 mg · $34</span><span>$6.80</span></div>
+    <div class="hp-receipt-row"><span>Vendor D · 10 mg · $52</span><span>$5.20</span></div>
+    <div class="hp-receipt-rule"></div>
+    <div class="hp-receipt-row hp-receipt-best"><span>Best value</span><span>$4.50/mg</span></div>
+    <div class="hp-receipt-note">You'd pay 51% more buying the "cheap" vial.</div>
+  </aside>
 </section>
 
-<section class="content-section">
-  <div class="section-heading">What is Peptide Price Lab?</div>
-  <p>Peptide Price Lab is a free browser-based tool for researchers who want an apples-to-apples comparison of peptide prices. Vendors sell in different vial sizes, concentrations, and units, which makes direct price comparison nearly impossible without doing math.</p>
-  <p>Peptide Price Lab does the math for you. Enter any number of products from any number of sources, and the tool instantly shows you the cost per milligram for each one, side by side. It also includes a bundle optimizer to help you hit free-shipping thresholds across multiple vendors.</p>
+{# ── Trust bar ──────────────────────────────────────────────────────── #}
+<section class="hp-trust">
+  <div class="hp-trust-item"><span class="hp-trust-n">412</span><span class="hp-trust-l">Products tracked</span></div>
+  <div class="hp-trust-item"><span class="hp-trust-n">18</span><span class="hp-trust-l">Vendors indexed</span></div>
+  <div class="hp-trust-item"><span class="hp-trust-n">$0</span><span class="hp-trust-l">To use, ever</span></div>
+  <div class="hp-trust-item"><span class="hp-trust-n">Weekly</span><span class="hp-trust-l">Per-mg refresh</span></div>
 </section>
 
-<section class="content-section">
-  <div class="section-heading">How it works</div>
-  <div class="steps-grid">
-    <div class="step-card">
-      <div class="step-num">1</div>
-      <h3>Add your sources</h3>
-      <p>Enter the vendors you use or want to compare. Add their shipping thresholds and promo codes.</p>
+{# ── The Index ──────────────────────────────────────────────────────── #}
+<section class="hp-section">
+  <div class="hp-section-head">
+    <div class="hp-mark"><span class="hp-mark-num">§ 01</span> The Index</div>
+    <div>
+      <h2 class="hp-section-title">What we're <span class="italic">tracking</span> this week.</h2>
+      <p class="hp-section-dek">The peptides our readers are pricing most — with the current per-mg low and high across the eighteen vendors we index. Click any row for the research notes.</p>
     </div>
-    <div class="step-card">
-      <div class="step-num">2</div>
-      <h3>Enter peptide prices</h3>
-      <p>Add products with their price, quantity, and unit size. The tool calculates cost per mg automatically.</p>
+  </div>
+
+  <div class="hp-index">
+    <div class="hp-index-head">
+      <span>№</span><span>Compound</span><span>Notes</span><span>Per-mg range</span>
     </div>
-    <div class="step-card">
-      <div class="step-num">3</div>
-      <h3>Compare and optimize</h3>
-      <p>Sort by per-mg price, filter by peptide, or run the Bundle Optimizer to plan the most cost-effective order.</p>
+    {% set shown = 0 %}
+    {% for note in collections.researchNotes %}
+      {% if note.data.price and shown < 8 %}
+        {% set shown = shown + 1 %}
+        <a href="{{ note.url }}" class="hp-index-row">
+          <span class="hp-index-num">{{ '%02d' | format(shown) if false else shown }}</span>
+          <span class="hp-index-name">{{ note.data.peptideName or note.data.h1 or note.data.title }}</span>
+          <span class="hp-index-cat">{{ note.data.category or (note.data.tags[0] if note.data.tags) }}</span>
+          <span class="hp-index-price"><b>{{ note.data.price.low }}</b> — {{ note.data.price.high }} <i>/mg</i></span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <a href="/peptides/" class="hp-more">The full index, every compound →</a>
+</section>
+
+{# ── Editor's note ──────────────────────────────────────────────────── #}
+<section class="hp-section hp-section--paper">
+  <div class="hp-section-head">
+    <div class="hp-mark"><span class="hp-mark-num">§ 02</span> Editor's Note</div>
+    <div class="hp-editorial">
+      <p class="hp-editorial-lead"><span class="hp-dropcap">A</span> five-milligram vial for twenty-eight dollars <em>sounds</em> cheaper than a ten-milligram vial for forty-five. Per milligram, that "cheap" vial costs $5.60 against $4.50 for the larger one.</p>
+      <p>Multiply across a year of research and the difference isn't small — it's often the cost of a whole extra protocol. Vendors know this, which is precisely why pricing is rarely presented per milligram.</p>
+      <p>We built the Lab because nobody we trusted was doing the math out loud. We do use affiliate codes — but only when they're actually the better deal. If a vendor's running a sale that beats our code, we say so. That's what keeps the Lab free and ad-free.</p>
     </div>
   </div>
 </section>
 
-<section class="content-section">
-  <div class="section-heading">Why per-mg pricing matters</div>
-  <p>A 5 mg vial for $28 sounds cheaper than a 10 mg vial for $45, but it is not. Per milligram, that "cheap" vial costs $5.60/mg vs. $4.50/mg for the larger one. Multiply that across a full research protocol and the difference is significant.</p>
-  <p>Vendors know this, which is why pricing is rarely presented per mg. Peptide Price Lab removes that friction entirely, giving you the one number that actually matters for comparison: cost per milligram.</p>
-</section>
+{# ── Pledge ─────────────────────────────────────────────────────────── #}
+{% set pledgeVariant = "wide" %}
+{% include "partials/pledge.njk" %}
 
-<section class="content-section">
-  <div class="section-heading">Peptide Research Notes</div>
-  <p>Not sure where to start? Our research notes cover commonly tracked peptides, typical research context, and current price ranges across major vendors.</p>
-  <div class="peptide-cards">
-    <a href="/peptides/bpc-157/" class="peptide-card">BPC-157</a>
-    <a href="/peptides/tb-500/" class="peptide-card">TB-500</a>
-    <a href="/peptides/semaglutide/" class="peptide-card">Semaglutide</a>
-    <a href="/peptides/tirzepatide/" class="peptide-card">Tirzepatide</a>
-    <a href="/peptides/pt-141/" class="peptide-card">PT-141</a>
-    <a href="/peptides/ghrp-6/" class="peptide-card">GHRP-6</a>
-  </div>
-  <a href="/peptides/" class="btn-card">View all research notes &rarr;</a>
-</section>
-
-<section class="content-section">
-  <div class="section-heading">Frequently asked questions</div>
-  <div class="faq-list">
-    <div class="faq-item">
-      <h3>Is Peptide Price Lab free?</h3>
-      <p>Yes, completely free. No account needed. Your data stays in your browser unless you choose to enable cloud sync.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Does it work on mobile?</h3>
-      <p>Yes. The app is a Progressive Web App, so you can add it to your home screen on iOS or Android for a native-app-like experience.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Where does the pricing data come from?</h3>
-      <p>You enter it. Peptide Price Lab is a calculator, not a live price database. This keeps it accurate and vendor-agnostic.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Is this for human use?</h3>
-      <p>No. Peptide Price Lab is designed for research purposes only. Nothing on this site constitutes medical advice.</p>
+{# ── Sources ────────────────────────────────────────────────────────── #}
+<section class="hp-section">
+  <div class="hp-section-head">
+    <div class="hp-mark"><span class="hp-mark-num">§ 03</span> The Sources</div>
+    <div>
+      <h2 class="hp-section-title">The vendors, <span class="italic">indexed</span> &amp; annotated.</h2>
+      <p class="hp-section-dek">Eighteen vendors with current shipping &amp; COA notes — none of them paid to be here.</p>
     </div>
   </div>
+  <div class="hp-sources">
+    {% for v in ["Peptide Sciences","Core Peptides","Swiss Chems","Biotech Peptides","Loti Labs","Pinnacle Peptides"] %}
+      <a href="/sources/" class="hp-source-row"><span class="hp-source-name">{{ v }}</span><span class="hp-source-go">View →</span></a>
+    {% endfor %}
+  </div>
+  <a href="/sources/" class="hp-more">All 18 vendors →</a>
+</section>
+
+{# ── Dispatch ───────────────────────────────────────────────────────── #}
+<section class="hp-dispatch">
+  <div class="hp-dispatch-main">
+    <div class="eyebrow">The Saturday Dispatch</div>
+    <h2 class="hp-dispatch-title">Price drops, plain-language briefs, <span class="italic">one Saturday morning.</span></h2>
+    <p class="hp-dispatch-dek">A short, honest letter on what's moved in the per-mg market — and what new research is actually worth reading.</p>
+    {% if collections.dispatch %}
+      <div class="hp-dispatch-issues">
+        {% for issue in collections.dispatch %}
+          {% if loop.index <= 2 %}
+            <a href="{{ issue.url }}" class="hp-dispatch-issue">
+              <span class="hp-dispatch-num">{{ issue.data.issueNumber }}<br>{{ issue.data.date | readableDate }}</span>
+              <span class="hp-dispatch-headline">{{ issue.data.h1 or issue.data.title }}</span>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+  <form class="subscribe-form" action="{{ site.newsletterAction or '#' }}" method="post">
+    <span class="form-label">Subscribe — it's free</span>
+    <p class="form-prompt">One short letter, Saturday at 7&nbsp;a.m. Eastern.</p>
+    <input type="email" name="email" placeholder="you@example.com" required>
+    <button type="submit">Send me the Dispatch</button>
+    <div class="form-trust"><div>≈ 4,800 readers · No selling lists, ever</div></div>
+  </form>
 </section>

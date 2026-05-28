@@ -77,3 +77,24 @@ render (the rest of the page is unaffected), so you can roll it out gradually.
 Drop both files in at the paths above, rebuild, push. Then for each note, add the
 `price:` block (and `category`/`folio` if you want the folio eyebrow). Everything
 else is automatic.
+
+---
+
+# Home Page Template
+
+`src/index.njk` (REPLACE) is now the editorial homepage matching the canvas:
+editorial hero + per-mg "receipt" card, trust bar, **The Index** table, Editor's
+Note, the Pledge, a Sources teaser, and the Dispatch sign-up band. Styles live in
+`css/components.css` (§13, `hp-*` classes).
+
+**The Index table is data-driven:** it lists your research notes that have a
+`price:` block (newest/first 8), showing the per-mg low–high range and linking to
+each note. So as Cowork adds `price:` to each peptide note (per the contract
+above), they automatically populate the homepage index too — no separate edit.
+
+- The Dispatch band pulls the two latest issues from the `dispatch` collection.
+- The Sources teaser links to `/sources/` (vendor names are a short static list
+  in the template — edit inline if you want different ones).
+- Hero copy, trust-bar numbers, and the receipt card are plain markup in
+  `index.njk` — edit directly to taste.
+
