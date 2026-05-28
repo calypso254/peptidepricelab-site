@@ -41,15 +41,15 @@ schema:
 ---
 
   <!-- Section 1 -->
-  <div class="content-section">
-    <div class="section-heading">What it is</div>
+  <section class="content-section">
+    <h2>What it is</h2>
     <p>SS-31 is a synthetic tetrapeptide belonging to the Szeto-Schiller (SS) family of mitochondria-targeted compounds, named for its developers Hazel Szeto and Peter Schiller. Its sequence is D-Arg-2',6'-Dmt-Lys-Phe-NH2, where 2',6'-Dmt denotes 2',6'-dimethyltyrosine. The alternating aromatic and cationic residues allow it to penetrate cell membranes and concentrate selectively in the inner mitochondrial membrane, driven by the large electrochemical gradient across that membrane. Once there, it binds cardiolipin, a phospholipid unique to the inner mitochondrial membrane that is essential for organizing the electron transport chain complexes. <a href="#ref-1" class="cite">[1]</a></p>
     <p>Cardiolipin stabilization is the proposed central mechanism. When cardiolipin is oxidized (a consequence of mitochondrial oxidative stress), electron transport chain efficiency falls and reactive oxygen species production increases in a self-amplifying cycle. SS-31 interrupts this cycle by scavenging electrons before they can react with oxygen and by preserving cardiolipin's structural role. The compound is also known as elamipretide in clinical development (where it was studied under the name MTP-131 or Bendavia) and has been evaluated in Phase II trials for heart failure with preserved ejection fraction. It is not FDA-approved for any indication.</p>
-  </div>
+  </section>
 
   <!-- Section 2 -->
-  <div class="content-section">
-    <div class="section-heading">What researchers study it for</div>
+  <section class="content-section">
+    <h2>What researchers study it for</h2>
     <ul class="research-list">
       <li>
         <strong>Mitochondrial dysfunction and cardiolipin stabilization</strong>
@@ -72,18 +72,18 @@ schema:
         <span>In LPS-induced neuroinflammation mouse models, elamipretide treatment was associated with improved mitochondrial function in hippocampal tissue, reductions in synaptic protein loss, and attenuation of memory impairment on behavioral testing. <a href="#ref-2" class="cite">[2]</a> The study positioned mitochondrial dysfunction as a mediator of neuroinflammation-driven cognitive effects.</span>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!-- Section 3 -->
-  <div class="content-section">
-    <div class="section-heading">Research context</div>
+  <section class="content-section">
+    <h2>Research context</h2>
     <p>SS-31's evidence base spans a wide range of preclinical models and has progressed further into human trials than most research peptides, though it remains without an approved indication. The EMPOWER-HF Phase II trial and related studies examined elamipretide in heart failure with preserved ejection fraction (HFpEF), a condition where mitochondrial dysfunction is increasingly recognized as a driver. Results from those trials informed the mechanistic picture but did not yield an FDA approval. <a href="#ref-1" class="cite">[1]</a> <a href="#ref-2" class="cite">[2]</a></p>
     <p>The strongest mechanistic data come from rodent cardiac models and isolated mitochondria preparations from both rodents and human samples. The skeletal muscle ADP sensitivity findings are notable because they used human tissue, lending translational weight to the preclinical cardiac and neurological data. <a href="#ref-5" class="cite">[5]</a> Researchers reviewing this compound should distinguish between the rich in vitro and animal literature and the smaller, still-developing human clinical dataset. The research-grade compound sold by peptide vendors is not equivalent to the pharmaceutical-grade formulations used in clinical trials.</p>
-  </div>
+  </section>
 
   <!-- Section 4 -->
-  <div class="content-section">
-    <div class="section-heading">Typical research parameters</div>
+  <section class="content-section">
+    <h2>Typical research parameters</h2>
     <table class="params-table">
       <thead>
         <tr><th>Parameter</th><th>Detail</th></tr>
@@ -97,7 +97,7 @@ schema:
         <tr><td>Mitochondrial targeting</td><td>Concentrates in inner mitochondrial membrane driven by membrane potential; no external targeting sequence required <a href="#ref-1" class="cite">[1]</a></td></tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
   <!-- Price CTA -->
   <div class="price-cta">
@@ -115,8 +115,8 @@ schema:
   </div>
 
   <!-- Bibliography -->
-  <div class="content-section">
-    <div class="section-heading">References</div>
+  <section class="content-section">
+    <h2>References</h2>
     <ol class="ref-list">
       <li id="ref-1">
         <span class="ref-num">[1]</span>
@@ -154,11 +154,11 @@ schema:
         </span>
       </li>
     </ol>
-  </div>
+  </section>
 
   <!-- Related links -->
-  <div class="content-section">
-    <div class="section-heading">Related</div>
+  <section class="content-section">
+    <h2>Related</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/epithalon/">
         <span class="rl-icon">🔬</span>
@@ -182,4 +182,4 @@ schema:
         </span>
       </a>
     </div>
-  </div>
+  </section>

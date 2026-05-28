@@ -41,15 +41,15 @@ schema:
 ---
 
   <!-- Section 1 -->
-  <div class="content-section">
-    <div class="section-heading">What it is</div>
+  <section class="content-section">
+    <h2>What it is</h2>
     <p>CJC-1295 is a synthetic 29-amino acid peptide designed to mimic and extend the activity of endogenous growth hormone-releasing hormone (GHRH), the hypothalamic signal that instructs the pituitary to release growth hormone. Native GHRH has a half-life of only a few minutes because it is rapidly cleaved by the enzyme dipeptidyl peptidase IV (DPP-IV). CJC-1295 was engineered with a drug affinity complex (DAC) modification that allows it to bind reversibly to serum albumin, the most abundant protein in blood, extending its effective half-life to approximately 6 to 8 days in humans. <a href="#ref-1" class="cite">[1]</a></p>
     <p>The compound is sometimes called CJC-1295 with DAC to distinguish it from modified GRF(1-29), a related GHRH analog with a similar amino acid sequence but no albumin-binding modification and a much shorter half-life. The two are sold under similar names and are frequently confused in non-scientific sources. CJC-1295 is not approved by the FDA for any indication and is sold outside approved pharmaceutical channels as a research compound.</p>
-  </div>
+  </section>
 
   <!-- Section 2 -->
-  <div class="content-section">
-    <div class="section-heading">What researchers study it for</div>
+  <section class="content-section">
+    <h2>What researchers study it for</h2>
     <ul class="research-list">
       <li>
         <strong>Sustained GH and IGF-1 elevation</strong>
@@ -72,18 +72,18 @@ schema:
         <span>IGF-1 plays a broad role in glucose metabolism, protein synthesis, and lipid handling. The serum protein profiling study found that CJC-1295-induced IGF-1 elevation was accompanied by changes in multiple circulating proteins, including those involved in metabolic and inflammatory signaling pathways, though the clinical significance of these changes in healthy adults remains unclear. <a href="#ref-5" class="cite">[5]</a></span>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!-- Section 3 -->
-  <div class="content-section">
-    <div class="section-heading">Research context</div>
+  <section class="content-section">
+    <h2>Research context</h2>
     <p>The human evidence base for CJC-1295 is narrow but substantive for its primary endpoint: GH and IGF-1 elevation. The Teichman et al. 2006 JCEM trial remains the primary human RCT, enrolling 65 participants across multiple dose cohorts and establishing the pharmacokinetic profile that defines the compound. <a href="#ref-2" class="cite">[2]</a> The Ionescu and Frohman 2006 study provides the key finding that GH pulsatility is preserved, which distinguishes CJC-1295 from continuous GH infusion protocols in terms of physiological signaling. <a href="#ref-4" class="cite">[4]</a></p>
     <p>Neither study was powered to evaluate clinical outcomes like body composition, bone density, or metabolic markers over time. The animal research in GHRH knockout mice provides mechanistic grounding for what prolonged GHRH agonism can achieve in a deficient state, but those models do not translate directly to healthy or normally aging humans. <a href="#ref-3" class="cite">[3]</a> There are no published RCTs examining CJC-1295 in people with GH deficiency, in postmenopausal populations, or in studies longer than a few weeks. Researchers interested in GH axis modulation should treat the existing literature as early-stage pharmacokinetic evidence rather than a confirmed efficacy profile.</p>
-  </div>
+  </section>
 
   <!-- Section 4 -->
-  <div class="content-section">
-    <div class="section-heading">Typical research parameters</div>
+  <section class="content-section">
+    <h2>Typical research parameters</h2>
     <table class="params-table">
       <thead>
         <tr><th>Parameter</th><th>Detail</th></tr>
@@ -98,7 +98,7 @@ schema:
         <tr><td>Half-life in humans</td><td>Approximately 6–8 days (albumin-bound form) <a href="#ref-2" class="cite">[2]</a></td></tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
   <!-- Price CTA -->
   <div class="price-cta">
@@ -116,8 +116,8 @@ schema:
   </div>
 
   <!-- Bibliography -->
-  <div class="content-section">
-    <div class="section-heading">References</div>
+  <section class="content-section">
+    <h2>References</h2>
     <ol class="ref-list">
       <li id="ref-1">
         <span class="ref-num">[1]</span>
@@ -155,11 +155,11 @@ schema:
         </span>
       </li>
     </ol>
-  </div>
+  </section>
 
   <!-- Related links -->
-  <div class="content-section">
-    <div class="section-heading">Related</div>
+  <section class="content-section">
+    <h2>Related</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/ipamorelin/">
         <span class="rl-icon">🔬</span>
@@ -190,4 +190,4 @@ schema:
         </span>
       </a>
     </div>
-  </div>
+  </section>

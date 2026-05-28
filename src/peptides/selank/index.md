@@ -39,13 +39,13 @@ schema:
   dateModified: "2026-05-23"
 ---
 
-  <div class="content-section">
-    <div class="section-heading">What it is</div>
+  <section class="content-section">
+    <h2>What it is</h2>
     <p>Selank (also called TP-7) is a synthetic heptapeptide derived from tuftsin, a naturally occurring tetrapeptide fragment of immunoglobulin G involved in immune regulation. Russian researchers extended the tuftsin sequence to improve stability and central nervous system activity. Selank was developed at the Institute of Molecular Genetics in Moscow and has been approved by the Russian Ministry of Health as a nasal spray formulation for anxiety. It has not been approved by the FDA or EMA.</p>
-  </div>
+  </section>
 
-  <div class="content-section">
-    <div class="section-heading">What researchers study it for</div>
+  <section class="content-section">
+    <h2>What researchers study it for</h2>
     <ul class="research-list">
       <li>
         <strong>Anxiety and anxiolytic effects</strong>
@@ -68,16 +68,16 @@ schema:
         <span>Animal studies have investigated selank in the context of opioid and alcohol withdrawal. A 2022 study found that selank attenuated withdrawal signs in a morphine-dependence model in rats, extending research interest beyond anxiety into substance dependence research. <a href="#ref-1" class="cite">[1]</a></span>
       </li>
     </ul>
-  </div>
+  </section>
 
-  <div class="content-section">
-    <div class="section-heading">Research context</div>
+  <section class="content-section">
+    <h2>Research context</h2>
     <p>The evidence base for selank is predominantly from animal models and in vitro studies, with most published work originating from Russian research institutions. The compound has regulatory approval in Russia, which represents a higher evidentiary bar than most research peptides on this site, but the Russian approval does not extend to FDA or EMA jurisdictions. The single published human clinical trial (PMID 25176261) enrolled 60 patients and compared selank nasal spray to phenazepam in anxiety disorders, finding comparable efficacy with fewer side effects. <a href="#ref-3" class="cite">[3]</a> This study has no DOI and is published in a Russian-language journal, which limits accessibility for non-Russian researchers.</p>
     <p>The mechanistic work is reasonably consistent: multiple studies point toward GABAergic modulation as a central mechanism, and the behavioral animal data on anxiolytic effects has been replicated across several labs. <a href="#ref-2" class="cite">[2]</a> <a href="#ref-5" class="cite">[5]</a> The gap is the near-complete absence of blinded, controlled human trials published in peer-reviewed English-language journals. Researchers interested in selank should treat the evidence as promising but preliminary by international clinical standards.</p>
-  </div>
+  </section>
 
-  <div class="content-section">
-    <div class="section-heading">Typical research parameters</div>
+  <section class="content-section">
+    <h2>Typical research parameters</h2>
     <table class="params-table">
       <thead><tr><th>Parameter</th><th>Detail</th></tr></thead>
       <tbody>
@@ -88,7 +88,7 @@ schema:
         <tr><td>Administration studied</td><td>Intranasal administration (approved Russian formulation); subcutaneous injection (animal studies)</td></tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
   <div class="price-cta">
     <div>
@@ -99,8 +99,8 @@ schema:
     <a class="btn-price" href="https://app.peptidepricelab.com">Compare prices</a>
   </div>
 
-  <div class="content-section">
-    <div class="section-heading">References</div>
+  <section class="content-section">
+    <h2>References</h2>
     <ol class="ref-list">
       <li id="ref-1">
         <span class="ref-num">[1]</span>
@@ -123,12 +123,12 @@ schema:
         <span class="ref-text">Filatova E, Kasian A, Kolomin T, et al. <em>GABA, Selank, and Olanzapine Affect the Expression of Genes Involved in GABAergic Neurotransmission in IMR-32 Cells.</em> Frontiers in pharmacology. 2017;8. <a href="https://pubmed.ncbi.nlm.nih.gov/28293190/" target="_blank" rel="noopener">PubMed ↗</a></span>
       </li>
     </ol>
-  </div>
+  </section>
 
   <div class="disclaimer">All content on Peptide Price Lab is for informational and research purposes only. Nothing here constitutes medical advice, and these compounds are not intended for human use. Always consult a licensed healthcare provider.</div>
 
-  <div class="content-section">
-    <div class="section-heading">Related research notes</div>
+  <section class="content-section">
+    <h2>Related research notes</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/for-women/">
         <span class="rl-icon">📖</span>
@@ -143,4 +143,4 @@ schema:
         <div class="rl-text"><strong>Sources Directory</strong><span>Research vendors carrying Selank, with purity information and pricing.</span></div>
       </a>
     </div>
-  </div>
+  </section>

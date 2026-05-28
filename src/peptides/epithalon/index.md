@@ -41,14 +41,14 @@ schema:
 ---
 
   <!-- SECTION 1: WHAT IT IS -->
-  <div class="content-section">
-    <div class="section-heading">What it is</div>
+  <section class="content-section">
+    <h2>What it is</h2>
     <p>Epithalon (also written Epitalon) is a synthetic tetrapeptide with the amino acid sequence Ala-Glu-Asp-Gly (AEDG). It was synthesized from Epithalamin, a polypeptide extract of the bovine pineal gland, and first described by researchers at the St. Petersburg Institute of Bioregulation and Gerontology. It does not occur in this exact four-amino-acid form naturally; it is a synthetic analog developed to replicate the active region of the pineal extract.</p>
-  </div>
+  </section>
 
   <!-- SECTION 2: WHAT RESEARCHERS STUDY IT FOR -->
-  <div class="content-section">
-    <div class="section-heading">What researchers study it for</div>
+  <section class="content-section">
+    <h2>What researchers study it for</h2>
     <ul class="research-list">
       <li>
         <strong>Telomere elongation and telomerase activation</strong>
@@ -71,18 +71,18 @@ schema:
         <span>The same 2025 retinal cell study also examined epithalon's effect on wound healing rate in an in vitro scratch assay, finding improved wound closure in high-glucose conditions compared to untreated controls. The proposed mechanism involves both antioxidant activity and inhibition of epithelial-to-mesenchymal transition (a cellular process involved in tissue remodeling). <a href="#ref-6" class="cite">[6]</a></span>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!-- SECTION 3: RESEARCH CONTEXT -->
-  <div class="content-section">
-    <div class="section-heading">Research context</div>
+  <section class="content-section">
+    <h2>Research context</h2>
     <p>The evidence base for epithalon is predominantly preclinical. The most-cited work comes from a single Russian research group (Khavinson and colleagues at the St. Petersburg Institute of Bioregulation and Gerontology), which has produced the majority of published animal and cell studies since the early 2000s. A 2025 comprehensive review acknowledged this history while noting that the telomere-elongation findings have now been independently replicated in human cell lines by a separate research group. <a href="#ref-1" class="cite">[1]</a> <a href="#ref-2" class="cite">[2]</a></p>
     <p>No peer-reviewed human clinical trials for epithalon have been published as of 2026. The animal lifespan studies used rodent models and involved subcutaneous injection protocols over the animals' full lifetimes. The in vitro telomere data, while conducted in human cells, does not translate directly to human outcomes. Researchers evaluating epithalon should weigh the mechanistic interest of the telomere findings against the absence of human safety and efficacy data.</p>
-  </div>
+  </section>
 
   <!-- SECTION 4: RESEARCH PARAMETERS -->
-  <div class="content-section">
-    <div class="section-heading">Typical research parameters</div>
+  <section class="content-section">
+    <h2>Typical research parameters</h2>
     <table class="params-table">
       <thead>
         <tr>
@@ -113,7 +113,7 @@ schema:
         </tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
   <!-- PRICE CTA -->
   <div class="price-cta">
@@ -126,8 +126,8 @@ schema:
   </div>
 
   <!-- BIBLIOGRAPHY -->
-  <div class="content-section">
-    <div class="section-heading">References</div>
+  <section class="content-section">
+    <h2>References</h2>
     <ol class="ref-list">
       <li id="ref-1">
         <span class="ref-num">[1]</span>
@@ -154,11 +154,11 @@ schema:
         <span class="ref-text">Gatta M, Dovizio M, Milillo C, et al. <em>The Antioxidant Tetrapeptide Epitalon Enhances Delayed Wound Healing in an in Vitro Model of Diabetic Retinopathy.</em> Stem cell reviews and reports. 2025;21. <a href="https://pubmed.ncbi.nlm.nih.gov/40493162/" target="_blank" rel="noopener">PubMed ↗</a></span>
       </li>
     </ol>
-  </div>
+  </section>
 
   <!-- RELATED LINKS -->
-  <div class="content-section">
-    <div class="section-heading">Related research notes</div>
+  <section class="content-section">
+    <h2>Related research notes</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/ghk-cu/">
         <span class="rl-icon">🔬</span>
@@ -189,7 +189,7 @@ schema:
         </div>
       </a>
     </div>
-  </div>
+  </section>
 
   <!-- DISCLAIMER -->
   <div class="disclaimer">

@@ -48,14 +48,14 @@ schema:
   </div>
 
   <!-- SECTION 1: WHAT IT IS -->
-  <div class="content-section">
-    <div class="section-heading">What it is</div>
+  <section class="content-section">
+    <h2>What it is</h2>
     <p>PT-141 (bremelanotide) is a synthetic cyclic heptapeptide and an agonist at melanocortin receptors, particularly MC3R and MC4R in the central nervous system. It was derived from Melanotan II, an earlier melanocortin peptide studied for tanning and sexual function. Unlike the GLP-1 agonists, which act peripherally, bremelanotide acts primarily in the brain on pathways involved in sexual desire. It is marketed as Vyleesi for the FDA-approved prescription indication.</p>
-  </div>
+  </section>
 
   <!-- SECTION 2: WHAT RESEARCHERS STUDY IT FOR -->
-  <div class="content-section">
-    <div class="section-heading">What researchers study it for</div>
+  <section class="content-section">
+    <h2>What researchers study it for</h2>
     <ul class="research-list">
       <li>
         <strong>Hypoactive sexual desire disorder (HSDD) in premenopausal women</strong>
@@ -78,18 +78,18 @@ schema:
         <span>Researchers have studied how MC4R agonism in the hypothalamus and other brain regions modulates the neural pathways involved in sexual arousal and desire. This work extends beyond bremelanotide itself to the broader question of central nervous system targets for female sexual dysfunction. <a href="#ref-3" class="cite">[3]</a></span>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!-- SECTION 3: RESEARCH CONTEXT -->
-  <div class="content-section">
-    <div class="section-heading">Research context</div>
+  <section class="content-section">
+    <h2>Research context</h2>
     <p>The evidence base for PT-141 is among the strongest of any peptide on this site: two Phase 3 randomized controlled trials (the RECONNECT studies) were the basis for FDA approval in 2019, and the long-term safety data extends to 52 weeks. <a href="#ref-1" class="cite">[1]</a> <a href="#ref-2" class="cite">[2]</a> The approval was specifically for premenopausal women with generalized, acquired HSDD. The drug has not been approved for men or for postmenopausal women.</p>
     <p>It is worth noting that the effect sizes in the RECONNECT trials, while statistically significant, were modest. A 2024 critical reanalysis concluded that the magnitude of improvement in satisfying sexual events and desire scores was small relative to placebo, and that the clinical meaningfulness of the FDA's chosen outcome measures remains contested in the research literature. <a href="#ref-5" class="cite">[5]</a> Researchers and patients should weigh the statistical significance of the trial results against the practical magnitude of benefit and the frequency of adverse effects, particularly nausea (reported by approximately 40% of participants in the pivotal trials).</p>
-  </div>
+  </section>
 
   <!-- SECTION 4: RESEARCH PARAMETERS -->
-  <div class="content-section">
-    <div class="section-heading">Typical research parameters</div>
+  <section class="content-section">
+    <h2>Typical research parameters</h2>
     <table class="params-table">
       <thead>
         <tr>
@@ -120,7 +120,7 @@ schema:
         </tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
   <!-- PRICE CTA -->
   <div class="price-cta">
@@ -133,8 +133,8 @@ schema:
   </div>
 
   <!-- BIBLIOGRAPHY -->
-  <div class="content-section">
-    <div class="section-heading">References</div>
+  <section class="content-section">
+    <h2>References</h2>
     <ol class="ref-list">
       <li id="ref-1">
         <span class="ref-num">[1]</span>
@@ -161,7 +161,7 @@ schema:
         <span class="ref-text">Koochaki P, Revicki D, Wilson H, et al. <em>The Patient Experience of Premenopausal Women Treated with Bremelanotide for Hypoactive Sexual Desire Disorder: RECONNECT Exit Study Results.</em> Journal of women's health (2002). 2021;30. <a href="https://pubmed.ncbi.nlm.nih.gov/33538638/" target="_blank" rel="noopener">PubMed ↗</a></span>
       </li>
     </ol>
-  </div>
+  </section>
 
   <!-- DISCLAIMER -->
   <div class="disclaimer">
@@ -169,8 +169,8 @@ schema:
   </div>
 
   <!-- RELATED LINKS -->
-  <div class="content-section">
-    <div class="section-heading">Related research notes</div>
+  <section class="content-section">
+    <h2>Related research notes</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/for-women/">
         <span class="rl-icon">📖</span>
@@ -201,4 +201,4 @@ schema:
         </div>
       </a>
     </div>
-  </div>
+  </section>

@@ -85,15 +85,15 @@ schema:
   </div>
 
   <!-- SECTION: WHY THESE TWO -->
-  <div class="content-section">
-    <div class="section-heading">Why researchers study these together</div>
+  <section class="content-section">
+    <h2>Why researchers study these together</h2>
     <p>GHK-Cu and Epithalon appear frequently in the same longevity and anti-aging research discussions because they are proposed to address different biological mechanisms involved in aging. GHK-Cu (glycyl-L-histidyl-L-lysine-copper) is a copper-binding peptide that occurs naturally in human plasma; serum levels decline significantly between age 20 and 60. Research interest centers on its effects on collagen synthesis, skin remodeling, and gene expression patterns associated with aging in the extracellular matrix.</p>
     <p>Epithalon (Ala-Glu-Asp-Gly) is a synthetic tetrapeptide derived from the pineal gland extract Epithalamin. Research interest centers on telomere length and telomerase activity: the cellular aging clock that operates independently of the extracellular environment. The two compounds are studied at different biological scales. GHK-Cu research focuses on tissue-level and matrix-level changes; Epithalon research focuses on intracellular and chromosomal mechanisms. This is the basis for the pairing in anti-aging research protocols.</p>
-  </div>
+  </section>
 
   <!-- SECTION: MECHANISM COMPARISON -->
-  <div class="content-section">
-    <div class="section-heading">How the research areas differ</div>
+  <section class="content-section">
+    <h2>How the research areas differ</h2>
 
     <table class="comparison-table">
       <thead>
@@ -133,11 +133,11 @@ schema:
     </table>
 
     <div class="note-box">Neither compound has an approved human pharmaceutical form. The evidence base for both is predominantly preclinical. The pairing is based on complementary proposed mechanisms, not on a study testing the combination directly. Researchers evaluating this protocol should read the individual research notes for each compound.</div>
-  </div>
+  </section>
 
   <!-- SECTION: RESEARCH AREAS -->
-  <div class="content-section">
-    <div class="section-heading">What the research has examined</div>
+  <section class="content-section">
+    <h2>What the research has examined</h2>
     <ul class="research-list">
       <li>
         <strong>Skin collagen and extracellular matrix (GHK-Cu)</strong>
@@ -160,18 +160,18 @@ schema:
         <span>Epithalon's origin as a pineal peptide analog has led researchers to study its effects on melatonin regulation. Research suggests it may modulate pineal gland output, which declines with age. Melatonin decline is associated with a range of age-related changes in sleep, immune function, and hormonal regulation.</span>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!-- SECTION: EVIDENCE CONTEXT -->
-  <div class="content-section">
-    <div class="section-heading">Research context</div>
+  <section class="content-section">
+    <h2>Research context</h2>
     <p>The evidence for GHK-Cu is stronger than for most research peptides at the mechanistic level: the collagen synthesis findings in fibroblast cultures have been replicated across multiple laboratories, and the compound has decades of cosmetic research behind it. The gap is at the clinical level: there are no human RCTs for systemic injectable GHK-Cu, and the evidence for cosmetic topical forms is not directly transferable to injectable research protocols.</p>
     <p>Epithalon's evidence base is more concentrated. Most of the published animal work comes from a single Russian research group, which limits independent replication for the lifespan findings. The telomere elongation mechanism has now been replicated in vitro by an independent group (2025), which strengthens the cellular mechanism argument. The absence of any human clinical data for either compound means researchers are working with mechanistic hypotheses, not confirmed human outcomes.</p>
-  </div>
+  </section>
 
   <!-- SECTION: PRICING -->
-  <div class="content-section">
-    <div class="section-heading">Price per mg: what to expect</div>
+  <section class="content-section">
+    <h2>Price per mg: what to expect</h2>
     <p>GHK-Cu is typically sold in larger vials than Epithalon because it is used at higher per-application amounts in cosmetic research. Epithalon vials tend to be smaller. The per-mg prices below reflect typical vendor pricing as of 2025.</p>
 
     <table class="price-table">
@@ -200,11 +200,11 @@ schema:
     </table>
 
     <div class="note-box">GHK-Cu pricing varies significantly by purity grade and whether it includes third-party testing. Epithalon at the low end of the price range may not include COA (certificate of analysis) documentation. The PPL price tool lets you calculate your real per-mg cost across vendors for both compounds before committing to a purchase.</div>
-  </div>
+  </section>
 
   <!-- RELATED LINKS -->
-  <div class="content-section">
-    <div class="section-heading">Related research notes</div>
+  <section class="content-section">
+    <h2>Related research notes</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/ghk-cu/">
         <span class="rl-icon">🔬</span>
@@ -235,7 +235,7 @@ schema:
         </div>
       </a>
     </div>
-  </div>
+  </section>
 
   <!-- DISCLAIMER -->
   <div class="disclaimer">

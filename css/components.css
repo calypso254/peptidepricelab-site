@@ -747,20 +747,24 @@
 .article-body .content-section > p { max-width: none; }
 
 /* Research areas list — term + explanation per row */
-.research-list { list-style: none; padding: 0; margin: 8px 0 0; }
-.research-list li {
+.research-list,
+.article-body ul.research-list { list-style: none; padding-left: 0; margin: 8px 0 0; }
+.research-list li,
+.article-body .research-list li {
   display: grid;
   gap: 4px;
   padding: 18px 0;
+  margin-bottom: 0;
 }
 .research-list strong {
-  font-family: var(--sans);
-  font-weight: 700;
-  font-size: 17.5px;
-  letter-spacing: 0;
+  font-family: var(--display);
+  font-weight: var(--display-weight);
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
   color: var(--ink);
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 .research-list span {
   font-family: var(--sans);

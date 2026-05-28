@@ -41,15 +41,15 @@ schema:
 ---
 
   <!-- Section 1 -->
-  <div class="content-section">
-    <div class="section-heading">What it is</div>
+  <section class="content-section">
+    <h2>What it is</h2>
     <p>Retatrutide is a synthetic peptide developed by Eli Lilly that acts as a single-molecule agonist at three distinct hormone receptors: the glucose-dependent insulinotropic polypeptide (GIP) receptor, the glucagon-like peptide-1 (GLP-1) receptor, and the glucagon receptor. This triple receptor engagement is the key distinction from earlier obesity drugs. GLP-1 agonists like semaglutide activate one receptor; dual agonists like tirzepatide activate two (GIP and GLP-1). Retatrutide adds glucagon receptor agonism, which independently promotes energy expenditure and fatty acid oxidation in the liver. <a href="#ref-3" class="cite">[3]</a></p>
     <p>The compound is not FDA-approved and is not available through any approved pharmaceutical channel. As of 2026, it is in Phase 3 clinical trials for obesity and type 2 diabetes under Eli Lilly's development program. Research-grade retatrutide sold by peptide vendors is not equivalent to the pharmaceutical compound used in those trials.</p>
-  </div>
+  </section>
 
   <!-- Section 2 -->
-  <div class="content-section">
-    <div class="section-heading">What researchers study it for</div>
+  <section class="content-section">
+    <h2>What researchers study it for</h2>
     <ul class="research-list">
       <li>
         <strong>Obesity and body weight reduction</strong>
@@ -68,18 +68,18 @@ schema:
         <span>Preclinical work has examined whether retatrutide-associated weight loss modulates tumor biology in obesity-associated cancers. A 2025 study in NPJ Metabolic Health and Disease found that retatrutide treatment in preclinical models reduced obesity-driven tumor growth, suggesting potential research applications beyond metabolic endpoints. <a href="#ref-4" class="cite">[4]</a></span>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!-- Section 3 -->
-  <div class="content-section">
-    <div class="section-heading">Research context</div>
+  <section class="content-section">
+    <h2>Research context</h2>
     <p>Retatrutide has the strongest Phase 2 weight loss data of any obesity compound yet published. The 24% mean weight reduction in the NEJM trial is clinically meaningful by any benchmark, and the MASLD findings add a hepatic dimension that positions the compound for a broad cardiometabolic indication. <a href="#ref-1" class="cite">[1]</a> <a href="#ref-2" class="cite">[2]</a> The addition of glucagon receptor agonism is both the compound's distinguishing feature and the element requiring the most careful safety monitoring: sustained glucagon activity can raise blood glucose and heart rate, and the long-term metabolic consequences of triple receptor co-stimulation in humans are still being characterized in the ongoing Phase 3 program.</p>
     <p>The obesity drug landscape is moving rapidly. Tirzepatide (dual GIP/GLP-1) was approved in 2022 and 2023, and retatrutide may follow pending Phase 3 outcomes. Researchers following this compound should treat the Phase 2 findings as hypothesis-generating: the sample size, duration, and patient populations in those trials were not designed to detect cardiovascular outcomes, long-term weight maintenance, or safety signals requiring larger exposure. Phase 3 results will be the determining evidence. <a href="#ref-3" class="cite">[3]</a></p>
-  </div>
+  </section>
 
   <!-- Section 4 -->
-  <div class="content-section">
-    <div class="section-heading">Typical research parameters</div>
+  <section class="content-section">
+    <h2>Typical research parameters</h2>
     <table class="params-table">
       <thead>
         <tr><th>Parameter</th><th>Detail</th></tr>
@@ -93,7 +93,7 @@ schema:
         <tr><td>Regulatory status</td><td>Not FDA-approved; Phase 3 trials ongoing as of 2026</td></tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
   <!-- Price CTA -->
   <div class="price-cta">
@@ -111,8 +111,8 @@ schema:
   </div>
 
   <!-- Bibliography -->
-  <div class="content-section">
-    <div class="section-heading">References</div>
+  <section class="content-section">
+    <h2>References</h2>
     <ol class="ref-list">
       <li id="ref-1">
         <span class="ref-num">[1]</span>
@@ -143,11 +143,11 @@ schema:
         </span>
       </li>
     </ol>
-  </div>
+  </section>
 
   <!-- Related links -->
-  <div class="content-section">
-    <div class="section-heading">Related</div>
+  <section class="content-section">
+    <h2>Related</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/semaglutide/">
         <span class="rl-icon">🔬</span>
@@ -171,4 +171,4 @@ schema:
         </span>
       </a>
     </div>
-  </div>
+  </section>

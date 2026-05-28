@@ -86,15 +86,15 @@ schema:
   </div>
 
   <!-- SECTION 1: WHAT THE COMBINATION IS -->
-  <div class="content-section">
-    <div class="section-heading">What the Wolverine blend is</div>
+  <section class="content-section">
+    <h2>What the Wolverine blend is</h2>
     <p>Wolverine is a pre-mixed blend of BPC-157 and TB-500 sold by many research vendors under that name. The name is community-generated — it does not come from any pharmaceutical or clinical source — but it has stuck, and most vendors who carry the combination simply call it Wolverine. Researchers and enthusiasts are drawn to the pairing because both peptides are studied for tissue repair and wound healing, and their proposed mechanisms are largely complementary.</p>
     <p>Some researchers prefer to buy the two compounds separately and combine them at their own ratios rather than purchasing the pre-mixed blend. Either way, the underlying compounds are the same: BPC-157 is a synthetic pentadecapeptide (15 amino acids) derived from a protein found in gastric juice, and TB-500 is a synthetic fragment of thymosin beta-4, a protein involved in actin regulation and cell motility. Both are research-only compounds with no approved human pharmaceutical applications.</p>
-  </div>
+  </section>
 
   <!-- SECTION 2: MECHANISM COMPARISON -->
-  <div class="content-section">
-    <div class="section-heading">How the mechanisms differ</div>
+  <section class="content-section">
+    <h2>How the mechanisms differ</h2>
     <p>Researchers studying these two compounds together often note that they appear to work through distinct pathways, which is part of the rationale for studying them in combination. The table below summarizes what published research has examined for each.</p>
 
     <table class="mechanism-table">
@@ -130,11 +130,11 @@ schema:
     </table>
 
     <div class="note-box">The overlap in research areas (tendon and muscle tissue) is why these two peptides are frequently discussed together. No published study has tested the combination directly in humans. The complementary mechanism argument is theoretical, based on the distinct pathways each compound appears to engage in preclinical work.</div>
-  </div>
+  </section>
 
   <!-- SECTION 3: WHAT RESEARCHERS STUDY THEM FOR TOGETHER -->
-  <div class="content-section">
-    <div class="section-heading">Research areas covered by both compounds</div>
+  <section class="content-section">
+    <h2>Research areas covered by both compounds</h2>
     <ul class="research-list">
       <li>
         <strong>Tendon and ligament tissue</strong>
@@ -153,18 +153,18 @@ schema:
         <span>Muscle injury models in rodents have been used to study both compounds, particularly in the context of crush injury and ischemic damage. This is the research context that generates the most community interest in the combination.</span>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!-- SECTION 4: RESEARCH CONTEXT -->
-  <div class="content-section">
-    <div class="section-heading">Research context</div>
+  <section class="content-section">
+    <h2>Research context</h2>
     <p>The evidence base for both compounds is almost entirely preclinical. BPC-157 has been studied extensively in rodent models across a wide range of tissue types, but as of 2025 no peer-reviewed human clinical trials have been published. TB-500 (the synthetic fragment) shares this limitation for most applications, though the full thymosin beta-4 protein has advanced to Phase 3 trial data in the context of dry eye and ocular surface disease.</p>
     <p>The Wolverine name is community-generated and does not appear in peer-reviewed literature. Researchers interested in the combination — whether purchased as a pre-mixed blend or self-assembled from individual vials — are typically extrapolating from two separate bodies of preclinical work. Anyone evaluating this combination should read the individual research notes for each compound to understand where the evidence is stronger and where it remains speculative.</p>
-  </div>
+  </section>
 
   <!-- SECTION 5: PRICING DETAIL -->
-  <div class="content-section">
-    <div class="section-heading">Price per mg: what to expect</div>
+  <section class="content-section">
+    <h2>Price per mg: what to expect</h2>
     <p>Both compounds are sold as lyophilized powder in 5 mg vials by most research vendors. Pricing varies significantly across vendors based on purity certification, batch testing practices, and shipping region. The ranges below reflect typical vendor pricing as of 2025 and should be verified with the price tool.</p>
 
     <table class="price-table">
@@ -193,7 +193,7 @@ schema:
     </table>
 
     <div class="note-box">Price per mg is a more meaningful comparison than price per vial, because vendors offer different vial sizes. A $40 vial of BPC-157 at 10 mg is a better deal than a $25 vial at 5 mg. The PPL price tool lets you enter any vial size and price to get the actual per-mg cost across vendors.</div>
-  </div>
+  </section>
 
   <!-- DISCLAIMER -->
   <div class="disclaimer">
@@ -202,7 +202,7 @@ schema:
 
   <!-- RELATED LINKS -->
   <div class="related-section">
-    <div class="section-heading">Related research notes</div>
+    <h2>Related research notes</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/bpc-157/">
         <span class="rl-icon">🔬</span>

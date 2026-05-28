@@ -41,15 +41,15 @@ schema:
 ---
 
   <!-- Section 1 -->
-  <div class="content-section">
-    <div class="section-heading">What it is</div>
+  <section class="content-section">
+    <h2>What it is</h2>
     <p>IGF-1 LR3, also written Long R3 IGF-I, is an 83-amino acid synthetic analog of human insulin-like growth factor-1 (IGF-1). It differs from native IGF-1 in two ways: a 13-amino acid extension at the N-terminus and a substitution of arginine (Arg) for glutamic acid at position 3. Together these changes reduce the molecule's affinity for IGF-binding proteins (IGFBPs) by roughly 500-fold compared to native IGF-1. Because IGFBPs sequester most circulating IGF-1 and limit its availability to tissues, the low-binding analog remains biologically active in circulation far longer. <a href="#ref-1" class="cite">[1]</a></p>
     <p>The practical result is a half-life of approximately 20 to 30 hours in animal studies, compared to the 12 to 15 minutes typical of native IGF-1. IGF-1 LR3 was originally developed as a research tool to study IGF-1 biology without the confounding effect of binding proteins, and it remains widely used as a cell culture supplement in tissue engineering and stem cell research. It is not FDA-approved for any use in humans, and unlike native IGF-1 (mecasermin, sold as Increlex), it has no approved pharmaceutical form.</p>
-  </div>
+  </section>
 
   <!-- Section 2 -->
-  <div class="content-section">
-    <div class="section-heading">What researchers study it for</div>
+  <section class="content-section">
+    <h2>What researchers study it for</h2>
     <ul class="research-list">
       <li>
         <strong>Anti-catabolic effects and muscle protein preservation</strong>
@@ -68,18 +68,18 @@ schema:
         <span>Because LR3 IGF-I bypasses endogenous IGF-binding proteins, it has been widely used in cell biology to study IGF-1 receptor signaling without the complication of IGFBP competition. This makes it a standard reagent in cell culture protocols for applications including skeletal muscle satellite cell activation, chondrocyte proliferation, and growth factor pathway research. The in vitro literature on LR3 IGF-I is substantially larger than the in vivo literature.</span>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!-- Section 3 -->
-  <div class="content-section">
-    <div class="section-heading">Research context</div>
+  <section class="content-section">
+    <h2>Research context</h2>
     <p>The key thing to understand about IGF-1 LR3's evidence base is that it is entirely preclinical. Every published study examining its in vivo effects has been conducted in animal models (primarily rats, pigs, and cattle), with no peer-reviewed human clinical trials in the literature. This is a meaningful distinction. The human IGF-1 literature, which is substantial, uses native recombinant IGF-1 (mecasermin), not the LR3 analog. Researchers and consumers who extrapolate from human mecasermin trials to IGF-1 LR3 are treating two different molecules as equivalent, which the pharmacokinetic and receptor data do not fully support. <a href="#ref-1" class="cite">[1]</a> <a href="#ref-2" class="cite">[2]</a></p>
     <p>The animal data are also internally inconsistent in ways worth noting. While rat studies consistently show anabolic and anti-catabolic activity for LR3 IGF-I, at least one pig study found that the analog reduced growth rather than promoting it, apparently by suppressing endogenous GH and IGF-1 feedback loops through a mechanism not observed in rodents. Species differences in IGFBP expression and IGF-1 axis regulation are significant, which limits the confidence with which rodent findings can be generalized to humans. <a href="#ref-4" class="cite">[4]</a> The compound's primary validated role is as a cell culture reagent, and that is where the evidence is most robust.</p>
-  </div>
+  </section>
 
   <!-- Section 4 -->
-  <div class="content-section">
-    <div class="section-heading">Typical research parameters</div>
+  <section class="content-section">
+    <h2>Typical research parameters</h2>
     <table class="params-table">
       <thead>
         <tr><th>Parameter</th><th>Detail</th></tr>
@@ -94,7 +94,7 @@ schema:
         <tr><td>Half-life (animal models)</td><td>Approximately 20–30 hours vs. 12–15 minutes for native IGF-1 <a href="#ref-1" class="cite">[1]</a></td></tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
   <!-- Price CTA -->
   <div class="price-cta">
@@ -112,8 +112,8 @@ schema:
   </div>
 
   <!-- Bibliography -->
-  <div class="content-section">
-    <div class="section-heading">References</div>
+  <section class="content-section">
+    <h2>References</h2>
     <ol class="ref-list">
       <li id="ref-1">
         <span class="ref-num">[1]</span>
@@ -151,11 +151,11 @@ schema:
         </span>
       </li>
     </ol>
-  </div>
+  </section>
 
   <!-- Related links -->
-  <div class="content-section">
-    <div class="section-heading">Related</div>
+  <section class="content-section">
+    <h2>Related</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/cjc-1295/">
         <span class="rl-icon">🔬</span>
@@ -179,4 +179,4 @@ schema:
         </span>
       </a>
     </div>
-  </div>
+  </section>

@@ -40,14 +40,14 @@ schema:
   dateModified: "2026-05-24"
 ---
 
-<div class="content-section">
-  <div class="section-heading">What it is</div>
+<section class="content-section">
+  <h2>What it is</h2>
   <p>Semax is a synthetic heptapeptide built from the N-terminal fragment of adrenocorticotropic hormone (ACTH), specifically residues 4 through 7, extended with a Pro-Gly-Pro tripeptide to improve metabolic stability. Its sequence is Met-Glu-His-Phe-Pro-Gly-Pro, and it was developed at the Institute of Molecular Genetics of the Russian Academy of Sciences. It is sometimes written as ACTH(4-7)PGP in the literature.</p>
   <p>Semax is approved in Russia as a nasal spray for conditions including ischemic stroke, optic nerve disease, and cognitive decline. It has not received approval from the FDA or EMA, and outside of Russia it is sold as a research compound. It is closely related to Selank, another synthetic peptide developed by the same Russian research group, though the two have distinct primary research profiles.</p>
-</div>
+</section>
 
-<div class="content-section">
-  <div class="section-heading">What researchers study it for</div>
+<section class="content-section">
+  <h2>What researchers study it for</h2>
   <ul class="research-list">
     <li>
       <strong>Neuroprotection following ischemic injury</strong>
@@ -70,16 +70,16 @@ schema:
       <span>Animal research has examined whether Semax can counteract neurochemical disruptions induced by early-life SSRI exposure. One rat study found that Semax administration reduced anxiety-like behavior, improved performance on a food-motivated maze task, and normalized monoamine levels in brain structures disrupted by neonatal fluvoxamine exposure. <a href="#ref-5" class="cite">[5]</a></span>
     </li>
   </ul>
-</div>
+</section>
 
-<div class="content-section">
-  <div class="section-heading">Research context</div>
+<section class="content-section">
+  <h2>Research context</h2>
   <p>The Semax evidence base is primarily composed of animal model studies and mechanistic in vitro work, with the majority of published research originating from Russian institutions. This concentration is partly explained by Semax's status as a registered pharmaceutical in Russia, which has motivated sustained domestic investment in its study. The compound has more published research than most nootropic peptides, but the geographic and linguistic concentration of that research limits independent replication by outside groups. <a href="#ref-3" class="cite">[3]</a> <a href="#ref-4" class="cite">[4]</a></p>
   <p>Human evidence is limited. The most frequently cited clinical study (PMID 11517472) is a 1997 controlled clinical trial in ischemic stroke patients, published in a Russian-language journal without a DOI. <a href="#ref-1" class="cite">[1]</a> The resting-state fMRI study from 2018 enrolled 24 healthy volunteers and represents the clearest published human data on Semax's acute brain effects, though it was a small, single-site study. <a href="#ref-2" class="cite">[2]</a> Researchers interested in Semax should treat the human data as preliminary and the mechanistic animal work as suggestive rather than conclusive.</p>
-</div>
+</section>
 
-<div class="content-section">
-  <div class="section-heading">Typical research parameters</div>
+<section class="content-section">
+  <h2>Typical research parameters</h2>
   <table class="params-table">
     <thead><tr><th>Parameter</th><th>Detail</th></tr></thead>
     <tbody>
@@ -90,7 +90,7 @@ schema:
       <tr><td>Administration studied</td><td>Intranasal (primary route in human and most animal studies); subcutaneous injection (some animal protocols)</td></tr>
     </tbody>
   </table>
-</div>
+</section>
 
 <div class="price-cta">
   <div>
@@ -103,8 +103,8 @@ schema:
 
 <div class="disclaimer">All content on Peptide Price Lab is for informational and research purposes only. Nothing here constitutes medical advice, and these compounds are not intended for human use. Always consult a licensed healthcare provider.</div>
 
-<div class="content-section">
-  <div class="section-heading">References</div>
+<section class="content-section">
+  <h2>References</h2>
   <ol class="ref-list">
     <li id="ref-1">
       <span class="ref-num">[1]</span>
@@ -127,10 +127,10 @@ schema:
       <span class="ref-text">Glazova NY, Manchenko DM, Volodina MA, et al. <em>Semax, synthetic ACTH(4-10) analogue, attenuates behavioural and neurochemical alterations following early-life fluvoxamine exposure in white rats.</em> Neuropeptides. 2021;86:102114. <a href="https://pubmed.ncbi.nlm.nih.gov/33418449/" target="_blank" rel="noopener">PubMed ↗</a></span>
     </li>
   </ol>
-</div>
+</section>
 
-<div class="content-section">
-  <div class="section-heading">Related research notes</div>
+<section class="content-section">
+  <h2>Related research notes</h2>
   <div class="related-links">
     <a class="related-link" href="https://peptidepricelab.com/peptides/selank/">
       <span class="rl-icon">🔬</span>
@@ -145,4 +145,4 @@ schema:
       <div class="rl-text"><strong>Sources Directory</strong><span>Research vendors carrying Semax, with purity information and pricing.</span></div>
     </a>
   </div>
-</div>
+</section>

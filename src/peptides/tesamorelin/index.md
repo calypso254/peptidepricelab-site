@@ -50,15 +50,15 @@ schema:
   </div>
 
   <!-- Section 1 -->
-  <div class="content-section">
-    <div class="section-heading">What it is</div>
+  <section class="content-section">
+    <h2>What it is</h2>
     <p>Tesamorelin is a 44-amino acid synthetic analog of growth hormone-releasing hormone (GHRH), the hypothalamic peptide that signals the anterior pituitary to release growth hormone. It is chemically modified with a trans-3-hexenoic acid group at its N-terminus, which stabilizes it against enzymatic degradation and extends its half-life compared to native GHRH. Like CJC-1295, it works by stimulating the pituitary's own GH production rather than introducing exogenous GH directly, which preserves natural feedback regulation.</p>
     <p>The compound was developed by Theratechnologies and approved by the FDA in 2010 under the brand name Egrifta, making it one of the few GHRH analogs with a confirmed pharmaceutical indication. The approved use is narrow: reduction of excess visceral adipose tissue (VAT) in adults with HIV who have developed lipodystrophy, a redistribution of body fat that is a known side effect of certain antiretroviral therapies. A reformulated lower-volume version (Egrifta SV) was approved in 2021.</p>
-  </div>
+  </section>
 
   <!-- Section 2 -->
-  <div class="content-section">
-    <div class="section-heading">What researchers study it for</div>
+  <section class="content-section">
+    <h2>What researchers study it for</h2>
     <ul class="research-list">
       <li>
         <strong>Visceral adipose tissue reduction in HIV lipodystrophy</strong>
@@ -77,18 +77,18 @@ schema:
         <span>Beyond fat redistribution, clinical trials have documented improvements in triglycerides and total cholesterol in treated individuals, consistent with the metabolic role of GH signaling in lipid metabolism. These effects are generally modest and secondary to the primary VAT endpoint in HIV lipodystrophy trials. <a href="#ref-1" class="cite">[1]</a></span>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!-- Section 3 -->
-  <div class="content-section">
-    <div class="section-heading">Research context</div>
+  <section class="content-section">
+    <h2>Research context</h2>
     <p>Tesamorelin has the most robust human clinical evidence of any GHRH analog, by virtue of its FDA approval pathway. The pivotal trials are large, well-controlled, and peer-reviewed, which distinguishes it clearly from most peptides in this category. <a href="#ref-1" class="cite">[1]</a> That said, the approved indication is specific: HIV-associated lipodystrophy in adults. Evidence for tesamorelin in people without HIV, in general obesity, or in age-related somatopause is far thinner and largely derived from smaller or exploratory studies.</p>
     <p>The cognitive research is intriguing but not yet conclusive. The Baker et al. GHRH-MCI trial was one of the first to test the hypothesis that restoring IGF-1 signaling through endogenous GH stimulation might slow cognitive decline. <a href="#ref-5" class="cite">[5]</a> The more recent HIV-population cognition trial returned a null result on the cognitive primary endpoint, though it may have been underpowered. Researchers interested in the GH axis and cognitive aging should treat this as an active area of inquiry rather than an established finding. Research-grade tesamorelin from peptide vendors is not subject to pharmaceutical manufacturing standards and is not equivalent to Egrifta.</p>
-  </div>
+  </section>
 
   <!-- Section 4 -->
-  <div class="content-section">
-    <div class="section-heading">Typical research parameters</div>
+  <section class="content-section">
+    <h2>Typical research parameters</h2>
     <table class="params-table">
       <thead>
         <tr><th>Parameter</th><th>Detail</th></tr>
@@ -102,7 +102,7 @@ schema:
         <tr><td>Half-life</td><td>Approximately 26–38 minutes; stimulates a pulsatile GH release lasting several hours</td></tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
   <!-- Price CTA -->
   <div class="price-cta">
@@ -120,8 +120,8 @@ schema:
   </div>
 
   <!-- Bibliography -->
-  <div class="content-section">
-    <div class="section-heading">References</div>
+  <section class="content-section">
+    <h2>References</h2>
     <ol class="ref-list">
       <li id="ref-1">
         <span class="ref-num">[1]</span>
@@ -159,11 +159,11 @@ schema:
         </span>
       </li>
     </ol>
-  </div>
+  </section>
 
   <!-- Related links -->
-  <div class="content-section">
-    <div class="section-heading">Related</div>
+  <section class="content-section">
+    <h2>Related</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/cjc-1295/">
         <span class="rl-icon">🔬</span>
@@ -187,4 +187,4 @@ schema:
         </span>
       </a>
     </div>
-  </div>
+  </section>
