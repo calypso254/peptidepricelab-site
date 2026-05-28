@@ -11,6 +11,11 @@ tags:
   - Anti-Aging
   - Skin & Collagen
   - Immune Research
+price:
+  median: "$4/mg"
+  low: "$2"
+  high: "$6"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Synthetic pineal tetrapeptide"

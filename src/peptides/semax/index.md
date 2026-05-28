@@ -11,6 +11,11 @@ tags:
   - Cognitive Research
   - Neuroprotection
   - Immune Research
+price:
+  median: "$8/mg"
+  low: "$4"
+  high: "$12"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Synthetic ACTH fragment"

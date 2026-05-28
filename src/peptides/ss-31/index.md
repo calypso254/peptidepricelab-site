@@ -11,6 +11,11 @@ tags:
   - Cardiovascular
   - Longevity
   - Tissue Repair
+price:
+  median: "$40/mg"
+  low: "$20"
+  high: "$60"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Mitochondria-targeted tetrapeptide"

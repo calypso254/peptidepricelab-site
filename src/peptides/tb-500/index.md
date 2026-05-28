@@ -12,6 +12,11 @@ tags:
   - Cardiovascular
   - Anti-Aging
   - Joint Research
+price:
+  median: "$6/mg"
+  low: "$3"
+  high: "$10"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Thymosin fragment"

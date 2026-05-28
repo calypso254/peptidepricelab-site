@@ -10,6 +10,11 @@ tags:
   - FDA-Approved
   - Libido Research
   - Hormonal Health
+price:
+  median: "$20/mg"
+  low: "$10"
+  high: "$30"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Melanocortin receptor agonist"

@@ -11,6 +11,11 @@ tags:
   - Hormonal Health
   - Skin & Collagen
   - Metabolic Health
+price:
+  median: "$3/mg"
+  low: "$2"
+  high: "$5"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Melanocortin agonist"

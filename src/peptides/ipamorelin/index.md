@@ -11,6 +11,11 @@ tags:
   - "Metabolic Health"
   - "Anti-Aging"
   - "Tissue Repair"
+price:
+  median: "$5/mg"
+  low: "$3"
+  high: "$8"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "GH secretagogue"

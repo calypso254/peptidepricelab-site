@@ -9,6 +9,11 @@ tags:
   - Immune Research
   - Anti-Aging
   - Longevity
+price:
+  median: "$14/mg"
+  low: "$8"
+  high: "$20"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Thymic peptide"

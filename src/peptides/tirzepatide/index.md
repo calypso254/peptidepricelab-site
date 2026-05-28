@@ -13,6 +13,11 @@ tags:
   - Metabolic Health
   - Cardiovascular
   - Hormonal Health
+price:
+  median: "$9/mg"
+  low: "$4"
+  high: "$15"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Dual GIP/GLP-1 agonist"

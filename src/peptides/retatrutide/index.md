@@ -11,6 +11,11 @@ tags:
   - Weight Research
   - Metabolic Health
   - Cardiovascular
+price:
+  median: "$50/mg"
+  low: "$20"
+  high: "$80"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Triple receptor agonist"

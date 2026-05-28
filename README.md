@@ -1,79 +1,149 @@
-# peptidepricelab.com - Marketing Site
+# PPL Site Update — Round 2 + Logo Suite
 
-Static marketing and content site for [Peptide Price Lab](https://peptidepricelab.com).
+## NEW: Logo suite (the bead system)The old logo image is retired in favor of a typed monogram + bead marks:
 
-The tool itself lives at [app.peptidepricelab.com](https://app.peptidepricelab.com) in a separate repo.
-
-## Structure
-
-```text
-/                        -> Current live landing page
-/sources/                -> Current live vendor directory
-/peptides/               -> Current live research notes index
-/peptides/[slug]/        -> Current live generated/static research notes
-/blog/[slug]/            -> Current live generated/static blog posts
-/css/style.css           -> Current landing-page stylesheet
-/css/content.css         -> Shared generated-content stylesheet
-/src/                    -> Eleventy source files and layouts
-/src/_includes/          -> Shared layouts and partials
-/templates/agent/        -> Templates for content-writing agents
-/assets/                 -> Images, logos, fonts, icons
-robots.txt               -> Allow all, points to sitemap
-sitemap.xml              -> Sitemap, to be generated after migration
-CNAME                    -> peptidepricelab.com for GitHub Pages
+```
+assets/logos/ppl-icon.svg       NEW  → app icon (512, strand on ink tile)
+assets/logos/ppl-favicon.svg    NEW  → favicon (32, simplifies to 16)
+assets/logos/ppl-lockup.svg     NEW  → horizontal lockup image (email/external use)
+src/_includes/partials/header.njk  REPLACE → inline P·P·L bead monogram + wordmark (no <img>)
+src/_includes/layouts/base.njk     REPLACE → adds favicon + apple-touch-icon <link>s
+css/components.css                 REPLACE → §11 masthead-logo styles (bead dots)
 ```
 
-## Build System
+The header now renders **P·P·L** with the interpunct dots as amino-acid beads
+(last one oxblood) beside the "Peptide Price Lab" wordmark — all live HTML/CSS
+in Instrument Serif, so it's crisp at any size and needs no image. The app icon
+and favicon use the matching bead-chain "strand." `site.json → logo` is no
+longer required by the header (the old `logo.default` image is hidden via CSS if
+still referenced anywhere).
 
-New content should be authored as Markdown under `src/` and rendered with Eleventy.
+---
+
+## NEW: Taglines (two movements)
+
+Two brand lines, placed by register:
+
+- **Door / intro** — *"We ran the numbers. You run the research."* → the default
+  dateline tagline (`dateline.njk`), shown at the top of the main pages.
+- **Resolution / end cap** — *"Research clearly. Source confidently."* → the
+  footer sign-off (`footer.njk`) and the sub-mark beneath the logo lockup
+  (`ppl-lockup.svg`).
+
+The old "The Honest Milligram" line is fully retired. Note: the live site does
+not currently render the dateline strip; if you want the door line at the top
+of pages, include `partials/dateline.njk` in the layouts (or ask me to wire it
+in + add it to the home hero).
+
+---
+
+# PPL Site Update — Round 2
+
+Fixes the remaining design conflicts and adds the **Dispatch** section + a
+working **News** index. Everything here matches the live repo structure
+(`calypso254/peptidepricelab-site`, Eleventy → `_site` → GitHub Pages).
+
+The earlier round (content.css, fonts.css, header/footer/pledge partials) is
+already live — this bundle does **not** re-ship those.
+
+────────────────────────────────────────────────────────────────────────
+## Why pages were "fighting" the design
+
+The index/listing templates (`news`, `sources`, the homepage `src/index.njk`,
+the guide listings, the FDA news article) use component classes — `.guide-card`,
+`.article-card`, `.step-card`, `.vendor-meta`, `.timeline`, `.peptide-list-card`,
+`.price-cta`, `.related-reading`, etc. — that lived in the OLD `style.css` but
+were never ported into `content.css`. So those pages rendered half-styled.
+
+**`css/components.css`** fills every one of those gaps in the editorial
+(parchment / Instrument Serif) language. It reuses the tokens already declared
+in `content.css` and is loaded right after it.
+
+> The stale root files `/index.html` and `/css/style.css` are NOT deployed
+> (the build only outputs `src/` → `_site/`). They're leftover from the
+> pre-Eleventy site. Safe to delete from the repo whenever you like — they are
+> not the homepage. The real homepage is `src/index.njk`.
+
+────────────────────────────────────────────────────────────────────────
+## File map — drop into the repo at these exact paths
+
+```
+css/components.css                                   NEW  → css/components.css
+eleventy.config.js                                   REPLACE (adds news + dispatch collections)
+src/_includes/layouts/base.njk                       REPLACE (adds <link> to components.css)
+src/_includes/layouts/dispatch-issue.njk             NEW
+src/dispatch/index.njk                               NEW  (the Dispatch hub)
+src/dispatch/no-01-reading-a-coa/index.md            NEW  (seed issue)
+src/dispatch/no-02-retatrutide-three-indexes/index.md NEW (seed issue)
+src/dispatch/no-03-ghk-cu-price-cuts/index.md        NEW  (seed issue)
+src/news/index.njk                                   REPLACE (auto-lists the news collection)
+src/sources/index.njk                                REPLACE (honest affiliate copy)
+```
+
+Then build:
 
 ```bash
-npm install
-npm run build
-npm run serve
+npm run build      # or: npm run serve
 ```
 
-Eleventy writes generated static output to `_site/`.
+Check: `/`, `/news/`, `/dispatch/`, `/sources/`, `/start-here/`,
+`/plain-language/`, `/notes/`, `/peptides/`, and the FDA news article.
 
-The existing root HTML pages remain live while the site is migrated. Do not create new full-page HTML from scratch unless there is a specific reason; create Markdown content files using the shared layouts instead.
+────────────────────────────────────────────────────────────────────────
+## What each change does
 
-## Adding a Research Note
+### 1. `css/components.css` (the big fix)
+Styles every listing + article component the templates already use:
+- **Homepage** — `.home-hero`, `.content-section`, `.section-heading`, `.steps-grid`/`.step-card`, `.peptide-cards`, `.faq-list`/`.faq-item`
+- **Guide listings** (start-here / plain-language / notes) — `.start-page`, `.guide-grid`/`.guide-card`, `.intro-note`, `.section-label`, `.section-see-all`, `.reading-time`
+- **Peptide index** — `.peptides-page`, `.peptide-section-heading`, `.microcopy`
+- **News index** — `.article-list`, `.article-card`(+`-with-image`), `.card-meta`, `.card-tag`, `.read-more`
+- **News article** — `.article-hero-image`, `.peptide-list-card`, `.timeline`, `.sources-section`/`.sources-list`, `.related-section`
+- **Sources** — `.vendor-grid`, `.vendor-meta`, `.vendor-link`, `.price-cta`
+- **Related reading** — `.related-reading` (used by every article layout)
+- **Dispatch** — `.dispatch-page`, `.dispatch-lead`, archive rows
+- Plus a `@container app (max-width:760px)` block so all of the above stack on mobile.
 
-1. Create `src/peptides/[slug]/index.md` using `templates/agent/research-note.md`.
-2. Write only front matter plus article body content.
-3. Run `npm run build`.
-4. During the migration phase, add the page to any old static indexes or `sitemap.xml` that have not yet been converted.
+### 2. Dispatch section (new)
+- **Collection** `dispatch` added to `eleventy.config.js` (globs `src/dispatch/*/index.md`, newest first).
+- **Hub** `src/dispatch/index.njk` — editorial hero, featured latest issue + subscribe form, archive feed.
+- **Layout** `src/_includes/layouts/dispatch-issue.njk` — per-issue page with issue number, date, body, end-of-issue subscribe prompt, and the Pledge.
+- **3 seed issues** (No. 01–03) so the hub isn't empty. Replace/extend with real letters — same front-matter shape (`issueNumber`, `date`, `title`, `lede`, `readingTime`).
+- The subscribe forms POST to `site.newsletterAction` if you add that key to `src/_data/site.json`; otherwise they're inert placeholders.
 
-## Adding a Blog Post
+### 3. News index (fixed)
+- **Collection** `news` added to `eleventy.config.js` (globs `src/news/*/index.{njk,md}`, so the hub itself is excluded).
+- `src/news/index.njk` now **auto-lists the collection** instead of a hard-coded card. Your existing FDA article appears automatically — no edit required (it falls back to `description` for the blurb and `schema.datePublished` for the date).
+- *Optional polish:* add `category: "Regulation"`, `cardDek: "…"`, and `readingTime: "7 min read"` to the FDA article's front-matter to control its card exactly. Without them it still renders (tagged "News").
 
-1. Create `src/blog/[slug]/index.md` using `templates/agent/blog-post.md`.
-2. Write only front matter plus article body content.
-3. Run `npm run build`.
-4. During the migration phase, add the page to any old static indexes or `sitemap.xml` that have not yet been converted.
+### 4. Sources affiliate copy (fixed)
+The directory callout previously read *"receives no affiliate fees from any
+vendor listed here."* It now states the real policy: no paid placements, but we
+do hold affiliate codes and surface them only when they beat the live sale —
+which is what keeps the Lab free and ad-free.
 
-## Writing Agent Contract
+────────────────────────────────────────────────────────────────────────
+## Adding a new Dispatch issue later
 
-See [docs/AGENT_CONTENT_WORKFLOW.md](docs/AGENT_CONTENT_WORKFLOW.md).
+1. Create `src/dispatch/no-04-some-slug/index.md`.
+2. Front-matter:
+   ```yaml
+   ---
+   layout: layouts/dispatch-issue.njk
+   issueNumber: "No. 04"
+   date: 2026-05-30
+   readingTime: "4 min read"
+   title: "Your headline"
+   h1: "Your headline"
+   lede: "One-sentence summary for the archive list."
+   ---
+   ```
+3. Write the letter in Markdown. `npm run build`. It auto-appears as the
+   featured issue on `/dispatch/` and drops older issues into the archive.
 
-The short version:
-
-- Output Markdown source files, not complete HTML documents.
-- Do not include header, nav, footer, global styles, canonical tags, Open Graph tags, or JSON-LD.
-- Use root-relative internal links, such as `/peptides/` and `/assets/...`.
-- Use the shared logo path `/assets/logos/peptide-price-lab-logo-default.svg`.
-
-## Adding a Vendor to /sources
-
-This page has not been migrated yet.
-
-1. Add a source card to `/sources/index.html`.
-2. Add affiliate promo code link if applicable.
-
-## SEO Checklist
-
-- Unique `title`
-- Unique `description`
-- Strong `h1`
-- Canonical URL handled by layout
-- Open Graph tags handled by layout
-- Internal links added from relevant index pages during migration
+────────────────────────────────────────────────────────────────────────
+## Rollback
+- Delete `css/components.css` and remove its `<link>` from `base.njk`.
+- Revert `eleventy.config.js`, `src/news/index.njk`, `src/sources/index.njk`.
+- Delete `src/dispatch/` and `src/_includes/layouts/dispatch-issue.njk`.
+Nothing else references these files.

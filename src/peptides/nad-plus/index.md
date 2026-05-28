@@ -12,6 +12,11 @@ tags:
   - Metabolic Health
   - Cognitive Research
   - Cardiovascular
+price:
+  median: "$3/mg"
+  low: "$1"
+  high: "$5"
+  vendors: 12
 stats:
   - label: "Compound Class"
     value: "Coenzyme / dinucleotide"

@@ -12,6 +12,11 @@ tags:
   - Metabolic Health
   - Hormonal Health
   - Tissue Repair
+price:
+  median: "$11/mg"
+  low: "$5"
+  high: "$18"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Mitochondrial-derived peptide"

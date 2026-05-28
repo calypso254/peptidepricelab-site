@@ -12,6 +12,11 @@ tags:
   - Metabolic Health
   - Cardiovascular
   - Hormonal Health
+price:
+  median: "$5/mg"
+  low: "$2"
+  high: "$8"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "GHRP / ghrelin mimetic"

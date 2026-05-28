@@ -11,6 +11,11 @@ tags:
   - "Metabolic Health"
   - "Hormonal Health"
   - "Anti-Aging"
+price:
+  median: "$32/mg"
+  low: "$15"
+  high: "$50"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Long-acting IGF-1 analog"

@@ -2,56 +2,92 @@
 layout: layouts/base.njk
 ogType: article
 ---
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <a href="/">Home</a>
-  <span>&rsaquo;</span>
-  <a href="/peptides/">Research Notes</a>
-  <span>&rsaquo;</span>
-  {{ peptideName or title }}
-</nav>
+{# ─────────────────────────────────────────────────────────────────────────
+   RESEARCH-NOTE TEMPLATE — matches the canvas peptide page.
 
-<article class="article research-note">
-  <header class="article-header">
-    {% if tags %}
-      <div class="tags">
-        {% for tag in tags %}
-          <a href="/tags/{{ tag | slugify }}/" class="tag{% if tag == 'FDA-Approved' %} fda{% endif %}">{{ tag }}</a>
-        {% endfor %}
-      </div>
+   Frontmatter contract (see TEMPLATE-GUIDE.md for the full spec):
+     peptideName / h1   — the compound name (hero title)
+     category           — e.g. "GLP-1 · Metabolic"      (hero eyebrow)
+     folio              — optional folio number          (hero eyebrow)
+     lede               — one-sentence italic standfirst
+     tags               — list (rendered as pills + /tags/ links)
+     price:             — drives the oxblood "Per-mg this week" card
+       median / low / high / vendors
+     stats:             — list of {label, value, note} → Quick reference grid
+   The article BODY (markdown / <section class="content-section"><h2>…) is
+   rendered untouched inside .article-body — no content rewrite needed.
+   ───────────────────────────────────────────────────────────────────────── #}
+
+<article class="research-note">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span>
+    <a href="/peptides/">The Index</a><span>&rsaquo;</span>
+    {{ peptideName or h1 or title }}
+  </nav>
+
+  {# ── Hero: title + lede on the left, per-mg price card on the right ── #}
+  <header class="rn-hero">
+    <div class="rn-hero-main">
+      {% if category or folio %}
+        <div class="eyebrow">{% if folio %}Folio № {{ folio }} &middot; {% endif %}{{ category }}</div>
+      {% endif %}
+      <h1 class="rn-title">{{ h1 or peptideName or title }}</h1>
+      {% if lede %}<p class="rn-lede">{{ lede }}</p>{% endif %}
+    </div>
+
+    {% if price %}
+      <aside class="rn-price-card" aria-label="Per-milligram price">
+        <div class="rn-price-label">Per-mg this week</div>
+        <div class="rn-price-median">{{ price.median }}</div>
+        {% if price.vendors %}<div class="rn-price-sub">Median across {{ price.vendors }} vendors</div>{% endif %}
+        {% if price.low or price.high %}
+          <div class="rn-price-range">
+            <div><span>Low</span><b>{{ price.low }}</b></div>
+            <div><span>High</span><b>{{ price.high }}</b></div>
+          </div>
+        {% endif %}
+        <a href="{{ site.appUrl }}" class="rn-price-cta">Compare every vendor &rarr;</a>
+      </aside>
     {% endif %}
-    <h1>{{ h1 or title }}</h1>
-    {% if lede %}<p class="lede">{{ lede }}</p>{% endif %}
   </header>
 
-  {% if stats %}
-    <section class="stats-bar" aria-label="Research note summary">
-      {% for stat in stats %}
-        <div class="stat-card">
-          <span>{{ stat.label }}</span>
-          <strong>{{ stat.value }}</strong>
-          {% set statNote = stat.note or stat.statNote or stat["stat-note"] %}
-          {% if statNote %}
-            <small>{{ statNote }}</small>
-          {% endif %}
-        </div>
+  {% if tags %}
+    <div class="rn-tags">
+      {% for tag in tags %}
+        <a href="/tags/{{ tag | slugify }}/" class="rn-tag{% if tag == 'FDA-Approved' %} is-fda{% endif %}">{{ tag }}</a>
       {% endfor %}
-    </section>
+    </div>
   {% endif %}
 
+  {# ── Article body: the prose sections, rendered as authored ── #}
   <div class="article-body">
     {{ content | safe }}
   </div>
 
-{% if relatedReading and relatedReading.length %}
-  <aside class="related-reading">
-    <h2>Keep reading</h2>
-    <ul>
-      {% for item in relatedReading %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </aside>
-{% endif %}
+  {# ── Quick reference grid (from stats) ── #}
+  {% if stats %}
+    <section class="rn-quickref">
+      <div class="rn-quickref-mark"><span class="rn-quickref-num">§</span> Quick reference</div>
+      <div class="rn-quickref-grid">
+        {% for s in stats %}
+          <div class="rn-fact">
+            <div class="rn-fact-label">{{ s.label }}</div>
+            <div class="rn-fact-value">{{ s.value }}</div>
+            {% set n = s.note or s.statNote or s["stat-note"] %}
+            {% if n %}<div class="rn-fact-note">{{ n }}</div>{% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if relatedReading and relatedReading.length %}
+    <aside class="related-reading">
+      <h2>Keep reading</h2>
+      <ul>{% for item in relatedReading %}<li><a href="{{ item.url }}">{{ item.title }}</a></li>{% endfor %}</ul>
+    </aside>
+  {% endif %}
 
   {% include "partials/pledge.njk" %}
 

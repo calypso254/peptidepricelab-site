@@ -915,6 +915,95 @@
 }
 
 /* ============================================================
+   11b. RESEARCH-NOTE HERO + PER-MG PRICE CARD + QUICK REFERENCE
+   ============================================================ */
+.research-note .breadcrumb { padding-left: 0; padding-right: 0; }
+.rn-hero {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 56px;
+  align-items: end;
+  padding: 36px 0 28px;
+}
+.rn-hero-main .eyebrow { margin-bottom: 14px; }
+.rn-title {
+  font-family: var(--display);
+  font-weight: var(--display-weight);
+  font-size: clamp(56px, 8vw, 116px);
+  line-height: 0.9;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  margin: 0;
+}
+.rn-lede {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(19px, 2vw, 24px);
+  line-height: 1.45;
+  color: var(--ink-2);
+  font-weight: var(--display-weight);
+  margin: 22px 0 0;
+  max-width: 640px;
+}
+.rn-price-card { background: var(--accent); color: var(--paper); padding: 26px 30px; border-radius: 2px; }
+.rn-price-label, .rn-price-sub {
+  font-family: var(--sans); font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.85;
+}
+.rn-price-label { font-size: 10px; margin-bottom: 12px; }
+.rn-price-median {
+  font-family: var(--display); font-style: italic; font-size: 76px; line-height: 0.9;
+  letter-spacing: -0.02em; margin-bottom: 8px;
+}
+.rn-price-sub { font-size: 10.5px; }
+.rn-price-range {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+  margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.25);
+}
+.rn-price-range span {
+  display: block; font-family: var(--sans); font-size: 9px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.7;
+}
+.rn-price-range b { font-family: var(--mono); font-size: 19px; font-weight: 400; }
+.rn-price-cta {
+  display: inline-block; margin-top: 20px; font-family: var(--sans); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--paper);
+  border-bottom: 1px solid rgba(255,255,255,0.5); padding-bottom: 2px;
+}
+.rn-price-cta:hover { color: var(--paper); border-color: var(--paper); }
+
+.rn-tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 0 22px; border-bottom: 1px solid var(--rule); }
+.rn-tag {
+  font-family: var(--sans); font-size: 10px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; padding: 6px 12px; border: 1px solid var(--rule);
+  border-radius: 999px; color: var(--ink-2);
+}
+.rn-tag:hover { border-color: var(--accent); color: var(--accent); }
+.rn-tag.is-fda { background: var(--positive); color: var(--paper); border-color: var(--positive); }
+
+.rn-quickref { display: grid; grid-template-columns: 200px minmax(0, 680px); column-gap: 56px; padding: 52px 0; }
+.rn-quickref-mark {
+  grid-column: 1; padding-top: 16px; border-top: 2px solid var(--ink);
+  font-family: var(--sans); font-weight: 700; font-size: 13px; letter-spacing: 0.13em;
+  text-transform: uppercase; color: var(--ink); align-self: start;
+}
+.rn-quickref-num { color: var(--accent); }
+.rn-quickref-grid { grid-column: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--ink); }
+.rn-fact { padding: 18px 22px; border-bottom: 1px solid var(--rule); }
+.rn-fact:nth-child(odd) { border-right: 1px solid var(--rule); }
+.rn-fact-label { font-family: var(--sans); font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 6px; }
+.rn-fact-value { font-family: var(--display); font-size: 22px; letter-spacing: -0.01em; color: var(--ink); }
+.rn-fact-note { font-family: var(--sans); font-size: 12px; color: var(--ink-3); margin-top: 4px; }
+
+@container app (max-width: 760px) {
+  .rn-hero { grid-template-columns: 1fr; gap: 28px; padding: 24px 0; }
+  .rn-title { font-size: clamp(44px, 13vw, 64px); }
+  .rn-price-median { font-size: 60px; }
+  .rn-quickref { grid-template-columns: 1fr; gap: 14px; padding: 32px 0; }
+  .rn-quickref-grid { grid-template-columns: 1fr; }
+  .rn-fact:nth-child(odd) { border-right: none; }
+}
+
+/* ============================================================
    12. TAG PAGES
    /tags/ (category index) and /tags/<slug>/ (per-category list).
    Without these the card name renders identically to the body text.

@@ -12,6 +12,11 @@ tags:
   - Wound Healing
   - Gut Health
   - Anti-Aging
+price:
+  median: "$1.50/mg"
+  low: "$1.00"
+  high: "$2.00"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Multi-peptide blend"

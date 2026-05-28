@@ -10,6 +10,11 @@ tags:
   - Weight Research
   - Metabolic Health
   - Hormonal Health
+price:
+  median: "$42/mg"
+  low: "$25"
+  high: "$60"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Amylin analog"

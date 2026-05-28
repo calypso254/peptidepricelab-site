@@ -12,6 +12,11 @@ tags:
   - Anti-Aging
   - Longevity
   - Tissue Repair
+price:
+  median: "$2/mg"
+  low: "$1"
+  high: "$4"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Synthetic NNMT inhibitor"

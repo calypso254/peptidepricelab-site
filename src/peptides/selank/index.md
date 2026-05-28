@@ -10,6 +10,11 @@ tags:
   - Cognitive Research
   - Hormonal Health
   - Immune Research
+price:
+  median: "$8/mg"
+  low: "$4"
+  high: "$12"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Synthetic tuftsin analog"

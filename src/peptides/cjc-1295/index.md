@@ -11,6 +11,11 @@ tags:
   - Anti-Aging
   - Metabolic Health
   - Sleep Research
+price:
+  median: "$17/mg"
+  low: "$10"
+  high: "$25"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "Long-acting GHRH analog"

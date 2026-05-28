@@ -9,6 +9,11 @@ tags:
   - Hormonal Health
   - Anti-Aging
   - Metabolic Health
+price:
+  median: "$5/mg"
+  low: "$3"
+  high: "$8"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "GHRP / ghrelin receptor agonist"

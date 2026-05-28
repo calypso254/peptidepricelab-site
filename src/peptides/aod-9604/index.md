@@ -9,6 +9,11 @@ tags:
   - Weight Research
   - Metabolic Health
   - Joint Research
+price:
+  median: "$7/mg"
+  low: "$4"
+  high: "$10"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "hGH C-terminal fragment"

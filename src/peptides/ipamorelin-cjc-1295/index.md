@@ -12,6 +12,11 @@ tags:
   - "Metabolic Health"
   - "Tissue Repair"
   - "Hormonal Health"
+price:
+  median: "$6/mg"
+  low: "$3"
+  high: "$10"
+  vendors: 12
 stats:
   - label: "Peptide Class"
     value: "GHRP + GHRH analog"
