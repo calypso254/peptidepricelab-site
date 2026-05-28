@@ -45,7 +45,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("readableDate", (value) => {
     if (!value) return "";
-    const date = new Date(`${value}T00:00:00`);
+    const date = value instanceof Date ? value : new Date(`${value}T00:00:00`);
     return new Intl.DateTimeFormat("en-US", {
       month: "long",
       day: "numeric",
