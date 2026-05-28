@@ -715,7 +715,45 @@ body {
 /* ============================================================
    11. TABLES
    ============================================================ */
-.params-table,
+
+/* params-table: editorial index-row style (matches hp-index aesthetic) */
+.params-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 0;
+  font-family: var(--sans);
+  background: transparent;
+  border-top: 2px solid var(--ink);
+}
+.params-table thead tr,
+.params-table tbody tr {
+  display: grid;
+  grid-template-columns: 1.4fr 2fr;
+  border-bottom: 1px solid var(--rule);
+}
+.params-table th {
+  padding: 12px 0;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.params-table td {
+  padding: 18px 0;
+  font-size: 17.5px;
+  line-height: 1.5;
+  color: var(--ink);
+  vertical-align: top;
+}
+.params-table td:first-child {
+  font-weight: 700;
+  padding-right: 16px;
+}
+.params-table tbody tr:last-child { border-bottom: none; }
+
+/* Other tables: keep original style */
 .price-table,
 .comparison-table,
 .mechanism-table {
@@ -729,7 +767,6 @@ body {
   border-bottom: 2px solid var(--ink);
 }
 
-.params-table th,
 .price-table th,
 .comparison-table th,
 .mechanism-table th {
@@ -745,7 +782,6 @@ body {
   border-bottom: 1px solid var(--ink);
 }
 
-.params-table td,
 .price-table td,
 .comparison-table td,
 .mechanism-table td {
@@ -755,7 +791,6 @@ body {
   color: var(--ink);
 }
 
-.params-table tr:last-child td,
 .price-table tr:last-child td,
 .comparison-table tr:last-child td,
 .mechanism-table tr:last-child td { border-bottom: 0; }
@@ -1495,7 +1530,6 @@ body {
   }
 
   /* Tables get horizontal scroll instead of crushing columns */
-  .params-table,
   .price-table,
   .comparison-table,
   .mechanism-table {
@@ -1504,6 +1538,12 @@ body {
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
+  /* params-table: collapse to single column on narrow viewports */
+  .params-table thead tr,
+  .params-table tbody tr {
+    grid-template-columns: 1fr !important;
+  }
+  .params-table td:first-child { padding-right: 0; }
 
   /* Pledge stacks */
   .pledge--wide .pledge-grid {
