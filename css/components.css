@@ -819,6 +819,15 @@
   margin-left: 1px;
 }
 
+/* Research-note column + vertical rhythm fix.
+   Without these, the homepage .content-section rule (72px padding) leaves a
+   huge gap above the first section ("What it is") and the stats-bar/body
+   margins stack. Widen the reading column and close the gap. */
+.research-note .article-body { max-width: 760px; padding-top: 0; }
+.research-note .stats-bar { margin: 28px 0 0; }
+.research-note .article-body .content-section:first-child { padding-top: 28px; }
+.research-note .article-body .content-section:first-child > h2 { margin-top: 0; }
+
 /* ============================================================
    10. RESPONSIVE
    ============================================================ */
