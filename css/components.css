@@ -908,17 +908,18 @@
   color: var(--accent);
 }
 
-/* Non-section blocks (price band, disclaimer, references, FDA card) align to
+/* Non-section blocks (price band, disclaimer, references) align to
    the body column so they read as part of the article, not detached banners */
 .research-note .article-body > .price-cta,
 .research-note .article-body > .disclaimer,
-.research-note .article-body > .bibliography,
-.research-note .article-body > .approval-callout {
+.research-note .article-body > .bibliography {
   margin-left: 256px;
   max-width: 680px;
 }
 
 /* FDA-approved pharmaceutical versions card (semaglutide / tirzepatide).
+   Spans the full hero/tags width so it reads as part of the page masthead
+   (title + tags + lede) rather than the indented article body below it.
    A contained editorial panel: oxblood-topped paper card, a sans label, and
    brand rows styled like the .research-list term + explanation pattern. */
 .approval-callout {
@@ -980,8 +981,10 @@
   .research-note .article-body .content-section:first-child > p:first-of-type::first-letter { font-size: 64px; }
   .research-note .article-body > .price-cta,
   .research-note .article-body > .disclaimer,
-  .research-note .article-body > .bibliography,
-  .research-note .article-body > .approval-callout { margin-left: 0; max-width: none; }
+  .research-note .article-body > .bibliography { margin-left: 0; max-width: none; }
+  /* Pull the card out of the article-body's 20px mobile padding so it stays
+     flush with the tags / hero above it. */
+  .research-note .article-body > .approval-callout { margin: 4px -20px 8px; }
   .approval-callout { padding: 20px 20px 22px; }
 }
 
