@@ -32,7 +32,7 @@ ogType: article
       {% if category or folio %}
         <div class="eyebrow">{% if folio %}Folio № {{ folio }} &middot; {% endif %}{{ category }}</div>
       {% endif %}
-      <h1 class="rn-title">{{ h1 or peptideName or title }}</h1>
+      <h1 class="rn-title">{{ peptideName or h1 or title }}</h1>
       {% if lede %}<p class="rn-lede">{{ lede }}</p>{% endif %}
     </div>
 

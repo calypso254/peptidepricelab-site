@@ -43,14 +43,20 @@ schema:
 ---
 
   <!-- FDA APPROVAL CALLOUT -->
-  <div class="approval-callout">
-    <strong>FDA-Approved Pharmaceutical Versions</strong>
-    <ul>
-      <li>Mounjaro (subcutaneous injection, 2.5–15 mg weekly): type 2 diabetes management, approved 2022</li>
-      <li>Zepbound (subcutaneous injection, 2.5–15 mg weekly): chronic weight management in adults with obesity or overweight with a weight-related comorbidity, approved 2023</li>
+  <aside class="approval-callout">
+    <div class="approval-callout-label">FDA-Approved Pharmaceutical Versions</div>
+    <ul class="approval-list">
+      <li>
+        <strong>Mounjaro</strong>
+        <span>Subcutaneous injection, 2.5–15 mg weekly. Approved 2022 for type 2 diabetes management.</span>
+      </li>
+      <li>
+        <strong>Zepbound</strong>
+        <span>Subcutaneous injection, 2.5–15 mg weekly. Approved 2023 for chronic weight management in adults with obesity (or overweight with a weight-related comorbidity).</span>
+      </li>
     </ul>
-    <p style="margin-top: 10px; font-size: 0.8125rem;">These are prescription medications. Research peptide vendors sell tirzepatide separately as a research compound; that product is not the same as the pharmaceutical versions above and is not approved for human use as sold by those vendors.</p>
-  </div>
+    <p class="approval-note">These are prescription medications. Research peptide vendors sell tirzepatide separately as a research compound; that product is not the same as the pharmaceutical versions above and is not approved for human use as sold by those vendors.</p>
+  </aside>
 
   <!-- SECTION 1: WHAT IT IS -->
   <section class="content-section">

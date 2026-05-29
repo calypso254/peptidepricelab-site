@@ -10,7 +10,7 @@ ogType: article
   {{ h1 or title }}
 </nav>
 
-<article class="article">
+<article class="article sectioned-article">
   <header class="article-header">
     {% if date or readingTime %}
       <div class="article-meta">
@@ -24,7 +24,7 @@ ogType: article
   </header>
 
   <div class="article-body">
-    {{ content | safe }}
+    {{ content | sectionize | safe }}
   </div>
 
 {% if relatedReading and relatedReading.length %}

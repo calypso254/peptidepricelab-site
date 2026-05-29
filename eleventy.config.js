@@ -76,6 +76,36 @@ export default function (eleventyConfig) {
       .replace(/(<\/div>)\s*<\/p>/g, "$1");
   });
 
+  // sectionize — wrap a flat article body (a bare run of <h2>/<p>/<ul>… as
+  // authored in the guide / note / plain-language markdown) into the same
+  // <section class="content-section"> blocks the peptide research-notes use,
+  // so the shared editorial CSS (left-rail § markers, body column, drop-cap
+  // intro) applies. Any lead content before the first <h2> becomes an
+  // unnumbered ".is-intro" section. Idempotent: content that already carries
+  // a content-section (the peptide pages) is returned untouched.
+  eleventyConfig.addFilter("sectionize", (value) => {
+    const html = String(value || "");
+    if (!html.trim() || html.includes("content-section")) return html;
+
+    const headingRe = /<h2\b[^>]*>[\s\S]*?<\/h2>/gi;
+    const starts = [];
+    let m;
+    while ((m = headingRe.exec(html)) !== null) starts.push(m.index);
+    if (starts.length === 0) return html;
+
+    const wrap = (inner, cls) =>
+      `<section class="${cls}">\n${inner.trim()}\n</section>\n`;
+
+    let out = "";
+    const lead = html.slice(0, starts[0]).trim();
+    if (lead) out += wrap(lead, "content-section is-intro");
+    for (let i = 0; i < starts.length; i++) {
+      const end = i + 1 < starts.length ? starts[i + 1] : html.length;
+      out += wrap(html.slice(starts[i], end), "content-section");
+    }
+    return out;
+  });
+
   eleventyConfig.addCollection("editorNotes", (collectionApi) =>
     collectionApi.getFilteredByGlob("src/notes/**/*.md")
       .sort((a, b) => String(b.data.date || "").localeCompare(String(a.data.date || "")))

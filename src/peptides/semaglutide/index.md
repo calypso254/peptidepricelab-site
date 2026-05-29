@@ -42,15 +42,24 @@ schema:
 ---
 
   <!-- FDA APPROVAL CALLOUT — unique to semaglutide/tirzepatide -->
-  <div class="approval-callout">
-    <strong>FDA-Approved Pharmaceutical Versions</strong>
-    <ul>
-      <li>Ozempic (subcutaneous injection, 0.5/1/2 mg weekly): type 2 diabetes management, approved 2017</li>
-      <li>Rybelsus (oral tablet, 3/7/14 mg daily): type 2 diabetes management, approved 2019</li>
-      <li>Wegovy (subcutaneous injection, 2.4 mg weekly): chronic weight management in adults, approved 2021</li>
+  <aside class="approval-callout">
+    <div class="approval-callout-label">FDA-Approved Pharmaceutical Versions</div>
+    <ul class="approval-list">
+      <li>
+        <strong>Ozempic</strong>
+        <span>Subcutaneous injection, 0.5/1/2 mg weekly. Approved 2017 for type 2 diabetes management.</span>
+      </li>
+      <li>
+        <strong>Rybelsus</strong>
+        <span>Oral tablet, 3/7/14 mg daily. Approved 2019 for type 2 diabetes management.</span>
+      </li>
+      <li>
+        <strong>Wegovy</strong>
+        <span>Subcutaneous injection, 2.4 mg weekly. Approved 2021 for chronic weight management in adults.</span>
+      </li>
     </ul>
-    <p style="margin-top: 10px; font-size: 0.8125rem;">These are prescription medications. Research peptide vendors sell semaglutide separately as a research compound; that product is not the same as the pharmaceutical versions above and is not approved for human use as sold by those vendors.</p>
-  </div>
+    <p class="approval-note">These are prescription medications. Research peptide vendors sell semaglutide separately as a research compound; that product is not the same as the pharmaceutical versions above and is not approved for human use as sold by those vendors.</p>
+  </aside>
 
   <!-- SECTION 1: WHAT IT IS -->
   <section class="content-section">
