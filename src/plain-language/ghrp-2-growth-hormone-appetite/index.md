@@ -56,6 +56,8 @@ schema:
 
 <p>If you are considering a growth hormone secretagogue for midlife wellness or body composition, the comparison with ipamorelin and sermorelin is worth doing carefully. Those compounds do not produce the same appetite and cortisol effects. That distinction matters in the real world, not just on paper.</p>
 
+<h2>If you want to dig deeper</h2>
+
 <div class="related-links">
   <a class="related-link" href="/peptides/ghrp-2/">
     <span class="rl-icon">🔬</span>

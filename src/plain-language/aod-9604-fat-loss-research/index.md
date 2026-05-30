@@ -52,6 +52,8 @@ schema:
 
 <p>The compound circulates in research contexts today, but the dosing used in those settings may not match what was studied in the clinical trials, and there's no standardized third-party testing requirement for research peptides. If the human obesity data from a properly run pharmaceutical trial wasn't sufficient for approval, the bar for being convinced by informal research context results should be high.</p>
 
+<h2>If you want to dig deeper</h2>
+
 <div class="related-links">
   <a class="related-link" href="/peptides/aod-9604/">
     <span class="rl-icon">🔬</span>

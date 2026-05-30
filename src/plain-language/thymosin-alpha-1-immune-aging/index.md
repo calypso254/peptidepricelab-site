@@ -52,6 +52,8 @@ schema:
 
 <p>One thing that does stand out compared to most research peptides: Tα1 has a well-characterized safety profile from decades of clinical use outside the US. Most adverse events in trials were local injection site reactions. That's a more reassuring starting point than compounds with no human data at all.</p>
 
+<h2>If you want to dig deeper</h2>
+
 <div class="related-links">
   <a class="related-link" href="/peptides/thymosin-alpha-1/">
     <span class="rl-icon">🔬</span>

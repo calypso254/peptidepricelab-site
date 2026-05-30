@@ -52,6 +52,8 @@ schema:
 
 <p>Long-term effects in adult populations are genuinely unknown. GH stimulation isn't risk-free at any level: elevated GH and IGF-1 have been associated with various concerns in the literature, and that's part of why the feedback-preservation argument for sermorelin gets raised. But "the feedback loop stays intact" is a theoretical safety argument, not a proven one. If you're considering this, that's a conversation worth having with a provider who actually understands the endocrinology, not just the marketing.</p>
 
+<h2>If you want to dig deeper</h2>
+
 <div class="related-links">
   <a class="related-link" href="/peptides/sermorelin/">
     <span class="rl-icon">🔬</span>
