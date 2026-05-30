@@ -201,7 +201,7 @@ schema:
   </div>
 
   <!-- RELATED LINKS -->
-  <div class="related-section">
+  <section class="content-section">
     <h2>Related research notes</h2>
     <div class="related-links">
       <a class="related-link" href="https://peptidepricelab.com/peptides/bpc-157/">
@@ -233,4 +233,4 @@ schema:
         </div>
       </a>
     </div>
-  </div>
+  </section>
