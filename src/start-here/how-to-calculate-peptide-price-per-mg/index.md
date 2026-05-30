@@ -147,7 +147,7 @@ schema:
   All content on Peptide Price Lab is for informational and research purposes only. Nothing here constitutes medical advice, and research peptides are not intended for human use. Always consult a licensed healthcare provider.
 </div>
 
-<div class="related-section">
+<section class="content-section">
   <h2>Research notes by peptide</h2>
   <div class="related-links">
     <a href="/peptides/bpc-157/" class="related-link">
@@ -167,4 +167,4 @@ schema:
       <span class="arrow">›</span>
     </a>
   </div>
-</div>
+</section>

@@ -81,6 +81,8 @@ schema:
   One important distinction: tirzepatide sold by research peptide vendors is not Mounjaro or Zepbound. Pharmaceutical versions are manufactured to strict pharmaceutical standards, with precisely calibrated doses in single-use injection pens. Research peptide vendor products are separate compounds not approved for human use, where purity and concentration accuracy vary by source. If you're interested in tirzepatide for a medical purpose, consult a licensed healthcare provider.
 </p>
 
+<h2>If you want to dig deeper</h2>
+
 <div class="related-links">
   <a class="related-link" href="/peptides/tirzepatide/">
     Tirzepatide — Research Notes

@@ -77,6 +77,8 @@ schema:
   Research peptide vendors sell retatrutide as a research compound. The product they sell is not the pharmaceutical compound used in clinical trials. It is not manufactured to the same standards, and purity and concentration accuracy vary by source.
 </p>
 
+<h2>If you want to dig deeper</h2>
+
 <div class="related-links">
   <a class="related-link" href="/peptides/retatrutide/">
     Retatrutide — Research Notes
