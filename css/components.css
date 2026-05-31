@@ -746,6 +746,12 @@
 }
 .article-body .content-section > p { max-width: none; }
 
+/* Plain prose bullet/numbered lists (unclassed <ul>/<ol>) should match the
+   body paragraph color (--ink-2), not the darker inherited --ink. Classed
+   lists (.research-list, .ref-list, .sources-list, etc.) keep their own. */
+.article-body .content-section ul:not([class]) li,
+.article-body .content-section ol:not([class]) li { color: var(--ink-2); }
+
 /* Research areas list — term + explanation per row. Top margin/padding are
    zeroed so the first term aligns with the top of the body column, matching
    the first paragraph of every other section. */

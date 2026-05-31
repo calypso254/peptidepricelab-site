@@ -95,6 +95,66 @@ stats:
 
 Then write only the research note body in Markdown or HTML.
 
+## Plain-Language Articles
+
+Create plain-language articles here:
+
+```text
+src/plain-language/[slug]/index.md
+```
+
+Use this layout:
+
+```yaml
+layout: layouts/plain-language.njk
+section: plain-language
+```
+
+## Markup Conventions
+
+The shared stylesheets only style specific class names. Authoring raw,
+unclassed markup produces broken-looking output. Follow these patterns.
+
+### Tables
+
+Always add `class="comparison-table"` to article tables. A bare `<table>`
+gets browser-default styling (oversized bold headers) and looks unstyled.
+
+```html
+<table class="comparison-table">
+  <thead>
+    <tr><th>Compound</th><th>Receptors</th><th>Approval</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Semaglutide</td><td>GLP-1</td><td>FDA approved</td></tr>
+  </tbody>
+</table>
+```
+
+Keep cells short. Do not repeat the same long phrase down a column — let
+the header carry the meaning (e.g. header "Verify Via" + cells "COA").
+
+### "If you want to dig deeper" / related links
+
+Use the arrow pattern. Each link is plain text followed by a single
+`<span class="arrow">`. Do **not** use `.rl-icon` / `.rl-text` /
+`<strong>` card markup with emoji — those class names have no CSS and
+render raw.
+
+```html
+<div class="related-links">
+  <a href="/peptides/semaglutide/" class="related-link">
+    Semaglutide Research Notes — full citation list and study breakdown
+    <span class="arrow">&#x203A;</span>
+  </a>
+</div>
+```
+
+### Bullet lists
+
+Use plain `<ul><li>` (no class). Prose lists inherit the body text color
+automatically. Do not add inline styles or custom classes for normal lists.
+
 ## Linking Rules
 
 Use root-relative links for internal site paths:

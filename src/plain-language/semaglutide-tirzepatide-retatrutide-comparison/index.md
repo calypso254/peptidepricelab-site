@@ -50,7 +50,7 @@ schema:
 
 <h2>How they compare</h2>
 
-<table>
+<table class="comparison-table">
   <thead>
     <tr>
       <th>Compound</th>
@@ -92,32 +92,20 @@ schema:
 <h2>If you want to dig deeper</h2>
 
 <div class="related-links">
-  <a class="related-link" href="/plain-language/glp-1-2-3-terminology-explained/">
-    <span class="rl-icon">🏷️</span>
-    <div class="rl-text">
-      <strong>Is GLP-2 the Same as Tirzepatide?</strong>
-      <span>How vendors name these compounds and how to verify what you're looking at.</span>
-    </div>
+  <a href="/plain-language/glp-1-2-3-terminology-explained/" class="related-link">
+    Is GLP-2 the Same as Tirzepatide? — how vendors name these compounds and how to verify
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/peptides/semaglutide/">
-    <span class="rl-icon">🔬</span>
-    <div class="rl-text">
-      <strong>Semaglutide Research Notes</strong>
-      <span>Full citation list and study breakdown.</span>
-    </div>
+  <a href="/peptides/semaglutide/" class="related-link">
+    Semaglutide Research Notes — full citation list and study breakdown
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/peptides/tirzepatide/">
-    <span class="rl-icon">🔬</span>
-    <div class="rl-text">
-      <strong>Tirzepatide Research Notes</strong>
-      <span>Full citation list and study breakdown.</span>
-    </div>
+  <a href="/peptides/tirzepatide/" class="related-link">
+    Tirzepatide Research Notes — full citation list and study breakdown
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/peptides/retatrutide/">
-    <span class="rl-icon">🔬</span>
-    <div class="rl-text">
-      <strong>Retatrutide Research Notes</strong>
-      <span>Early-phase trial data and what we know so far.</span>
-    </div>
+  <a href="/peptides/retatrutide/" class="related-link">
+    Retatrutide Research Notes — early-phase trial data and what we know so far
+    <span class="arrow">&#x203A;</span>
   </a>
 </div>

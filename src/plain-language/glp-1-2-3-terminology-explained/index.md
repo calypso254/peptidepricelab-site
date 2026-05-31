@@ -54,7 +54,7 @@ schema:
 
 <h2>Quick reference</h2>
 
-<table>
+<table class="comparison-table">
   <thead>
     <tr>
       <th>Vendor Label</th>
@@ -66,17 +66,17 @@ schema:
     <tr>
       <td>GLP-1</td>
       <td>Semaglutide</td>
-      <td>COA: confirm compound name and MW</td>
+      <td>COA</td>
     </tr>
     <tr>
       <td>GLP-2</td>
       <td>Tirzepatide</td>
-      <td>COA: confirm compound name and MW</td>
+      <td>COA</td>
     </tr>
     <tr>
       <td>GLP-3</td>
       <td>Retatrutide</td>
-      <td>COA: confirm compound name and MW</td>
+      <td>COA</td>
     </tr>
   </tbody>
 </table>
@@ -86,32 +86,20 @@ schema:
 <h2>If you want to dig deeper</h2>
 
 <div class="related-links">
-  <a class="related-link" href="/start-here/glp1-explainer/">
-    <span class="rl-icon">📖</span>
-    <div class="rl-text">
-      <strong>GLP-1s: What Everyone Is Talking About</strong>
-      <span>How this drug class works and what the research actually shows.</span>
-    </div>
+  <a href="/start-here/glp1-explainer/" class="related-link">
+    GLP-1s: What Everyone Is Talking About — how this drug class works and what the research shows
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/peptides/semaglutide/">
-    <span class="rl-icon">🔬</span>
-    <div class="rl-text">
-      <strong>Semaglutide Research Notes</strong>
-      <span>Full citation list and study breakdown.</span>
-    </div>
+  <a href="/peptides/semaglutide/" class="related-link">
+    Semaglutide Research Notes — full citation list and study breakdown
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/peptides/tirzepatide/">
-    <span class="rl-icon">🔬</span>
-    <div class="rl-text">
-      <strong>Tirzepatide Research Notes</strong>
-      <span>Full citation list and study breakdown.</span>
-    </div>
+  <a href="/peptides/tirzepatide/" class="related-link">
+    Tirzepatide Research Notes — full citation list and study breakdown
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/peptides/retatrutide/">
-    <span class="rl-icon">🔬</span>
-    <div class="rl-text">
-      <strong>Retatrutide Research Notes</strong>
-      <span>Early-phase trial data and what we know so far.</span>
-    </div>
+  <a href="/peptides/retatrutide/" class="related-link">
+    Retatrutide Research Notes — early-phase trial data and what we know so far
+    <span class="arrow">&#x203A;</span>
   </a>
 </div>

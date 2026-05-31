@@ -55,32 +55,20 @@ schema:
 <h2>If you want to dig deeper</h2>
 
 <div class="related-links">
-  <a class="related-link" href="/peptides/aod-9604/">
-    <span class="rl-icon">🔬</span>
-    <div class="rl-text">
-      <strong>AOD-9604 Research Notes</strong>
-      <span>Full citations, study types, and supply parameters.</span>
-    </div>
+  <a href="/peptides/aod-9604/" class="related-link">
+    AOD-9604 Research Notes — full citations, study types, and supply parameters
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="https://app.peptidepricelab.com">
-    <span class="rl-icon">💰</span>
-    <div class="rl-text">
-      <strong>Compare AOD-9604 Prices</strong>
-      <span>Current per-mg pricing across vendors.</span>
-    </div>
+  <a href="https://app.peptidepricelab.com" class="related-link">
+    Compare AOD-9604 Prices — current per-mg pricing across vendors
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/sources/">
-    <span class="rl-icon">📋</span>
-    <div class="rl-text">
-      <strong>Sources Directory</strong>
-      <span>Vendors carrying AOD-9604 with purity and pricing info.</span>
-    </div>
+  <a href="/sources/" class="related-link">
+    Sources Directory — vendors carrying AOD-9604 with purity and pricing info
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/tags/weight-research/">
-    <span class="rl-icon">🏷️</span>
-    <div class="rl-text">
-      <strong>Weight Research</strong>
-      <span>Other peptides studied for fat metabolism and body composition.</span>
-    </div>
+  <a href="/tags/weight-research/" class="related-link">
+    Weight Research — other peptides studied for fat metabolism and body composition
+    <span class="arrow">&#x203A;</span>
   </a>
 </div>

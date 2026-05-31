@@ -59,32 +59,20 @@ schema:
 <h2>If you want to dig deeper</h2>
 
 <div class="related-links">
-  <a class="related-link" href="/peptides/ghrp-2/">
-    <span class="rl-icon">🔬</span>
-    <div class="rl-text">
-      <strong>GHRP-2 Research Notes</strong>
-      <span>Full citations, study types, and supply parameters.</span>
-    </div>
+  <a href="/peptides/ghrp-2/" class="related-link">
+    GHRP-2 Research Notes — full citations, study types, and supply parameters
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="https://app.peptidepricelab.com">
-    <span class="rl-icon">💰</span>
-    <div class="rl-text">
-      <strong>Compare GHRP-2 Prices</strong>
-      <span>Current per-mg pricing across vendors.</span>
-    </div>
+  <a href="https://app.peptidepricelab.com" class="related-link">
+    Compare GHRP-2 Prices — current per-mg pricing across vendors
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/sources/">
-    <span class="rl-icon">📋</span>
-    <div class="rl-text">
-      <strong>Sources Directory</strong>
-      <span>Vendors carrying GHRP-2 with purity and pricing info.</span>
-    </div>
+  <a href="/sources/" class="related-link">
+    Sources Directory — vendors carrying GHRP-2 with purity and pricing info
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/tags/hormonal-health/">
-    <span class="rl-icon">🏷️</span>
-    <div class="rl-text">
-      <strong>Hormonal Health Research</strong>
-      <span>Other peptides studied for hormone-related applications.</span>
-    </div>
+  <a href="/tags/hormonal-health/" class="related-link">
+    Hormonal Health Research — other peptides studied for hormone-related applications
+    <span class="arrow">&#x203A;</span>
   </a>
 </div>

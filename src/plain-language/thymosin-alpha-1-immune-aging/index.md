@@ -55,32 +55,20 @@ schema:
 <h2>If you want to dig deeper</h2>
 
 <div class="related-links">
-  <a class="related-link" href="/peptides/thymosin-alpha-1/">
-    <span class="rl-icon">🔬</span>
-    <div class="rl-text">
-      <strong>Thymosin Alpha-1 Research Notes</strong>
-      <span>Full citations, study types, and supply parameters.</span>
-    </div>
+  <a href="/peptides/thymosin-alpha-1/" class="related-link">
+    Thymosin Alpha-1 Research Notes — full citations, study types, and supply parameters
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="https://app.peptidepricelab.com">
-    <span class="rl-icon">💰</span>
-    <div class="rl-text">
-      <strong>Compare Thymosin Alpha-1 Prices</strong>
-      <span>Current per-mg pricing across vendors.</span>
-    </div>
+  <a href="https://app.peptidepricelab.com" class="related-link">
+    Compare Thymosin Alpha-1 Prices — current per-mg pricing across vendors
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/sources/">
-    <span class="rl-icon">📋</span>
-    <div class="rl-text">
-      <strong>Sources Directory</strong>
-      <span>Vendors carrying Thymosin Alpha-1 with purity and pricing info.</span>
-    </div>
+  <a href="/sources/" class="related-link">
+    Sources Directory — vendors carrying Thymosin Alpha-1 with purity and pricing info
+    <span class="arrow">&#x203A;</span>
   </a>
-  <a class="related-link" href="/tags/immune-research/">
-    <span class="rl-icon">🏷️</span>
-    <div class="rl-text">
-      <strong>Immune Research</strong>
-      <span>Other peptides studied for immune function and modulation.</span>
-    </div>
+  <a href="/tags/immune-research/" class="related-link">
+    Immune Research — other peptides studied for immune function and modulation
+    <span class="arrow">&#x203A;</span>
   </a>
 </div>
